@@ -21,15 +21,19 @@
 
 import os
 
+from gi.repository import GLib
 from gi.repository import Gtk
+from gi.repository import Gst
 from gi.repository import Gdk
 from gi.repository import Pango
 from gi.repository import GES
+from gi.repository import GstController
 
 from gettext import gettext as _
 
 from pitivi.configure import get_ui_dir
 
+from pitivi.utils import pipeline
 from pitivi.utils.ui import EFFECT_TARGET_ENTRY
 from pitivi.utils.loggable import Loggable
 from pitivi.utils.ui import PADDING, SPACING
@@ -565,13 +569,13 @@ class TransformationProperties(Gtk.Expander, Loggable):
         self.source = None
         self._selected_clip = None
         self.spin_buttons = {}
-        self.default_values = {}
         self.set_label(_("Transformation"))
 
         self.builder = Gtk.Builder()
         self.builder.add_from_file(os.path.join(get_ui_dir(),
                                                 "cliptransformation.ui"))
 
+        self.__controlBindings = {}
         self.add(self.builder.get_object("transform_box"))
         self.show_all()
         self._initButtons()
@@ -579,8 +583,30 @@ class TransformationProperties(Gtk.Expander, Loggable):
         self.hide()
 
     def _initButtons(self):
-        clear_button = self.builder.get_object("clear_button")
+
+        toolbar = self.builder.get_object("toolbar")
+
+        clear_button = Gtk.ToolButton.new(None, _("Reset all"))
         clear_button.connect("clicked", self._defaultValuesCb)
+        toolbar.insert(clear_button, 0)
+
+        self.__activate_keyframes_btn = Gtk.ToggleToolButton.new()
+        self.__activate_keyframes_btn.props.label = "◇"
+        self.__activate_keyframes_btn.connect("toggled", self._showKeyframesToggledCb)
+        self.__activate_keyframes_btn.connect("notify::active", self.__activateKeyframeActiveChangedCb)
+        toolbar.insert(self.__activate_keyframes_btn, 0)
+
+        self.__next_keyframe_btn = Gtk.ToolButton.new(None, ">")
+        self.__next_keyframe_btn.connect("clicked", self.__gotToKeyframe, True)
+        self.__next_keyframe_btn.set_no_show_all(True)
+        self.__next_keyframe_btn.hide()
+        toolbar.insert(self.__next_keyframe_btn, 0)
+
+        self.__previous_keyframe_btn = Gtk.ToolButton.new(None, "<")
+        self.__previous_keyframe_btn.connect("clicked", self.__gotToKeyframe, False)
+        self.__previous_keyframe_btn.set_no_show_all(True)
+        self.__previous_keyframe_btn.hide()
+        toolbar.insert(self.__previous_keyframe_btn, 0)
 
         self.__setupSpinButton("xpos_spinbtn", "posx")
         self.__setupSpinButton("ypos_spinbtn", "posy")
@@ -588,42 +614,146 @@ class TransformationProperties(Gtk.Expander, Loggable):
         self.__setupSpinButton("width_spinbtn", "width")
         self.__setupSpinButton("height_spinbtn", "height")
 
+    def __setDefaultKeyframesValues(self, control_source, prop):
+        val = self.source.get_child_property(prop)[1]
+        control_source.set(self.source.props.in_point, val)
+        control_source.set(self.source.props.duration + self.source.props.in_point, val)
+
+    def __gotToKeyframe(self, unused_button, next_keyframe):
+        assert(self.__controlBindings)
+        position = self.app.project_manager.current_project.pipeline.getPosition() - self.source.props.start + self.source.props.in_point
+
+        seekval = self.source.props.start
+        if position < 0:
+            seekval = self.source.props.start
+        else:
+            keyframes = self.__controlBindings["posx"].props.control_source.get_all()
+            prev_kf = keyframes[0]
+            for i in range(1, len(keyframes)):
+                kf = keyframes[i]
+                if prev_kf.timestamp <= position <= kf.timestamp:
+                    if next_keyframe:
+                        if kf.timestamp == position:
+                            try:
+                                kf = keyframes[i + 1]
+                            except IndexError:
+                                pass
+                        seekval = kf.timestamp + self.source.props.start - self.source.props.in_point
+                    else:
+                        if prev_kf.timestamp == position:
+                            try:
+                                kf = keyframes[i - 1]
+                            except IndexError:
+                                pass
+                        seekval = prev_kf.timestamp + self.source.props.start - self.source.props.in_point
+                    break
+                prev_kf = kf
+
+        pipeline.Seeker().seek(seekval)
+
+    def __activateKeyframeActiveChangedCb(self, button, unused_pspec):
+        if not button.props.active:
+            self.__previous_keyframe_btn.hide()
+            self.__next_keyframe_btn.hide()
+        else:
+            self.__previous_keyframe_btn.show()
+            self.__next_keyframe_btn.show()
+
+    def _showKeyframesToggledCb(self, button):
+        if not button.props.active:
+            self.__removeControlBindings()
+        else:
+            self.__setControlBindings()
+
     def _zoomViewerCb(self, scale):
         self.app.gui.viewer.setZoom(scale.get_value())
+
+    def __sourceUsesKeyframes(self):
+        if self.source is None:
+            return False
+
+        for prop in ["posx", "posy", "width", "height"]:
+            binding = self.source.get_control_binding(prop)
+            if binding:
+                return True
+
+        return False
 
     def _expandedCb(self, expander, params):
         if self._selected_clip:
             self.source = self._selected_clip.find_track_element(None,
                                                                  GES.VideoSource)
+            if self.__sourceUsesKeyframes():
+                self.__activate_keyframes_btn.props.active = True
+
             self.__setSource()
             self.set_expanded(self.get_expanded())
         else:
             self.set_expanded(False)
 
-    def _defaultValuesCb(self, widget):
-        for name, spinbtn in list(self.spin_buttons.items()):
-            spinbtn.set_value(self.default_values[name])
+    def __removeControlBindings(self):
+        for propname, binding in self.__controlBindings.items():
+            control_source = binding.props.control_source
+            control_source.unset_all()
+            self.source.remove_control_binding(propname)
+        self.__controlBindings = {}
+        self.app.project_manager.current_project.setModificationState(True)
+        self.source.ui.hideKeyframes()
 
-    def __sourcePropertyChangedCb(self, source, element, param):
+    def __setControlBindings(self):
+        adding_kfs = not self.__sourceUsesKeyframes()
+
+        for prop in ["posx", "posy", "width", "height"]:
+            binding = self.source.get_control_binding(prop)
+            if not binding:
+                control_source = GstController.InterpolationControlSource()
+                control_source.props.mode = GstController.InterpolationMode.LINEAR
+                self.source.set_control_source(control_source, prop, "direct-absolute")
+                self.__setDefaultKeyframesValues(control_source, prop)
+
+                binding = self.source.get_control_binding(prop)
+            self.__controlBindings[prop] = binding
+        if adding_kfs:
+            self.app.project_manager.current_project.setModificationState(True)
+        self.source.ui.showMultipleKeyframes(self.__controlBindings)
+
+    def _defaultValuesCb(self, widget):
+        if self.__controlBindings:
+            self.__removeControlBindings()
+            self.__activate_keyframes_btn.props.active = False
+
+        for name, spinbtn in list(self.spin_buttons.items()):
+            if name == "width":
+                spinbtn.set_value(self.app.project_manager.current_project.videowidth)
+            elif name == "height":
+                spinbtn.set_value(self.app.project_manager.current_project.videoheight)
+            else:
+                spinbtn.set_value(0)
+
+    def __sourcePropertyChangedCb(self, source, element, param, on_idle=False):
+        if self.__controlBindings and not on_idle:
+            GLib.idle_add(self.__sourcePropertyChangedCb, source, element, param,
+                          True)
+            return
+
         try:
             spin = self.spin_buttons[param.name]
         except KeyError:
             return
 
-        res, value = self.source.get_child_property(param.name)
-        if spin.get_value() != value:
+        res, value = self.__getProp(param.name)
+        if res and spin.get_value() != value:
+            self.debug("Setting value to %s" % value)
             spin.set_value(value)
+            self.app.project_manager.current_project.setModificationState(True)
+
+        if on_idle:
+            return False
 
     def _updateSpinButtons(self):
         for name, spinbtn in list(self.spin_buttons.items()):
             res, value = self.source.get_child_property(name)
             assert(res)
-            if name == "width":
-                self.default_values[name] = self.app.project_manager.current_project.videowidth
-            elif name == "height":
-                self.default_values[name] = self.app.project_manager.current_project.videoheight
-            else:
-                self.default_values[name] = 0
             spinbtn.set_value(value)
             self.source.connect("deep-notify", self.__sourcePropertyChangedCb)
 
@@ -636,16 +766,54 @@ class TransformationProperties(Gtk.Expander, Loggable):
         spinbtn.connect("output", self._onValueChangedCb, property_name)
         self.spin_buttons[property_name] = spinbtn
 
+    def __getProp(self, prop):
+        assert(self.source)
+        if self.__controlBindings:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                if position < self.source.props.start:
+                    return False, None
+
+                val = self.__controlBindings[prop].get_value(position - self.source.props.start + self.source.props.in_point)
+                if val is None:
+                    self.debug("Could not get value at %s for %s" % (Gst.TIME_ARGS(position),
+                               prop))
+                    return True, 0.0
+
+                return True, val
+            except pipeline.PipelineError:
+                return False, None
+
+        return self.source.get_child_property(prop)
+
+    def __setProp(self, prop, value):
+        assert(self.source)
+        if self.__controlBindings:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                if position < self.source.props.start:
+                    return
+
+                self.__controlBindings[prop].props.control_source.set(position - self.source.props.start + self.source.props.in_point, value)
+                self.debug("Set %s at %s to %s" % (prop, Gst.TIME_ARGS(position), value))
+            except pipeline.PipelineError:
+                return
+        else:
+            self.source.set_child_property(prop, value)
+
     def _onValueChangedCb(self, spinbtn, prop):
         if not self.source:
             return
 
         value = spinbtn.get_value()
 
-        res, cvalue = self.source.get_child_property(prop)
+        res, cvalue = self.__getProp(prop)
+        if not res:
+            return
+
         if value != cvalue:
             self.action_log.begin("Transformation property change")
-            self.source.set_child_property(prop, value)
+            self.__setProp(prop, value)
             self.action_log.commit()
             self.app.project_manager.current_project.pipeline.commit_timeline()
 
@@ -655,11 +823,16 @@ class TransformationProperties(Gtk.Expander, Loggable):
                 self.source.disconnect_by_func(self.__sourcePropertyChangedCb)
             except TypeError:
                 pass
+
         if self.get_expanded() and self._selected_clip:
             self.source = self._selected_clip.find_track_element(None,
                                                                  GES.VideoSource)
+            if not self.source:
+                return
 
             self._updateSpinButtons()
+            if self.__sourceUsesKeyframes():
+                self.__setControlBindings()
         else:
             self.source = None
 
@@ -679,7 +852,7 @@ class TransformationProperties(Gtk.Expander, Loggable):
             # Deselect
             if self._selected_clip:
                 self._selected_clip = None
-                self.app.project_manager.current_project.pipeline.flushSeek()
+                self.app.project_manager.current_project.pipeline.commit_timeline()
             self.__setSource()
             self.hide()
 

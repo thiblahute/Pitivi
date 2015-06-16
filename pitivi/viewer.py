@@ -31,7 +31,7 @@ from time import time
 from pitivi.settings import GlobalSettings
 from pitivi.utils.loggable import Loggable
 from pitivi.utils.misc import format_ns
-from pitivi.utils.pipeline import AssetPipeline, Seeker
+from pitivi.utils.pipeline import AssetPipeline, Seeker, PipelineError
 from pitivi.utils.ui import SPACING
 from pitivi.utils.widgets import TimeWidget
 
@@ -512,6 +512,37 @@ class TransformationBox(Gtk.EventBox, Loggable):
                 except IndexError:
                     continue
 
+    def __getProp(self, prop):
+        assert(self.__editSource)
+
+        binding = self.__editSource.get_control_binding(prop)
+        if binding:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                val = binding.get_value(position - self.__editSource.props.start + self.__editSource.props.in_point)
+                if val is None:
+                    self.info("Could not get value at %s for %s" % (Gst.TIME_ARGS(position),
+                              prop))
+                    return True, 0.0
+
+                return True, val
+            except PipelineError:
+                return False, None
+
+        return self.__editSource.get_child_property(prop)
+
+    def __setProp(self, prop, value):
+        assert(self.__editSource)
+        binding = self.__editSource.get_control_binding(prop)
+        if binding:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                binding.props.control_source.set(position - self.__editSource.props.start + self.__editSource.props.in_point, value)
+            except PipelineError:
+                return None
+        else:
+            self.__editSource.set_child_property(prop, value)
+
     def do_event(self, event):
         if event.type == Gdk.EventType.ENTER_NOTIFY and event.mode == Gdk.CrossingMode.NORMAL:
             self.__setupEditSource()
@@ -527,8 +558,8 @@ class TransformationBox(Gtk.EventBox, Loggable):
         elif event.type == Gdk.EventType.BUTTON_PRESS:
             self.__setupEditSource()
             if self.__editSource:
-                res_x, current_x = self.__editSource.get_child_property("posx")
-                res_y, current_y = self.__editSource.get_child_property("posy")
+                res_x, current_x = self.__getProp("posx")
+                res_y, current_y = self.__getProp("posy")
 
                 if res_x and res_y:
                     event_widget = Gtk.get_event_widget(event)
@@ -539,12 +570,11 @@ class TransformationBox(Gtk.EventBox, Loggable):
             if self.__startDraggingPosition and self.__editSource:
                 event_widget = Gtk.get_event_widget(event)
                 x, y = event_widget.translate_coordinates(self, event.x, event.y)
-                self.__editSource.set_child_property("posx",
-                                                     self.__startEditSourcePosition[0] +
-                                                     (x - self.__startDraggingPosition[0]))
+                self.__setProp("posx", self.__startEditSourcePosition[0] +
+                               (x - self.__startDraggingPosition[0]))
 
-                self.__editSource.set_child_property("posy", self.__startEditSourcePosition[1] +
-                                                     (y - self.__startDraggingPosition[1]))
+                self.__setProp("posy", self.__startEditSourcePosition[1] +
+                               (y - self.__startDraggingPosition[1]))
                 self.app.project_manager.current_project.pipeline.commit_timeline()
         elif event.type == Gdk.EventType.SCROLL:
             if self.__editSource:
@@ -564,8 +594,8 @@ class TransformationBox(Gtk.EventBox, Loggable):
                         return True
 
                 delta_y = delta_y * -1.0
-                width = self.__editSource.get_child_property("width")[1]
-                height = self.__editSource.get_child_property("height")[1]
+                width = self.__getProp("width")[1]
+                height = self.__getProp("height")[1]
                 if event.get_state()[1] & Gdk.ModifierType.SHIFT_MASK:
                     height += delta_y
                 elif event.get_state()[1] & Gdk.ModifierType.CONTROL_MASK:
@@ -574,8 +604,8 @@ class TransformationBox(Gtk.EventBox, Loggable):
                     width += delta_y
                     height += delta_y
 
-                self.__editSource.set_child_property("width", width)
-                self.__editSource.set_child_property("height", height)
+                self.__setProp("width", width)
+                self.__setProp("height", height)
                 self.app.project_manager.current_project.pipeline.commit_timeline()
 
         return True
