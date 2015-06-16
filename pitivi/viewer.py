@@ -541,6 +541,37 @@ class TransformationBox(Gtk.EventBox, Loggable):
         else:
             self.__editSource.set_child_property(prop, value)
 
+    def __getProp(self, prop):
+        assert(self.__editSource)
+
+        binding = self.__editSource.get_control_binding(prop)
+        if binding:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                val = binding.get_value(position - self.__editSource.props.start + self.__editSource.props.in_point)
+                if val is None:
+                    self.info("Could not get value at %s for %s" % (Gst.TIME_ARGS(position),
+                              prop))
+                    return True, 0.0
+
+                return True, val
+            except PipelineError:
+                return False, None
+
+        return self.__editSource.get_child_property(prop)
+
+    def __setProp(self, prop, value):
+        assert(self.__editSource)
+        binding = self.__editSource.get_control_binding(prop)
+        if binding:
+            try:
+                position = self.app.project_manager.current_project.pipeline.getPosition()
+                binding.props.control_source.set(position - self.__editSource.props.start + self.__editSource.props.in_point, value)
+            except PipelineError:
+                return None
+        else:
+            self.__editSource.set_child_property(prop, value)
+
     def do_event(self, event):
         if event.type == Gdk.EventType.ENTER_NOTIFY and event.mode == Gdk.CrossingMode.NORMAL:
             self.__setupEditSource()
