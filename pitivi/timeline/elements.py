@@ -70,20 +70,21 @@ class KeyframeCurve(FigureCanvas, Loggable):
         "leave": (GObject.SIGNAL_RUN_LAST, None, ()),
     }
 
-    def __init__(self, timeline, binding):
+    def __init__(self, timeline, binding, linewidth=1.0):
         figure = Figure()
         FigureCanvas.__init__(self, figure)
         Loggable.__init__(self)
 
         self.__timeline = timeline
-        self.__source = binding.props.control_source
+        self._source = binding.props.control_source
         self.__propertyName = binding.props.name
-        self.__resetTooltip()
+        self.__binding = binding
+        self._resetTooltip()
 
         # Curve values, basically separating source.get_values() timestamps
         # and values.
-        self.__line_xs = []
-        self.__line_ys = []
+        self._line_xs = []
+        self._line_ys = []
 
         # axisbg to None for transparency
         self.__ax = figure.add_axes([0, 0, 1, 1], axisbg='None')
@@ -118,8 +119,9 @@ class KeyframeCurve(FigureCanvas, Loggable):
         # matplotlib weirdness, simply here to avoid a warning ..
         self.__keyframes.set_picker(True)
         self.__line = self.__ax.plot([], [],
-                                     linewidth=1.0, zorder=1)[0]
-        self.__updatePlots()
+                                     linewidth=linewidth,
+                                     zorder=1)[0]
+        self._updatePlots()
 
         # Drag and drop logic
         self.__dragged = False
@@ -129,39 +131,69 @@ class KeyframeCurve(FigureCanvas, Loggable):
         self.__hovered = False
 
         self.connect("motion-notify-event", self.__gtkMotionEventCb)
-        self.connect("event", self._eventCb)
+        self.connect("event", self.__eventCb)
 
         self.mpl_connect('button_press_event', self.__mplButtonPressEventCb)
         self.mpl_connect(
             'button_release_event', self.__mplButtonReleaseEventCb)
         self.mpl_connect('motion_notify_event', self.__mplMotionEventCb)
 
-    # Private methods
-    def __updatePlots(self):
-        values = self.__source.get_all()
+        self._connectSources()
 
-        self.__line_xs = []
-        self.__line_ys = []
+    def _connectSources(self):
+        self._source.connect("value-added", self._keyframesChangedCb)
+        self._source.connect("value-removed", self._keyframesChangedCb)
+
+    def _keyframesChangedCb(self, control_source, kf):
+        self._updatePlots()
+        self.queue_draw()
+
+    # protected methods
+    def _populateLines(self):
+        values = self._source.get_all()
+
         for value in values:
-            self.__line_xs.append(value.timestamp)
-            self.__line_ys.append(value.value)
+            self._line_xs.append(value.timestamp)
+            self._line_ys.append(value.value)
 
-        self.__ax.set_xlim(self.__line_xs[0], self.__line_xs[-1])
+    def _updatePlots(self):
+        self._line_xs = []
+        self._line_ys = []
+
+        self._populateLines()
+
+        self.__ax.set_xlim(self._line_xs[0], self._line_xs[-1])
+
         self.__ax.set_ylim(0.0, 1.0)
 
-        arr = numpy.array((self.__line_xs, self.__line_ys))
+        arr = numpy.array((self._line_xs, self._line_ys))
         arr = arr.transpose()
         self.__keyframes.set_offsets(arr)
-        self.__line.set_xdata(self.__line_xs)
-        self.__line.set_ydata(self.__line_ys)
+        self.__line.set_xdata(self._line_xs)
+        self.__line.set_ydata(self._line_ys)
         self.emit("plot-changed")
 
-    def __maybeCreateKeyframe(self, event):
+    def _createKeyframe(self, timestamp, value):
+        self._source.set(timestamp, value)
+
+    def _removeKeyframe(self, timestamp):
+        self._source.unset(timestamp)
+
+    def _setTooltip(self, event):
+        if event.xdata:
+            self.set_tooltip_markup(_("Property: %s\nTimestamp: %s\nValue: %s")
+                                    % (self.__propertyName,
+                                       Gst.TIME_ARGS(event.xdata),
+                                       "{:.3f}".format(event.ydata)))
+
+    def _resetTooltip(self):
+        self.set_tooltip_markup(_("Setting property: %s") % str(self.__propertyName))
+
+    def _maybeCreateKeyframe(self, event):
         line_contains = self.__line.contains(event)[0]
         keyframe_existed = self.__keyframes.contains(event)[0]
         if line_contains and not keyframe_existed:
-            self.__source.set(event.xdata, event.ydata)
-            self.__updatePlots()
+            self._createKeyframe(event.xdata, event.ydata)
 
     # Callbacks
 
@@ -174,7 +206,7 @@ class KeyframeCurve(FigureCanvas, Loggable):
             return True
         return False
 
-    def _eventCb(self, element, event):
+    def __eventCb(self, element, event):
         if event.type == Gdk.EventType.LEAVE_NOTIFY:
             cursor = NORMAL_CURSOR
             self.__timeline.get_window().set_cursor(cursor)
@@ -192,44 +224,9 @@ class KeyframeCurve(FigureCanvas, Loggable):
 
             if event.guiEvent.type == Gdk.EventType._2BUTTON_PRESS and not \
                     is_edge_keyframe:
-                self.__source.unset(self.__offset)
-                self.__updatePlots()
+                self._removeKeyframe(self.__offset)
             else:
                 self.__handling_motion = True
-
-    def __setTooltip(self, event):
-        if event.xdata:
-            self.set_tooltip_markup(_("Property: %s\nTimestamp: %s\nValue: %s")
-                                    % (self.__propertyName,
-                                       Gst.TIME_ARGS(event.xdata),
-                                       "{:.3f}".format(event.ydata)))
-
-    def __resetTooltip(self):
-        self.set_tooltip_markup(_("Setting property: %s") % str(self.__propertyName))
-
-    def __computeKeyframeNewTimestamp(self, event):
-        # The user can not change the timestamp of the first
-        # and last keyframes.
-        values = self.__source.get_all()
-        if (values[0].timestamp == self.__offset or
-                values[-1].timestamp == self.__offset):
-            return self.__offset
-
-        if event.xdata != self.__offset:
-            try:
-                kf = next(kf for kf in values if kf.timestamp == int(self.__offset))
-            except StopIteration:
-                return event.xdata
-
-            i = values.index(kf)
-            if event.xdata > self.__offset:
-                if values[i + 1].timestamp < event.xdata:
-                    return max(0, values[i + 1].timestamp - 1)
-            else:
-                if i > 1 and values[i - 1].timestamp > event.xdata:
-                    return values[i - 1].timestamp + 1
-
-        return event.xdata
 
     def __mplMotionEventCb(self, event):
         if not self.props.visible:
@@ -239,24 +236,29 @@ class KeyframeCurve(FigureCanvas, Loggable):
             self.__dragged = True
             # Check that the mouse event still is in the figure boundaries
             if event.ydata is not None and event.xdata is not None:
-                keyframe_ts = self.__computeKeyframeNewTimestamp(event)
-                self.__source.unset(int(self.__offset))
-                self.__source.set(keyframe_ts, event.ydata)
-                self.__offset = keyframe_ts
-                self.__setTooltip(event)
-                self.__updatePlots()
+                # The user can not change the timestamp of the first
+                # and last keyframes.
+                values = self._source.get_all()
+                if (values[0].timestamp == self.__offset or
+                        values[-1].timestamp == self.__offset):
+                    event.xdata = self.__offset
+
+                self._source.unset(int(self.__offset))
+                self._createKeyframe(event.xdata, event.ydata)
+                self.__offset = event.xdata
+                self._setTooltip(event)
 
         cursor = NORMAL_CURSOR
         result = self.__line.contains(event)
         if result[0]:
             cursor = DRAG_CURSOR
-            self.__setTooltip(event)
+            self._setTooltip(event)
             if not self.__hovered:
                 self.emit("enter")
                 self.__hovered = True
         elif self.__hovered:
             self.emit("leave")
-            self.__resetTooltip()
+            self._resetTooltip()
             self.__hovered = False
 
         self.__timeline.get_window().set_cursor(
@@ -265,11 +267,53 @@ class KeyframeCurve(FigureCanvas, Loggable):
     def __mplButtonReleaseEventCb(self, event):
         if not self.__dragged and not self.__offset:
             if event.guiEvent.type == Gdk.EventType.BUTTON_RELEASE:
-                self.__maybeCreateKeyframe(event)
+                self._maybeCreateKeyframe(event)
 
         self.__offset = None
         self.__handling_motion = False
         self.__dragged = False
+
+
+class MultiKeyframeCurve(KeyframeCurve):
+    def __init__(self, timeline, bindings):
+        self.__properties = list(bindings.keys())
+        self.__bindings = list(bindings.values())
+
+        super(MultiKeyframeCurve, self).__init__(timeline, self.__bindings[0], linewidth=0.0)
+
+    def _connectSources(self):
+        for binding in self.__bindings:
+            binding.props.control_source.connect("value-removed", self._keyframesChangedCb)
+
+    def _maybeCreateKeyframe(self, event):
+        pass
+
+    def _removeKeyframe(self, timestamp):
+        for binding in self.__bindings:
+            binding.props.control_source.unset(timestamp)
+
+    def _createKeyframe(self, timestamp, value):
+        for binding in self.__bindings:
+            binding.props.control_source.set(timestamp, binding.get_value(timestamp))
+
+    def _populateLines(self):
+        for binding in self.__bindings:
+            values = binding.props.control_source.get_all()
+            for value in values:
+                self._line_xs.append(value.timestamp)
+                self._line_ys.append(0.5)
+
+    def _setTooltip(self, event):
+        pass
+
+    def _resetTooltip(self):
+        prop_str = ""
+        for prop in self.__properties:
+            if prop_str:
+                prop_str += ", "
+            prop_str += prop
+
+        self.set_tooltip_markup(_("Setting properties: %s") % prop_str)
 
 
 class TimelineElement(Gtk.Layout, timelineUtils.Zoomable, Loggable):
@@ -339,6 +383,9 @@ class TimelineElement(Gtk.Layout, timelineUtils.Zoomable, Loggable):
         self.__width = width
         self.__height = height
 
+    def showMultipleKeyframes(self, bindings):
+        self.__createKeyframeCurve(list(bindings.values())[0], bindings)
+
     def showKeyframes(self, effect, prop):
         self.__controlledProperty = prop
         self.__createControlBinding(effect)
@@ -357,15 +404,18 @@ class TimelineElement(Gtk.Layout, timelineUtils.Zoomable, Loggable):
 
     def __removeKeyframes(self):
         if self.__keyframeCurve:
-            self.__keyframeCurve.disconnect_by_func(
-                self.__keyframePlotChangedCb)
+            try:
+                self.__keyframeCurve.disconnect_by_func(self.__keyframePlotChangedCb)
+            except TypeError:
+                pass
+
             self.__keyframeCurve.disconnect_by_func(self.__curveEnterCb)
             self.__keyframeCurve.disconnect_by_func(self.__curveLeaveCb)
             self.remove(self.__keyframeCurve)
         self.__keyframeCurve = None
 
     # Private methods
-    def __createKeyframeCurve(self, binding):
+    def __createKeyframeCurve(self, binding, bindings=[]):
         source = binding.props.control_source
         values = source.get_all()
 
@@ -380,9 +430,14 @@ class TimelineElement(Gtk.Layout, timelineUtils.Zoomable, Loggable):
                 val)
 
         self.__removeKeyframes()
-        self.__keyframeCurve = KeyframeCurve(self.timeline, binding)
-        self.__keyframeCurve.connect("plot-changed",
-                                     self.__keyframePlotChangedCb)
+
+        if not bindings:
+            self.__keyframeCurve = KeyframeCurve(self.timeline, binding)
+            self.__keyframeCurve.connect("plot-changed",
+                                         self.__keyframePlotChangedCb)
+        else:
+            self.__keyframeCurve = MultiKeyframeCurve(self.timeline, bindings)
+
         self.__keyframeCurve.connect("enter", self.__curveEnterCb)
         self.__keyframeCurve.connect("leave", self.__curveLeaveCb)
         self.add(self.__keyframeCurve)
