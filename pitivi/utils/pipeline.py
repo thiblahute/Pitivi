@@ -702,8 +702,6 @@ class Pipeline(GES.Pipeline, SimplePipeline):
 
     def _busMessageCb(self, bus, message):
         if message.type == Gst.MessageType.ASYNC_DONE:
-            if self.commiting:
-                self.error("DONE COMMITING")
             self.commiting = False
 
         if message.type == Gst.MessageType.ASYNC_DONE and\
