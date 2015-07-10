@@ -898,6 +898,9 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
         self._on_layer = None
 
     def __getLayerAt(self, y, bLayer=None):
+        def layerGetSeps(bLayer, sep_name):
+            return [getattr(bLayer.ui, sep_name), getattr(bLayer.control_ui, sep_name)]
+
         if y < 20 or not self.bTimeline.get_layers():
             try:
                 bLayer = self.bTimeline.get_layers()[0]
@@ -905,7 +908,7 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
                 bLayer = self.bTimeline.append_layer()
 
             self.debug("Returning very first layer")
-            return bLayer, [bLayer.ui.before_sep]
+            return bLayer, layerGetSeps(bLayer, "before_sep")
 
         layers = self.bTimeline.get_layers()
         rect = Gdk.Rectangle()
@@ -920,14 +923,14 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
             if Gdk.rectangle_intersect(rect, layer_alloc)[0] is True:
                 return layer, []
 
-            separators = [layer.ui.after_sep]
+            separators = layerGetSeps(layer, "after_sep")
             sep_rectangle = Gdk.Rectangle()
             sep_rectangle.x = 0
             sep_rectangle.y = layer_alloc.y + layer_alloc.height
             try:
                 sep_rectangle.height = layers[i + 1].ui.get_allocation().y - \
                     layer_alloc.y - layer_alloc.height
-                separators.append(layers[i + 1].ui.before_sep)
+                separators.extend(layerGetSeps(layers[i + 1], "before_sep"))
             except IndexError:
                 sep_rectangle.height += LAYER_HEIGHT
 
@@ -939,7 +942,7 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
 
         self.debug("Returning very last layer")
 
-        return layers[-1], [layers[-1].ui.after_sep]
+        return layers[-1], layerGetSeps(layers[-1], "after_sep")
 
     def __setHoverSeparators(self):
         for sep in self.__on_separators:
