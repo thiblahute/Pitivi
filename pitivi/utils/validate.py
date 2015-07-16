@@ -329,9 +329,23 @@ def editContainer(scenario, action):
     return 1
 
 
-# def commit(scenario, action):
+def commit_done_cb(pipeline, message, action):
+    action.set_done()
+    pipeline.disconnect_by_func(commit_done_cb)
 
-#     return True
+    loggable.error(CAT, "DONE")
+
+
+def commit(scenario, action):
+    loggable.error(CAT, "COMMITING")
+    pipeline = scenario.pipeline.props.timeline.ui.app.project_manager.current_project.pipeline
+
+    if not pipeline.commit_wanted:
+        scenario.pipeline.props.timeline.ui.app.project_manager.current_project.pipeline.commit_timeline(False)
+
+    pipeline.get_bus().connect("message::async-done", commit_done_cb, action)
+
+    return 2
 
 
 def splitClip(scenario, action):
@@ -502,6 +516,12 @@ def init():
                                          remove_clip, None,
                                          "Remove clip",
                                          GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("commit", "pitivi",
+                                         commit, None,
+                                         "Commit the timeline",
+                                         GstValidate.ActionTypeFlags.NONE)
+
         GstValidate.register_action_type("select-clips", "pitivi",
                                          select_clips, [Parametter("clip-name",
                                                                    "The name of the clip to select",

@@ -607,7 +607,7 @@ class Pipeline(GES.Pipeline, SimplePipeline):
         self.app = app
 
         self._was_empty = False
-        self._commit_wanted = False
+        self.commit_wanted = False
 
         self._timeline = None
         self._seeker = Seeker()
@@ -696,18 +696,18 @@ class Pipeline(GES.Pipeline, SimplePipeline):
 
     def _busMessageCb(self, bus, message):
         if message.type == Gst.MessageType.ASYNC_DONE and\
-                self._commit_wanted:
+                self.commit_wanted:
             self.debug("Commiting now that ASYNC is DONE")
             self._addWaitingForAsyncDoneTimeout()
             self._timeline.commit()
-            self._commit_wanted = False
+            self.commit_wanted = False
         else:
             super(Pipeline, self)._busMessageCb(bus, message)
 
-    def commit_timeline(self):
+    def commit_timeline(self, force=False):
         if self._waiting_for_async_done and not self._was_empty\
                 and not self._timeline.is_empty():
-            self._commit_wanted = True
+            self.commit_wanted = True
             self._was_empty = False
             self.debug("commit wanted")
         else:
