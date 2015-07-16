@@ -403,6 +403,21 @@ def remove_clip(scenario, action):
     return GstValidate.execute_action(action_type.overriden_type, action)
 
 
+def fix_id(uri):
+    return uri.replace("PITIVI_TEST_SAMPLES", os.path.dirname(os.path.abspath(os.path.join(__file__,
+                       "../", "../", "samples/"))))
+
+
+def add_clip(scenario, action):
+    struct = action.structure
+
+    struct["asset-id"] = fix_id(struct["asset-id"])
+    action.set_structure(struct)
+    action_type = GstValidate.get_action_type(action.type)
+
+    return GstValidate.execute_action(action_type.overriden_type, action)
+
+
 def select_clips(scenario, action):
     should_select = True
     timeline = scenario.pipeline.props.timeline
@@ -460,6 +475,36 @@ def select_clips(scenario, action):
     return 1
 
 
+def add_asset(scenario, action):
+    asset_type = action.structure["type"]
+
+    if asset_type != "GESUriClip":
+        action_type = GstValidate.get_action_type(action.type)
+
+        return GstValidate.execute_action(action_type.overriden_type, action)
+
+    action_type = GstValidate.get_action_type("gtk-put-event")
+    action.type = "gtk-put-event"
+
+    structs_str = ["gtk-put-event, widget-name=media_import_button, button=1",
+                   "gtk-put-event, keys=\"<Control>l\"",
+                   "gtk-put-event, string=%s" % fix_id(action.structure["id"]),
+                   "gtk-put-event, widget-name=Add, button=1, widget-type=GtkButton"]
+
+    structs = []
+    for struct in structs_str:
+        structs.append(Gst.Structure.from_string(struct)[0])
+
+    for i in range(3, 0, -1):
+        structs[i - 1]["sub-action"] = structs[i].to_string()
+
+    struct = action.structure
+    struct["sub-action"] = structs[0].to_string()
+    action.set_structure(struct)
+
+    return True
+
+
 def Parametter(name, desc, mandatory=False, possible_variables=None, types=None):
     p = GstValidate.ActionParameter()
     p.description = desc
@@ -477,6 +522,11 @@ def init():
         from gi.repository import GstValidate
         GstValidate.init()
         has_validate = GES.validate_register_action_types()
+        GstValidate.register_action_type("add-asset", "pitivi",
+                                         add_asset, None,
+                                         "Pitivi override for the add_asset action",
+                                         GstValidate.ActionTypeFlags.NONE)
+
         GstValidate.register_action_type("stop", "pitivi",
                                          stop, None,
                                          "Pitivi override for the stop action",
@@ -510,6 +560,11 @@ def init():
         GstValidate.register_action_type("add-layer", "pitivi",
                                          add_layer, None,
                                          "Add layer",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("add-clip", "pitivi",
+                                         add_clip, None,
+                                         "Add clip",
                                          GstValidate.ActionTypeFlags.NONE)
 
         GstValidate.register_action_type("remove-clip", "pitivi",
