@@ -702,7 +702,8 @@ class Clip(Gtk.EventBox, timelineUtils.Zoomable, Loggable):
 
     def sendFakeEvent(self, event, event_widget):
         if event.type == Gdk.EventType.BUTTON_RELEASE:
-            self.__buttonReleaseEventCb(event_widget, event)
+            if self.__buttonReleaseEventCb(event_widget, event):
+                return
 
         self.timeline.sendFakeEvent(event, event_widget)
 
@@ -751,7 +752,7 @@ class Clip(Gtk.EventBox, timelineUtils.Zoomable, Loggable):
 
         self.timeline.selection.setSelection(selection, mode)
 
-        return False
+        return True
 
     def _connectWidgetSignals(self):
         self.connect("button-release-event", self.__buttonReleaseEventCb)

@@ -18,6 +18,7 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 # Boston, MA 02110-1301, USA.
+import os
 import locale
 import subprocess
 
@@ -28,8 +29,10 @@ from gi.repository import Gdk
 from gi.repository import GLib
 
 from pitivi.utils import ui
+from pitivi.utils import loggable
 from pitivi.utils import timeline as timelineUtils
 
+loggable
 
 CAT = "validate"
 
@@ -333,15 +336,17 @@ def commit_done_cb(pipeline, message, action):
     action.set_done()
     pipeline.disconnect_by_func(commit_done_cb)
 
-    loggable.error(CAT, "DONE")
+    loggable.debug(CAT, "Commit done")
 
 
 def commit(scenario, action):
-    loggable.error(CAT, "COMMITING")
     pipeline = scenario.pipeline.props.timeline.ui.app.project_manager.current_project.pipeline
 
-    if not pipeline.commit_wanted:
+    if not pipeline.commiting and not pipeline.commit_wanted:
+        loggable.debug(CAT, "Commiting")
         scenario.pipeline.props.timeline.ui.app.project_manager.current_project.pipeline.commit_timeline(False)
+    else:
+        loggable.debug(CAT, "Already commiting... letting it be")
 
     pipeline.get_bus().connect("message::async-done", commit_done_cb, action)
 
@@ -404,8 +409,8 @@ def remove_clip(scenario, action):
 
 
 def fix_id(uri):
-    return uri.replace("PITIVI_TEST_SAMPLES", os.path.dirname(os.path.abspath(os.path.join(__file__,
-                       "../", "../", "samples/"))))
+    return uri.replace("PITIVI_TEST_SAMPLES", os.path.abspath(os.path.join(os.path.dirname(__file__),
+                      "../", "../", "tests", "samples/")))
 
 
 def add_clip(scenario, action):
@@ -439,7 +444,7 @@ def select_clips(scenario, action):
             should_select = False
 
         timeline.ui.sendFakeEvent(Event(event_type=Gdk.EventType.KEY_PRESS,
-                                        keyval=Gdk.KEY_Control_L))
+                                  keyval=Gdk.KEY_Control_L))
 
     event = Gdk.EventButton.new(Gdk.EventType.BUTTON_RELEASE)
     clip.ui.sendFakeEvent(event, clip.ui)
@@ -462,12 +467,12 @@ def select_clips(scenario, action):
                     if not c.ui.get_state_flags() & Gtk.StateFlags.SELECTED:
                         scenario.report_simple(GLib.quark_from_string("scenario::execution-error"),
                                                "Clip %s should be selected (as defined in selection %s)"
-                                               " but is not" % (selection, clip.get_name()))
+                                               " but is not" % (selection, c.get_name()))
                 else:
                     if c.ui.get_state_flags() & Gtk.StateFlags.SELECTED:
                         scenario.report_simple(GLib.quark_from_string("scenario::execution-error"),
                                                "Clip %s should NOT be selected (as defined in selection %s)"
-                                               " but it is" % (selection, clip.get_name()))
+                                               " but it is" % (selection, c.get_name()))
 
     if mode == "ctrl":
         timeline.ui.sendFakeEvent(Event(Gdk.EventType.KEY_RELEASE, keyval=Gdk.KEY_Control_L))
