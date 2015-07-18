@@ -1185,7 +1185,7 @@ class Project(Loggable, GES.Project):
             self.pipeline.release()
 
         if self.runner:
-            res = self.runner.printf()
+            res = self.runner.exit(True)
 
         if self.runner:
             self.runner = None
