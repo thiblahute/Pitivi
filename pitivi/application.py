@@ -227,6 +227,13 @@ class Pitivi(Gtk.Application, Loggable):
         self.threads.stopAllThreads()
         self.settings.storeSettings()
         self.quit()
+        try:
+            from gi.repository import GstValidate
+            GstValidate.deinit()
+        except:
+            pass
+
+        Gst.deinit()
         return True
 
     def _setScenarioFile(self, uri):

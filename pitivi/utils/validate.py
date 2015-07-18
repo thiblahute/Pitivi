@@ -124,10 +124,9 @@ def stop(scenario, action):
         if project:
             project.setModificationState(False)
             GstValidate.print_action(action, "Force quiting, ignoring any"
-
                                      " changes in the project\n")
-        timeline.ui.app.shutdown()
 
+        timeline.ui.app.shutdown()
         return 1
 
     GstValidate.print_action(action, "STOP: not doing anything in pitivi\n")
@@ -410,7 +409,7 @@ def remove_clip(scenario, action):
 
 def fix_id(uri):
     return uri.replace("PITIVI_TEST_SAMPLES", os.path.abspath(os.path.join(os.path.dirname(__file__),
-                      "../", "../", "tests", "samples/")))
+                       "../", "../", "tests", "samples/")))
 
 
 def add_clip(scenario, action):
