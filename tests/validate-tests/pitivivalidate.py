@@ -46,8 +46,16 @@ class PitiviTest(GstValidateTest):
     def __init__(self, classname, options, reporter, scenario,
                  combination=None):
 
+        config = scenario.path.replace(".scenario", ".config") if scenario else None
+        if os.path.exists(config):
+            extra_arguments = {
+                "GST_VALIDATE_CONFIG": os.environ.get("GST_VALIDATE_CONFIG", "") + os.pathsep + config
+            }
+        else:
+            extra_arguments = {}
+
         super(PitiviTest, self).__init__(PITIVI_COMMAND, classname, options, reporter,
-                                         scenario=None)
+                                         scenario=None, extra_env_variables=extra_arguments)
         self._scenario = scenario
 
     def set_sample_paths(self):
