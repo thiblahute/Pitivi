@@ -41,7 +41,7 @@ from pwd import getpwuid
 from pitivi.undo.undo import UndoableAction
 from pitivi.configure import get_ui_dir
 
-from pitivi.utils.validate import has_validate, create_monitor
+from pitivi.utils.validate import has_validate
 from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog
 from pitivi.utils.pipeline import PipelineError, Seeker
 from pitivi.utils.loggable import Loggable
@@ -811,7 +811,6 @@ class Project(Loggable, GES.Project):
 
         self.info("Setting up validate scenario")
         self.runner = GstValidate.Runner.new()
-        create_monitor(self.runner, self.app.gui)
         self.monitor = GstValidate.Monitor.factory_create(
             self.pipeline, self.runner, None)
         self._scenario = GstValidate.Scenario.factory_create(

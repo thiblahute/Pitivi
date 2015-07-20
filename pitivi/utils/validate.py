@@ -19,8 +19,6 @@
 # Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 # Boston, MA 02110-1301, USA.
 import os
-import locale
-import subprocess
 
 from gi.repository import Gtk
 from gi.repository import Gst
@@ -62,50 +60,6 @@ def Event(event_type, **kwargs):
         setattr(event, arg, value)
 
     return event
-
-if GstValidate:
-    class PitiviMonitor(GstValidate.Monitor):
-        def __init__(self, runner, object):
-            GstValidate.Monitor.__init__(self, object=object, validate_runner=runner)
-
-            if GstValidate:
-                try:
-                    from gi.repository import Wnck
-                    Wnck.Screen.get_default().connect("window-opened", self._windowOpenedCb)
-                except ImportError:
-                    print("Wnck not present on the system,"
-                          " not checking the sink does not open a new window")
-                    pass
-
-        def _windowOpenedCb(self, screen, window):
-            global monitor
-
-            if window.get_name() == 'OpenGL renderer' and monitor:
-                monitor.report_simple(GLib.quark_from_string("pitivi::wrong-window-creation"),
-                                      "New window created by the sink,"
-                                      " that should not happen")
-
-        def checkWrongWindow(self):
-            try:
-                windows = subprocess.check_output(["xwininfo", "-tree", "-root"]).decode(locale.getdefaultlocale()[1])
-                for w in windows.split('\n'):
-                    if "OpenGL renderer" in w and w.startswith("     0x"):
-                        monitor.report_simple(GLib.quark_from_string("pitivi::wrong-window-creation"),
-                                              "New window created by the sink,"
-                                              " that should not happen, (current windows: %s)"
-                                              % windows)
-                        break
-            except (subprocess.CalledProcessError, FileNotFoundError):
-                pass
-
-
-def create_monitor(runner, app):
-    global monitor
-    global has_validate
-
-    if not monitor and has_validate:
-        monitor = PitiviMonitor(runner, app)
-        GstValidate.Reporter.set_name(monitor, "Pitivi")
 
 
 def stop(scenario, action):

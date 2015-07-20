@@ -193,9 +193,17 @@ class SimplePipeline(GObject.Object, Loggable):
         self._timeout_async_id = 0
         self._force_position_listener = False
 
-        sink = Gst.ElementFactory.make("glsinkbin", None)
-        sink.props.sink = Gst.ElementFactory.make("gtkglsink", None)
-        self.setSink(sink)
+        self.setSink(self.createSink())
+
+    def createSink(self):
+        try:
+            GObject.type_from_name("GdkBroadwayDisplay")
+            sink = Gst.ElementFactory.make("gtksink", None)
+        except RuntimeError:
+            sink = Gst.ElementFactory.make("glsinkbin", None)
+            sink.props.sink = Gst.ElementFactory.make("gtkglsink", None)
+
+        return sink
 
     def setSink(self, sink):
         self.video_sink = sink
