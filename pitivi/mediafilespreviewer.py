@@ -252,6 +252,7 @@ class PreviewWidget(Gtk.Grid, Loggable):
                     video.get_par_num() / video.get_par_denom()) * video.get_width()
                 video_height = video.get_height()
                 w, h = self.__get_best_size(video_width, video_height)
+                self.error("Setting size request %dx%d", w, h)
                 self.preview_video.set_size_request(w, h)
                 self.preview_video.setDisplayAspectRatio(
                     float(video_width) / video_height)
@@ -265,6 +266,7 @@ class PreviewWidget(Gtk.Grid, Loggable):
                     _("<b>Resolution</b>: %d×%d") % (
                         video_width, video_height),
                     _("<b>Duration</b>: %s") % pretty_duration])
+                self.queue_draw()
         else:
             self.current_preview_type = 'audio'
             self.preview_video.hide()
@@ -385,6 +387,11 @@ class PreviewWidget(Gtk.Grid, Loggable):
                 if (w, h) < self.original_dims:
                     (w, h) = self.original_dims
             self.preview_video.set_size_request(int(w), int(h))
+            self.preview_video.drawing_area.set_size_request(int(w), int(h))
+            self.error("Preferred size:  %sx%s",
+                       self.preview_video.get_preferred_width(),
+                       self.preview_video.get_preferred_height())
+            self.queue_draw()
             self.settings.FCpreviewWidth = int(w)
             self.settings.FCpreviewHeight = int(h)
         elif self.current_preview_type == 'image':

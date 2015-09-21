@@ -615,7 +615,6 @@ class ViewerWidget(Gtk.AspectFrame, Loggable):
         self.box = None
         self.stored = False
         self.area = None
-        self.zoom = 1.0
         self.sink = sink
         self.pixbuf = None
         self.pipeline = None
