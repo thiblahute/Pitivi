@@ -1,0 +1,5 @@
+description, seek=true, handles-states=true
+pause, playback-time=0.0
+seek, playback-time=0.0, start=24.989, flags=accurate+flush
+dot-pipeline;
+

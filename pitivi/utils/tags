@@ -1,0 +1,549 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+activatePositionListener	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def activatePositionListener(self, interval=50):$/;"	m	language:Python	class:SimplePipeline
+addChoices	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def addChoices(self, choices):$/;"	m	language:Python	class:TextWidget
+addInstance	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def addInstance(cls, instance):$/;"	m	language:Python	class:Zoomable
+addLimitedLogHandler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def addLimitedLogHandler(func):$/;"	f	language:Python
+addLogHandler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def addLogHandler(func):$/;"	f	language:Python
+addPresets	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def addPresets(self, presets):$/;"	m	language:Python	class:FractionWidget
+add_layer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def add_layer(scenario, action):$/;"	f	language:Python
+alter_style_class	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def alter_style_class(style_class, target_widget, css_style):$/;"	f	language:Python
+app	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    app = None$/;"	v	language:Python	class:Zoomable
+append_page	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def append_page(self, child, label):$/;"	m	language:Python	class:BaseTabs
+APPNAME	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^from pitivi.configure import APPNAME$/;"	i	language:Python
+argb_to_gdk_rgba	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def argb_to_gdk_rgba(color_int):$/;"	f	language:Python
+AssetPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^class AssetPipeline(SimplePipeline):$/;"	c	language:Python
+audio_channels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^audio_channels = model((str, int), ($/;"	v	language:Python
+audio_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^audio_rates = model((str, int), ($/;"	v	language:Python
+BAR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    BAR = '%3d%% ${GREEN}[${BOLD}%s%s${NORMAL}${GREEN}]${NORMAL}\\n'$/;"	v	language:Python	class:ProgressBar
+BaseLoggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^class BaseLoggable(object):$/;"	c	language:Python
+BaseTabs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class BaseTabs(Gtk.Notebook):$/;"	c	language:Python
+beautify_ETA	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def beautify_ETA(length):$/;"	f	language:Python
+beautify_info	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def beautify_info(info):$/;"	f	language:Python
+beautify_length	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def beautify_length(length):$/;"	f	language:Python
+beautify_length	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+beautify_stream	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def beautify_stream(stream):$/;"	f	language:Python
+beautify_time_delta	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def beautify_time_delta(seconds):$/;"	f	language:Python
+BLINK	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    BLINK = ''           # : Turn on blink mode$/;"	v	language:Python	class:TerminalController
+BOL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    BOL = ''             # : Move the cursor to the beginning of the line$/;"	v	language:Python	class:TerminalController
+BOLD	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    BOLD = ''            # : Turn on bold mode$/;"	v	language:Python	class:TerminalController
+cairo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import cairo$/;"	i	language:Python
+CANVAS_SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^CANVAS_SPACING = 21$/;"	v	language:Python
+CAT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^CAT = "validate"$/;"	v	language:Python
+ChoiceWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class ChoiceWidget(Gtk.Box, DynamicWidget):$/;"	c	language:Python
+cleanEditModes	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def cleanEditModes(timeline, scenario):$/;"	f	language:Python
+clear	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def clear(self):$/;"	m	language:Python	class:ProgressBar
+CLEAR_BOL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    CLEAR_BOL = ''       # : Clear to the beginning of the line.$/;"	v	language:Python	class:TerminalController
+CLEAR_EOL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    CLEAR_EOL = ''       # : Clear to the end of the line.$/;"	v	language:Python	class:TerminalController
+CLEAR_EOS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    CLEAR_EOS = ''       # : Clear to the end of the screen$/;"	v	language:Python	class:TerminalController
+CLEAR_SCREEN	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    CLEAR_SCREEN = ''    # : Clear the screen and move to home position$/;"	v	language:Python	class:TerminalController
+collections	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import collections$/;"	i	language:Python
+COLORS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^COLORS = {ERROR: 'RED',$/;"	v	language:Python
+ColorWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class ColorWidget(Gtk.ColorButton, DynamicWidget):$/;"	c	language:Python
+COLS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    COLS = None          # : Width of the terminal (None for unknown)$/;"	v	language:Python	class:TerminalController
+commit_timeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def commit_timeline(self):$/;"	m	language:Python	class:Pipeline
+computeZoomLevel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def computeZoomLevel(cls, ratio):$/;"	m	language:Python	class:Zoomable
+computeZoomRatio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def computeZoomRatio(cls, x):$/;"	m	language:Python	class:Zoomable
+connectActivateEvent	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectActivateEvent(self, activateCb):$/;"	m	language:Python	class:TimeWidget
+connectFocusEvents	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectFocusEvents(self, focusInCb, focusOutCb):$/;"	m	language:Python	class:TimeWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:ChoiceWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:ColorWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:DynamicWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:FontWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:NumericWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:PathWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:TextWidget
+connectValueChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def connectValueChanged(self, callback, *args):$/;"	m	language:Python	class:ToggleWidget
+CONTROL_WIDTH	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^CONTROL_WIDTH = 240$/;"	v	language:Python
+CONTROL_WIDTH	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+COOKIE_NONE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^COOKIE_NONE = 0$/;"	v	language:Python
+COOKIE_SCREENSAVER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^COOKIE_SCREENSAVER = 1$/;"	v	language:Python
+COOKIE_SLEEP	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^COOKIE_SLEEP = 2$/;"	v	language:Python
+CPUUsageTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^class CPUUsageTracker(object):$/;"	c	language:Python
+createSink	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def createSink(self):$/;"	m	language:Python	class:SimplePipeline
+curses	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^            import curses$/;"	i	language:Python
+curses	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^        import curses$/;"	i	language:Python
+datetime	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^import datetime$/;"	i	language:Python
+dbus	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^            import dbus$/;"	i	language:Python
+deactivatePositionListener	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def deactivatePositionListener(self):$/;"	m	language:Python	class:SimplePipeline
+debug	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def debug(self, *args):$/;"	m	language:Python	class:BaseLoggable
+debug	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def debug(cat, format, *args):$/;"	f	language:Python
+debugObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def debugObject(object, cat, format, *args):$/;"	f	language:Python
+decimal	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import decimal$/;"	i	language:Python
+DefaultWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class DefaultWidget(Gtk.Label):$/;"	c	language:Python
+desktopMessage	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def desktopMessage(self, title, message, icon="pitivi"):$/;"	m	language:Python	class:FreedesktopOrgSystem
+desktopMessage	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def desktopMessage(self, title, message, unused_icon=None):$/;"	m	language:Python	class:System
+DIM	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    DIM = ''             # : Turn on half-bright mode$/;"	v	language:Python	class:TerminalController
+DiscovererAudioInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    DiscovererStreamInfo, DiscovererSubtitleInfo, DiscovererInfo$/;"	i	language:Python
+DiscovererInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    DiscovererStreamInfo, DiscovererSubtitleInfo, DiscovererInfo$/;"	i	language:Python
+DiscovererStreamInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    DiscovererStreamInfo, DiscovererSubtitleInfo, DiscovererInfo$/;"	i	language:Python
+DiscovererSubtitleInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    DiscovererStreamInfo, DiscovererSubtitleInfo, DiscovererInfo$/;"	i	language:Python
+DiscovererVideoInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    DiscovererStreamInfo, DiscovererSubtitleInfo, DiscovererInfo$/;"	i	language:Python
+display_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^display_aspect_ratios = model((str, object), ($/;"	v	language:Python
+DOCUMENT_FONT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^DOCUMENT_FONT = _get_font("document-font-name", "Sans")$/;"	v	language:Python
+doLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def doLog(self, level, where, format, *args, **kwargs):$/;"	m	language:Python	class:BaseLoggable
+doLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def doLog(level, object, category, format, args, where=-1, filePath=None, line=None):$/;"	f	language:Python
+doLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from pitivi.utils.loggable import doLog, ERROR$/;"	i	language:Python
+DOWN	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    DOWN = ''            # : Move the cursor down one line$/;"	v	language:Python	class:TerminalController
+DynamicWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class DynamicWidget(object):$/;"	c	language:Python
+editContainer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def editContainer(scenario, action):$/;"	f	language:Python
+EditingContext	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^class EditingContext(GObject.Object, Loggable):$/;"	c	language:Python
+editTo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def editTo(self, position, priority):$/;"	m	language:Python	class:EditingContext
+EFFECT_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^EFFECT_TARGET_ENTRY = Gtk.TargetEntry.new("pitivi\/effect", 0, 0)$/;"	v	language:Python
+ellipsize	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def ellipsize(o):$/;"	f	language:Python
+errno	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import errno$/;"	i	language:Python
+error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def error(self, *args):$/;"	m	language:Python	class:BaseLoggable
+error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def error(self, format, *args):$/;"	m	language:Python	class:Loggable
+error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def error(cat, format, *args):$/;"	f	language:Python
+ERROR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from pitivi.utils.loggable import doLog, ERROR$/;"	i	language:Python
+error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.error$/;"	i	language:Python
+errorObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def errorObject(object, cat, format, *args):$/;"	f	language:Python
+Event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def Event(event_type, **kwargs):$/;"	f	language:Python
+EXPANDED_SIZE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^EXPANDED_SIZE = 65$/;"	v	language:Python
+FILE_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^FILE_TARGET_ENTRY = Gtk.TargetEntry.new("text\/plain", 0, 0)$/;"	v	language:Python
+finish	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def finish(self):$/;"	m	language:Python	class:EditingContext
+fixme	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def fixme(self, *args):$/;"	m	language:Python	class:BaseLoggable
+fixme	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def fixme(cat, format, *args):$/;"	f	language:Python
+fixmeObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def fixmeObject(object, cat, format, *args):$/;"	f	language:Python
+flush	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def flush(self, on_idle=False):$/;"	m	language:Python	class:Seeker
+flushSeek	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def flushSeek(self):$/;"	m	language:Python	class:SimplePipeline
+fnmatch	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import fnmatch$/;"	i	language:Python
+FontWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class FontWidget(Gtk.FontButton, DynamicWidget):$/;"	c	language:Python
+format_ns	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from pitivi.utils.misc import format_ns$/;"	i	language:Python
+FractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class FractionWidget(TextWidget, DynamicWidget):$/;"	c	language:Python
+fraction_regex	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    fraction_regex = re.compile($/;"	v	language:Python	class:FractionWidget
+frame_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^frame_rates = model((str, object), ($/;"	v	language:Python
+FreedesktopOrgSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^class FreedesktopOrgSystem(System):$/;"	c	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import Gdk$/;"	i	language:Python
+gdk_rgba_to_argb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def gdk_rgba_to_argb(color):$/;"	f	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import GES$/;"	i	language:Python
+getCategoryLevel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getCategoryLevel(category):$/;"	f	language:Python
+getCurrentZoomLevel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getCurrentZoomLevel(cls):$/;"	m	language:Python	class:Zoomable
+getDebug	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getDebug():$/;"	f	language:Python
+getDuration	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def getDuration(self):$/;"	m	language:Python	class:SimplePipeline
+getExceptionMessage	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getExceptionMessage(exception, frame=-1, filename=None):$/;"	f	language:Python
+getFileLine	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getFileLine(where=-1):$/;"	f	language:Python
+getFormatArgs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getFormatArgs(startFormat, startArgs, endFormat, endArgs, args, kwargs):$/;"	f	language:Python
+getFormattedLevelName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getFormattedLevelName(level):$/;"	f	language:Python
+getLevelInt	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getLevelInt(levelName):$/;"	f	language:Python
+getLevelName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getLevelName(level):$/;"	f	language:Python
+getLevelNames	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getLevelNames():$/;"	f	language:Python
+getLogSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def getLogSettings():$/;"	f	language:Python
+getPosition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def getPosition(self, blocks=False):$/;"	m	language:Python	class:SimplePipeline
+getScreensaverInhibitors	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def getScreensaverInhibitors(self):$/;"	m	language:Python	class:System
+getSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getSelected(self):$/;"	m	language:Python	class:Selected
+getSelectedEffects	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getSelectedEffects(self):$/;"	m	language:Python	class:Selection
+getSelectedTrackElements	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getSelectedTrackElements(self):$/;"	m	language:Python	class:Selection
+getSelectedTrackElementsAtPosition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getSelectedTrackElementsAtPosition(self, position, element_type=GObject.Object,$/;"	m	language:Python	class:Selection
+getSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getSettings(self):$/;"	m	language:Python	class:GstElementSettingsDialog
+getSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getSettings(self, with_default=False):$/;"	m	language:Python	class:GstElementSettingsWidget
+getSingleClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def getSingleClip(self, clip_type):$/;"	m	language:Python	class:Selection
+getSleepInhibitors	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def getSleepInhibitors(self):$/;"	m	language:Python	class:System
+getState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def getState(self):$/;"	m	language:Python	class:SimplePipeline
+getSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^def getSystem():$/;"	f	language:Python
+getUniqueFilename	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def getUniqueFilename(self, string):$/;"	m	language:Python	class:System
+getWidgetDefault	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetDefault(self):$/;"	m	language:Python	class:DynamicWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:ChoiceWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:ColorWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:FontWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:FractionWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:NumericWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:PathWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:TextWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:TimeWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self):$/;"	m	language:Python	class:ToggleWidget
+getWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def getWidgetValue(self, value):$/;"	m	language:Python	class:DynamicWidget
+get_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def get_combo_value(combo):$/;"	f	language:Python
+get_edge	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def get_edge(structure):$/;"	f	language:Python
+get_pixmap_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from pitivi.configure import get_pixmap_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+get_value_from_model	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def get_value_from_model(model, key):$/;"	f	language:Python
+Gio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import Gio$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from gi.repository import GLib$/;"	i	language:Python
+GnomeSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^class GnomeSystem(FreedesktopOrgSystem):$/;"	c	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import GObject$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import Gst$/;"	i	language:Python
+GstElementSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class GstElementSettingsDialog(Loggable):$/;"	c	language:Python
+GstElementSettingsWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class GstElementSettingsWidget(Gtk.Box, Loggable):$/;"	c	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^        from gi.repository import GstValidate$/;"	i	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^    from gi.repository import GstValidate$/;"	i	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^    GstValidate = None$/;"	v	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import Gtk$/;"	i	language:Python
+handleException	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def handleException(self, exc):$/;"	m	language:Python	class:BaseLoggable
+has_validate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^has_validate = False$/;"	v	language:Python
+HEADER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    HEADER = '${BOLD}${CYAN}%s${NORMAL}\\n\\n'$/;"	v	language:Python	class:ProgressBar
+hex_to_rgb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def hex_to_rgb(value):$/;"	f	language:Python
+HIDE_CURSOR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    HIDE_CURSOR = ''     # : Make the cursor invisible$/;"	v	language:Python	class:TerminalController
+info	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def info(self, *args):$/;"	m	language:Python	class:BaseLoggable
+info	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def info(cat, format, *args):$/;"	f	language:Python
+infoObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def infoObject(object, cat, format, *args):$/;"	f	language:Python
+info_name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def info_name(info):$/;"	f	language:Python
+inhibitScreensaver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def inhibitScreensaver(self, key):$/;"	m	language:Python	class:System
+inhibitSleep	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def inhibitSleep(self, key):$/;"	m	language:Python	class:System
+INHIBIT_LOGOUT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^INHIBIT_LOGOUT = 1$/;"	v	language:Python
+INHIBIT_SESSION_IDLE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^INHIBIT_SESSION_IDLE = 8$/;"	v	language:Python
+INHIBIT_SUSPEND	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^INHIBIT_SUSPEND = 4$/;"	v	language:Python
+INHIBIT_USER_SWITCHING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^INHIBIT_USER_SWITCHING = 2$/;"	v	language:Python
+init	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def init(envVarName, enableColorOutput=True, enableCrackOutput=True):$/;"	f	language:Python
+init	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def init():$/;"	f	language:Python
+KEYFRAME_SIZE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^KEYFRAME_SIZE = 8$/;"	v	language:Python
+LAYER_CONTROL_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^LAYER_CONTROL_TARGET_ENTRY = Gtk.TargetEntry.new("pitivi\/layer-control", 0, 0)$/;"	v	language:Python
+LAYER_CREATION_BLOCK_TIME	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^LAYER_CREATION_BLOCK_TIME = 0.2$/;"	v	language:Python
+LAYER_HEIGHT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^LAYER_HEIGHT = 130$/;"	v	language:Python
+LEFT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    LEFT = ''            # : Move the cursor left one char$/;"	v	language:Python	class:TerminalController
+LINES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    LINES = None         # : Height of the terminal (None for unknown)$/;"	v	language:Python	class:TerminalController
+locale	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^import locale$/;"	i	language:Python
+log	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def log(self, *args):$/;"	m	language:Python	class:BaseLoggable
+log	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def log(cat, format, *args):$/;"	f	language:Python
+logFunction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def logFunction(self, *args):$/;"	m	language:Python	class:BaseLoggable
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^class Loggable(BaseLoggable):$/;"	c	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+logLevelName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def logLevelName(level):$/;"	f	language:Python
+logObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def logObject(object, cat, format, *args):$/;"	f	language:Python
+logObjectName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def logObjectName(self):$/;"	m	language:Python	class:BaseLoggable
+logObjectName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def logObjectName(self):$/;"	m	language:Python	class:Loggable
+math	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^import math$/;"	i	language:Python
+MAX_BRINGING_TO_PAUSED_DURATION	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^MAX_BRINGING_TO_PAUSED_DURATION = 5$/;"	v	language:Python
+MAX_RECOVERIES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^MAX_RECOVERIES = 3$/;"	v	language:Python
+MAX_SET_STATE_DURATION	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^MAX_SET_STATE_DURATION = 1$/;"	v	language:Python
+max_zoom	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    max_zoom = 1000.0$/;"	v	language:Python	class:Zoomable
+min_zoom	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    min_zoom = 0.25$/;"	v	language:Python	class:Zoomable
+missing_soft_deps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^from pitivi.check import missing_soft_deps$/;"	i	language:Python
+model	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def model(columns, data):$/;"	f	language:Python
+monitor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^monitor = None$/;"	v	language:Python
+MONOSPACE_FONT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^MONOSPACE_FONT = _get_font("monospace-font-name", "Monospace")$/;"	v	language:Python
+multiprocessing	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^import multiprocessing$/;"	i	language:Python
+ngettext	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gettext import ngettext, gettext as _$/;"	i	language:Python
+NORMAL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    NORMAL = ''          # : Turn off all modes$/;"	v	language:Python	class:TerminalController
+NORMAL_FONT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^NORMAL_FONT = _get_font("font-name", "Cantarell")$/;"	v	language:Python
+Notify	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^            from gi.repository import Notify$/;"	i	language:Python
+Notify	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^            from gi.repository import Notify$/;"	i	language:Python
+NOT_RECOVERING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^        NOT_RECOVERING = "not-recovering"$/;"	v	language:Python	class:SimplePipeline.RecoveryState
+nsToPixel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def nsToPixel(cls, duration):$/;"	m	language:Python	class:Zoomable
+nsToPixelAccurate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def nsToPixelAccurate(cls, duration):$/;"	m	language:Python	class:Zoomable
+NumericWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class NumericWidget(Gtk.Box, DynamicWidget):$/;"	c	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^import os$/;"	i	language:Python
+outputToFiles	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def outputToFiles(stdout=None, stderr=None):$/;"	f	language:Python
+pack_color_32	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def pack_color_32(red, green, blue, alpha=0xFFFF):$/;"	f	language:Python
+pack_color_32	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+pack_color_64	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def pack_color_64(red, green, blue, alpha=0xFFFF):$/;"	f	language:Python
+pack_color_64	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+PADDING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^PADDING = 6$/;"	v	language:Python
+Pango	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gi.repository import Pango$/;"	i	language:Python
+Parametter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def Parametter(name, desc, mandatory=False, possible_variables=None, types=None):$/;"	f	language:Python
+parse	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.parse$/;"	i	language:Python
+PathWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class PathWidget(Gtk.FileChooserButton, DynamicWidget):$/;"	c	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from pitivi.utils.misc import path_from_uri$/;"	i	language:Python
+pause	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def pause(self):$/;"	m	language:Python	class:SimplePipeline
+Pipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^class Pipeline(GES.Pipeline, SimplePipeline):$/;"	c	language:Python
+PipelineError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^class PipelineError(Exception):$/;"	c	language:Python
+PIPELINE_SIGNALS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^PIPELINE_SIGNALS = {$/;"	v	language:Python
+pixelToNs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def pixelToNs(cls, pixel):$/;"	m	language:Python	class:Zoomable
+pixelToNsAt	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def pixelToNsAt(cls, pixel, ratio):$/;"	m	language:Python	class:Zoomable
+pixel_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^pixel_aspect_ratios = model((str, object), ($/;"	v	language:Python
+play	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def play(self):$/;"	m	language:Python	class:SimplePipeline
+PLAYHEAD_WIDTH	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^PLAYHEAD_WIDTH = 1$/;"	v	language:Python
+printHandler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def printHandler(level, object, category, file, line, message):$/;"	f	language:Python
+ProgressBar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^class ProgressBar:$/;"	c	language:Python
+re	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import re$/;"	i	language:Python
+re	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^import re$/;"	i	language:Python
+RecoveryState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    class RecoveryState(object):$/;"	c	language:Python	class:SimplePipeline
+registerCategory	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def registerCategory(category):$/;"	f	language:Python
+release	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def release(self):$/;"	m	language:Python	class:Pipeline
+release	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def release(self):$/;"	m	language:Python	class:SimplePipeline
+removeInstance	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def removeInstance(cls, instance):$/;"	m	language:Python	class:Zoomable
+removeLimitedLogHandler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def removeLimitedLogHandler(func):$/;"	f	language:Python
+removeLogHandler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def removeLogHandler(func):$/;"	f	language:Python
+remove_clip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def remove_clip(scenario, action):$/;"	f	language:Python
+render	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def render(self, template):$/;"	m	language:Python	class:TerminalController
+reopen	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def reopen(name, fileno, *args):$/;"	f	language:Python	function:reopenOutputFiles
+reopenOutputFiles	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def reopenOutputFiles():$/;"	f	language:Python
+request	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.request$/;"	i	language:Python
+reset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def reset():$/;"	f	language:Python
+reset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def reset(self):$/;"	m	language:Python	class:CPUUsageTracker
+resetAll	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def resetAll(self):$/;"	m	language:Python	class:GstElementSettingsDialog
+resetKeyframeToggleButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def resetKeyframeToggleButtons(self, widget=None):$/;"	m	language:Python	class:GstElementSettingsWidget
+resource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^import resource$/;"	i	language:Python
+REVERSE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    REVERSE = ''         # : Turn on reverse-video mode$/;"	v	language:Python	class:TerminalController
+RIGHT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    RIGHT = ''           # : Move the cursor right one char$/;"	v	language:Python	class:TerminalController
+safeprintf	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def safeprintf(file, format, *args):$/;"	f	language:Python
+screensaverIsBlockable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def screensaverIsBlockable(self):$/;"	m	language:Python	class:System
+screensaverIsInhibited	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def screensaverIsInhibited(self, key=None):$/;"	m	language:Python	class:System
+screensaver_is_blockable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def screensaver_is_blockable(self):$/;"	m	language:Python	class:GnomeSystem
+scrubFilename	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def scrubFilename(filename):$/;"	f	language:Python
+seek	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def seek(self, position, on_idle=False):$/;"	m	language:Python	class:Seeker
+SEEKED_AFTER_RECOVERING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^        SEEKED_AFTER_RECOVERING = "seeked-after-recovering"$/;"	v	language:Python	class:SimplePipeline.RecoveryState
+Seeker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^class Seeker(GObject.Object, Loggable):$/;"	c	language:Python
+seekRelative	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def seekRelative(self, time, on_idle=False):$/;"	m	language:Python	class:Seeker
+seekRelative	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def seekRelative(self, time_delta):$/;"	m	language:Python	class:SimplePipeline
+SELECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^SELECT = 0$/;"	v	language:Python
+selected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    selected = property(getSelected, setSelected)$/;"	v	language:Python	class:Selected
+Selected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^class Selected(GObject.Object):$/;"	c	language:Python
+Selection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^class Selection(GObject.Object, Loggable):$/;"	c	language:Python
+SELECT_ADD	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^SELECT_ADD = 2$/;"	v	language:Python
+select_clips	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def select_clips(scenario, action):$/;"	f	language:Python
+setChoices	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setChoices(self, choices):$/;"	m	language:Python	class:ChoiceWidget
+setClipUri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def setClipUri(self, uri):$/;"	m	language:Python	class:AssetPipeline
+setDebug	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def setDebug(string):$/;"	f	language:Python
+setEditingMode	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def setEditingMode(timeline, scenario, action):$/;"	f	language:Python
+setElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setElement(self, element, properties={}, ignore=['name'],$/;"	m	language:Python	class:GstElementSettingsWidget
+setForcePositionListener	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def setForcePositionListener(self, force):$/;"	m	language:Python	class:SimplePipeline
+setFramerate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setFramerate(self, framerate):$/;"	m	language:Python	class:TimeWidget
+setLogSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def setLogSettings(state):$/;"	f	language:Python
+setMode	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setMode(self, mode):$/;"	m	language:Python	class:EditingContext
+setPackageScrubList	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def setPackageScrubList(*packages):$/;"	f	language:Python
+setSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setSelected(self, selected):$/;"	m	language:Python	class:Selected
+setSelection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setSelection(self, objs, mode):$/;"	m	language:Python	class:Selection
+setSink	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def setSink(self, sink):$/;"	m	language:Python	class:SimplePipeline
+setState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def setState(self, state):$/;"	m	language:Python	class:Pipeline
+setState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def setState(self, state):$/;"	m	language:Python	class:SimplePipeline
+setToObj	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setToObj(self, obj, mode):$/;"	m	language:Python	class:Selection
+setWidgetToDefault	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetToDefault(self):$/;"	m	language:Python	class:DefaultWidget
+setWidgetToDefault	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetToDefault(self):$/;"	m	language:Python	class:DynamicWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, font_name):$/;"	m	language:Python	class:FontWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, timeNanos, send_signal=True):$/;"	m	language:Python	class:TimeWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:ChoiceWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:ColorWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:DynamicWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:FractionWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:NumericWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:PathWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value):$/;"	m	language:Python	class:ToggleWidget
+setWidgetValue	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def setWidgetValue(self, value, send_signal=True):$/;"	m	language:Python	class:TextWidget
+setZoomLevel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setZoomLevel(cls, level):$/;"	m	language:Python	class:Zoomable
+setZoomLevel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def setZoomLevel(scenario, action):$/;"	f	language:Python
+setZoomRatio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def setZoomRatio(cls, ratio):$/;"	m	language:Python	class:Zoomable
+set_cairo_color	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def set_cairo_color(context, color):$/;"	f	language:Python
+set_children_state_recurse	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def set_children_state_recurse(widget, state):$/;"	f	language:Python
+set_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def set_combo_value(combo, value, default_index=-1):$/;"	f	language:Python
+set_state	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def set_state(scenario, action):$/;"	f	language:Python
+set_timeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def set_timeline(self, timeline):$/;"	m	language:Python	class:Pipeline
+set_width_chars	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def set_width_chars(self, width):$/;"	m	language:Python	class:TextWidget
+SHOW_CURSOR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    SHOW_CURSOR = ''     # : Make the cursor visible$/;"	v	language:Python	class:TerminalController
+sighup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def sighup(signum, frame):$/;"	f	language:Python	function:outputToFiles
+sigid	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    sigid = None$/;"	v	language:Python	class:Zoomable
+signal	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    from . import signal$/;"	i	language:Python
+SimplePipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^class SimplePipeline(GObject.Object, Loggable):$/;"	c	language:Python
+simple_seek	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def simple_seek(self, position):$/;"	m	language:Python	class:Pipeline
+simple_seek	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def simple_seek(self, position):$/;"	m	language:Python	class:SimplePipeline
+sleepIsBlockable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def sleepIsBlockable(self):$/;"	m	language:Python	class:System
+sleepIsInhibited	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def sleepIsInhibited(self, key=None):$/;"	m	language:Python	class:System
+sleep_is_blockable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def sleep_is_blockable(self):$/;"	m	language:Python	class:GnomeSystem
+SNAPBAR_WIDTH	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^SNAPBAR_WIDTH = 5$/;"	v	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^SPACING = 10$/;"	v	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+splitClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def splitClip(scenario, action):$/;"	f	language:Python
+STARTED_RECOVERING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^        STARTED_RECOVERING = "started-recovering"$/;"	v	language:Python	class:SimplePipeline.RecoveryState
+stepFrame	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def stepFrame(self, framerate, frames_offset):$/;"	m	language:Python	class:Pipeline
+stop	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def stop(self):$/;"	m	language:Python	class:SimplePipeline
+stop	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def stop(scenario, action):$/;"	f	language:Python
+stream_sort_key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^    def stream_sort_key(stream):$/;"	f	language:Python	function:beautify_info
+subprocess	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^import subprocess$/;"	i	language:Python
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import sys$/;"	i	language:Python
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^import sys$/;"	i	language:Python
+System	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^class System(GObject.Object, Loggable):$/;"	c	language:Python
+system_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^system_ = None$/;"	v	language:Python
+TerminalController	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^class TerminalController:$/;"	c	language:Python
+TextWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class TextWidget(Gtk.Box, DynamicWidget):$/;"	c	language:Python
+threading	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import threading$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import time$/;"	i	language:Python
+TimelineError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^class TimelineError(Exception):$/;"	c	language:Python
+timelineUtils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from pitivi.utils import timeline as timelineUtils$/;"	i	language:Python
+TimeWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class TimeWidget(TextWidget, DynamicWidget):$/;"	c	language:Python
+time_to_string	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def time_to_string(value):$/;"	f	language:Python
+time_to_string	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+togglePlayback	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def togglePlayback(self):$/;"	m	language:Python	class:SimplePipeline
+ToggleWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class ToggleWidget(Gtk.CheckButton, DynamicWidget):$/;"	c	language:Python
+traceback	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import traceback$/;"	i	language:Python
+traceback	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^        import traceback$/;"	i	language:Python
+TRACK_SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^TRACK_SPACING = 8$/;"	v	language:Python
+types	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^import types$/;"	i	language:Python
+ui	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^from pitivi.utils import ui$/;"	i	language:Python
+ui	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^from pitivi.utils import ui$/;"	i	language:Python
+uninhibitAll	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def uninhibitAll(self):$/;"	m	language:Python	class:System
+uninhibitScreensaver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def uninhibitScreensaver(self, key):$/;"	m	language:Python	class:System
+uninhibitSleep	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def uninhibitSleep(self, key):$/;"	m	language:Python	class:System
+unpack_color	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def unpack_color(value):$/;"	f	language:Python
+unpack_color	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    time_to_string, SPACING, CONTROL_WIDTH$/;"	i	language:Python
+unpack_color_32	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def unpack_color_32(value):$/;"	f	language:Python
+unpack_color_64	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def unpack_color_64(value):$/;"	f	language:Python
+UNSELECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^UNSELECT = 1$/;"	v	language:Python
+unset_children_state_recurse	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def unset_children_state_recurse(widget, state):$/;"	f	language:Python
+UP	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    UP = ''              # : Move the cursor up one line$/;"	v	language:Python	class:TerminalController
+update	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def update(self, percent, message):$/;"	m	language:Python	class:ProgressBar
+URI_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^URI_TARGET_ENTRY = Gtk.TargetEntry.new("text\/uri-list", 0, 0)$/;"	v	language:Python
+urllib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.error$/;"	i	language:Python
+urllib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.parse$/;"	i	language:Python
+urllib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^import urllib.request$/;"	i	language:Python
+usage	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def usage(self):$/;"	m	language:Python	class:CPUUsageTracker
+use_glsink	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    use_glsink = None$/;"	v	language:Python	class:SimplePipeline
+VALID_REGEX	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    VALID_REGEX = re.compile($/;"	v	language:Python	class:TimeWidget
+warning	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def warning(self, *args):$/;"	m	language:Python	class:BaseLoggable
+warning	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def warning(cat, format, *args):$/;"	f	language:Python
+warningObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def warningObject(object, cat, format, *args):$/;"	f	language:Python
+WATCHDOG_TIMEOUT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^WATCHDOG_TIMEOUT = 3$/;"	v	language:Python
+writeMarker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def writeMarker(self, marker, level):$/;"	m	language:Python	class:BaseLoggable
+zoom	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def zoom(scenario, action):$/;"	f	language:Python
+Zoomable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^class Zoomable(object):$/;"	c	language:Python
+Zoomable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from pitivi.utils.timeline import Zoomable$/;"	i	language:Python
+ZoomBox	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^class ZoomBox(Gtk.Grid, Zoomable):$/;"	c	language:Python
+zoomChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def zoomChanged(self):$/;"	m	language:Python	class:Zoomable
+zoomChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def zoomChanged(self):$/;"	m	language:Python	class:ZoomBox
+zoomIn	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def zoomIn(cls):$/;"	m	language:Python	class:Zoomable
+zoomOut	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def zoomOut(cls):$/;"	m	language:Python	class:Zoomable
+zoomratio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    zoomratio = None$/;"	v	language:Python	class:Zoomable
+zoom_range	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    zoom_range = max_zoom - min_zoom$/;"	v	language:Python	class:Zoomable
+ZOOM_SLIDER_PADDING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^ZOOM_SLIDER_PADDING = SPACING * 4 \/ 5$/;"	v	language:Python
+zoom_steps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    zoom_steps = 100$/;"	v	language:Python	class:Zoomable
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^from gettext import ngettext, gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^from gettext import gettext as _$/;"	i	language:Python
+_activateCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _activateCb(self, unused_widget):$/;"	m	language:Python	class:TextWidget
+_addWaitingForAsyncDoneTimeout	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _addWaitingForAsyncDoneTimeout(self, timeout=WATCHDOG_TIMEOUT):$/;"	m	language:Python	class:SimplePipeline
+_addWidgets	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _addWidgets(self, properties, default_btn, use_element_props):$/;"	m	language:Python	class:GstElementSettingsWidget
+_ANSICOLORS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    _ANSICOLORS = "BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE".split()$/;"	v	language:Python	class:TerminalController
+_asyncDoneNotReceivedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _asyncDoneNotReceivedCb(self):$/;"	m	language:Python	class:SimplePipeline
+_busMessageCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _busMessageCb(self, bus, message):$/;"	m	language:Python	class:Pipeline
+_busMessageCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _busMessageCb(self, unused_bus, message):$/;"	m	language:Python	class:SimplePipeline
+_canShortcutLogging	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def _canShortcutLogging(category, level):$/;"	f	language:Python
+_categories	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_categories = {}$/;"	v	language:Python
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _createUi(self):$/;"	m	language:Python	class:BaseTabs
+_createWindowCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _createWindowCb(self, unused_from_notebook, child, x, y):$/;"	m	language:Python	class:BaseTabs
+_cur_zoom	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    _cur_zoom = 20$/;"	v	language:Python	class:Zoomable
+_DEBUG	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_DEBUG = "*:1"$/;"	v	language:Python
+_defaultBtnClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _defaultBtnClickedCb(self, unused_button, widget):$/;"	m	language:Python	class:GstElementSettingsWidget
+_detachedComponentWindowDestroyCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _detachedComponentWindowDestroyCb(self, window, child,$/;"	m	language:Python	class:BaseTabs
+_ENV_VAR_NAME	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_ENV_VAR_NAME = None$/;"	v	language:Python
+_fillWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _fillWindow(self):$/;"	m	language:Python	class:GstElementSettingsDialog
+_filter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _filter(self, text):$/;"	m	language:Python	class:FractionWidget
+_filter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _filter(self, text):$/;"	m	language:Python	class:TextWidget
+_FORMATTED_LEVELS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_FORMATTED_LEVELS = []$/;"	v	language:Python
+_getDuration	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _getDuration(self):$/;"	m	language:Python	class:Pipeline
+_getDuration	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _getDuration(self):$/;"	m	language:Python	class:SimplePipeline
+_getKeyframeToggleButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _getKeyframeToggleButton(self, prop):$/;"	m	language:Python	class:GstElementSettingsWidget
+_getResetToDefaultValueButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _getResetToDefaultValueButton(self, unused_prop, widget):$/;"	m	language:Python	class:GstElementSettingsWidget
+_get_font	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def _get_font(font_spec, default):$/;"	f	language:Python
+_get_settings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/ui.py	/^def _get_settings(schema):$/;"	f	language:Python
+_handleErrorMessage	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _handleErrorMessage(self, error, detail, source):$/;"	m	language:Python	class:SimplePipeline
+_hideSecondHpanedInMainWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _hideSecondHpanedInMainWindow(self):$/;"	m	language:Python	class:BaseTabs
+_inhibit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def _inhibit(self, list_, key):$/;"	m	language:Python	class:System
+_initialized	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_initialized = False$/;"	v	language:Python
+_instance	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    _instance = None$/;"	v	language:Python	class:Seeker
+_instances	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    _instances = []$/;"	v	language:Python	class:Zoomable
+_isInhibited	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def _isInhibited(self, list_, key=None):$/;"	m	language:Python	class:System
+_LEVEL_NAMES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_LEVEL_NAMES = ['ERROR', 'WARN', 'FIXME', 'INFO', 'DEBUG', 'LOG']$/;"	v	language:Python
+_listenToPosition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _listenToPosition(self, listen=True):$/;"	m	language:Python	class:SimplePipeline
+_log_handlers	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_log_handlers = []$/;"	v	language:Python
+_log_handlers_limited	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_log_handlers_limited = []$/;"	v	language:Python
+_makePropertyWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _makePropertyWidget(self, prop, value=None):$/;"	m	language:Python	class:GstElementSettingsWidget
+_old_hup_handler	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_old_hup_handler = None$/;"	v	language:Python
+_outfile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_outfile = None$/;"	v	language:Python
+_PACKAGE_SCRUB_LIST	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_PACKAGE_SCRUB_LIST = []$/;"	v	language:Python
+_parseText	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _parseText(self, text):$/;"	m	language:Python	class:FractionWidget
+_positionListenerCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _positionListenerCb(self):$/;"	m	language:Python	class:SimplePipeline
+_preformatLevels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^def _preformatLevels(enableColorOutput):$/;"	f	language:Python
+_propertyChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _propertyChangedCb(self, effect, gst_element, pspec):$/;"	m	language:Python	class:GstElementSettingsWidget
+_queryDurationAsync	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _queryDurationAsync(self, *unused_args, **unused_kwargs):$/;"	m	language:Python	class:SimplePipeline
+_recover	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _recover(self):$/;"	m	language:Python	class:SimplePipeline
+_releaseButtonIfNeeded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/validate.py	/^def _releaseButtonIfNeeded(scenario, action, timeline, container, edge, layer_prio,$/;"	f	language:Python
+_removeWaitingForAsyncDoneTimeout	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _removeWaitingForAsyncDoneTimeout(self):$/;"	m	language:Python	class:SimplePipeline
+_render_sub	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def _render_sub(self, match):$/;"	m	language:Python	class:TerminalController
+_reset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def _reset(self):$/;"	m	language:Python	class:System
+_resetValuesClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _resetValuesClickedCb(self, unused_button):$/;"	m	language:Python	class:GstElementSettingsDialog
+_responseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _responseCb(self, unused_dialog, response):$/;"	m	language:Python	class:PathWidget
+_scheduleSeek	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _scheduleSeek(self, timeout, callback, relative=False):$/;"	m	language:Python	class:Seeker
+_seekCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _seekCb(self, unused_seeker, position):$/;"	m	language:Python	class:Pipeline
+_seekRelativeCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _seekRelativeCb(self, unused_seeker, time_delta):$/;"	m	language:Python	class:Pipeline
+_seekTimeoutCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _seekTimeoutCb(self, relative=False):$/;"	m	language:Python	class:Seeker
+_setKeyframeToggleButtonState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _setKeyframeToggleButtonState(self, button, active_state):$/;"	m	language:Python	class:GstElementSettingsWidget
+_set_child_properties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _set_child_properties(self, child, label):$/;"	m	language:Python	class:BaseTabs
+_showKeyframesToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _showKeyframesToggledCb(self, button, prop):$/;"	m	language:Python	class:GstElementSettingsWidget
+_showSecondHpanedInMainWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _showSecondHpanedInMainWindow(self):$/;"	m	language:Python	class:BaseTabs
+_sliderTooltipCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _sliderTooltipCb(self, unused_slider, unused_x, unused_y, unused_keyboard_mode, tooltip):$/;"	m	language:Python	class:ZoomBox
+_stderr	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_stderr = None$/;"	v	language:Python
+_stdout	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^_stdout = None$/;"	v	language:Python
+_textChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _textChanged(self, unused_widget):$/;"	m	language:Python	class:TextWidget
+_tigetstr	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def _tigetstr(self, cap_name):$/;"	m	language:Python	class:TerminalController
+_uninhibit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def _uninhibit(self, list_, key):$/;"	m	language:Python	class:System
+_updatePowerInhibitionCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def _updatePowerInhibitionCb(self, unused_system):$/;"	m	language:Python	class:GnomeSystem
+_waiting_for_async_done	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _waiting_for_async_done(self):$/;"	m	language:Python	class:SimplePipeline
+_waiting_for_async_done	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def _waiting_for_async_done(self, value):$/;"	m	language:Python	class:SimplePipeline
+_zoomAdjustmentChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _zoomAdjustmentChangedCb(self, adjustment):$/;"	m	language:Python	class:ZoomBox
+_zoomChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def _zoomChanged(cls):$/;"	m	language:Python	class:Zoomable
+_zoomFitCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _zoomFitCb(self, unused_button):$/;"	m	language:Python	class:ZoomBox
+_zoomSliderScrollCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def _zoomSliderScrollCb(self, unused, event):$/;"	m	language:Python	class:ZoomBox
+__bool__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __bool__(self):$/;"	m	language:Python	class:Selected	file:
+__canUseGlSink	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __canUseGlSink(self):$/;"	m	language:Python	class:SimplePipeline	file:
+__del__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __del__(self):$/;"	m	language:Python	class:Zoomable	file:
+__emitPosition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __emitPosition(self):$/;"	m	language:Python	class:SimplePipeline	file:
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    __gsignals__ = PIPELINE_SIGNALS$/;"	v	language:Python	class:Pipeline
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    __gsignals__ = PIPELINE_SIGNALS$/;"	v	language:Python	class:SimplePipeline
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Seeker
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    __gsignals__ = {$/;"	v	language:Python	class:System
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Selected
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Selection
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gsignals__ = {$/;"	v	language:Python	class:PathWidget
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gsignals__ = {$/;"	v	language:Python	class:TextWidget
+__gtype_name__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gtype_name__ = 'FractionWidget'$/;"	v	language:Python	class:FractionWidget
+__gtype_name__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gtype_name__ = 'PathWidget'$/;"	v	language:Python	class:PathWidget
+__gtype_name__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gtype_name__ = 'TextWidget'$/;"	v	language:Python	class:TextWidget
+__gtype_name__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __gtype_name__ = 'TimeWidget'$/;"	v	language:Python	class:TimeWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def __init__(self, logCategory=None):$/;"	m	language:Python	class:Loggable
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def __init__(self, term, header):$/;"	m	language:Python	class:ProgressBar
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/loggable.py	/^    def __init__(self, term_stream=sys.stdout):$/;"	m	language:Python	class:TerminalController
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __init__(self, app, pipeline=None):$/;"	m	language:Python	class:Pipeline
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __init__(self, clip=None, name=None):$/;"	m	language:Python	class:AssetPipeline
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __init__(self, pipeline):$/;"	m	language:Python	class:SimplePipeline
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __init__(self, timeout=80):$/;"	m	language:Python	class:Seeker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def __init__(self):$/;"	m	language:Python	class:CPUUsageTracker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def __init__(self):$/;"	m	language:Python	class:FreedesktopOrgSystem
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def __init__(self):$/;"	m	language:Python	class:GnomeSystem
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/system.py	/^    def __init__(self):$/;"	m	language:Python	class:System
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __init__(self):$/;"	m	language:Python	class:Selected
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __init__(self):$/;"	m	language:Python	class:Selection
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __init__(self):$/;"	m	language:Python	class:Zoomable
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __init__(self, focus, timeline, mode, edge, unused_settings, action_log):$/;"	m	language:Python	class:EditingContext
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, *unused, **unused_kwargs):$/;"	m	language:Python	class:DefaultWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, action=Gtk.FileChooserAction.OPEN, default=None):$/;"	m	language:Python	class:PathWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, app, hide_hpaned=False):$/;"	m	language:Python	class:BaseTabs
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, choices, default=None):$/;"	m	language:Python	class:ChoiceWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, default):$/;"	m	language:Python	class:DynamicWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, default=None):$/;"	m	language:Python	class:FontWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, default=None):$/;"	m	language:Python	class:TimeWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, default=None):$/;"	m	language:Python	class:ToggleWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, elementfactory, properties, parent_window=None, isControllable=True):$/;"	m	language:Python	class:GstElementSettingsDialog
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, isControllable=True):$/;"	m	language:Python	class:GstElementSettingsWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, matches=None, choices=None, default=None):$/;"	m	language:Python	class:TextWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, range=None, presets=None, default=None):$/;"	m	language:Python	class:FractionWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, timeline):$/;"	m	language:Python	class:ZoomBox
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, upper=None, lower=None, default=None):$/;"	m	language:Python	class:NumericWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    def __init__(self, value_type=str, default=None):$/;"	m	language:Python	class:ColorWidget
+__INVALID__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __INVALID__ = Gdk.Color(0xFFFF, 0, 0)$/;"	v	language:Python	class:TextWidget
+__iter__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __iter__(self):$/;"	m	language:Python	class:Selection	file:
+__len__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/timeline.py	/^    def __len__(self):$/;"	m	language:Python	class:Selection	file:
+__new__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/pipeline.py	/^    def __new__(cls, *args, **kwargs):$/;"	m	language:Python	class:Seeker	file:
+__NORMAL__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/utils/widgets.py	/^    __NORMAL__ = Gdk.Color(0, 0, 0)$/;"	v	language:Python	class:TextWidget

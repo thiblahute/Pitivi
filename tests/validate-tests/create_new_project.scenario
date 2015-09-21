@@ -1,0 +1,9 @@
+description, seek=true, handles-states=true
+wait, duration=1.0, check="<yes>l"
+#gtk-put-event, widget-name="media_import_button", button=1
+#gtk-put-event, keys="<Control>l"
+#gtk-put-event, string="/home/thiblahute/Videos/PitiviFunderDraft.mp4"
+#gtk-put-event, widget-name="Add", button=1, widget-type=GtkButton
+
+
+add-asset, type=GESUriClip, id="file:///home/thiblahute/Videos/PitiviFunderDraft.mp4"

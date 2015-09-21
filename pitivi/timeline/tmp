@@ -1,0 +1,7 @@
+21 pick 8071716 validate: Override the commit action type 
+22 pick 9323878 validate: Implement asset import fully from the UI 
+23 pick 64eb619 tests: Cleanup and fix GstValidate tests 
+24 pick 4a9efb0 validate: exit runner instead of printing 
+25 pick 0ea341f tests:validate: Check output frames for the edit_clip_endpoint scenario 
+27 pick f6bfb2f Deinit Gst and GstValidate on shutdown 
+

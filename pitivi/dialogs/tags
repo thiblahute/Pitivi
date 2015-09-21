@@ -1,0 +1,26 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+DepsManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from pitivi.dialogs.depsmanager import DepsManager$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from gi.repository import Gdk$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from gi.repository import GES$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from gi.repository import Gtk$/;"	i	language:Python
+hide	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def hide(self):$/;"	m	language:Python	class:StartUpWizard
+missing_soft_deps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from pitivi.check import missing_soft_deps$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^import os$/;"	i	language:Python
+show	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def show(self):$/;"	m	language:Python	class:StartUpWizard
+show_user_manual	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from pitivi.utils.misc import show_user_manual$/;"	i	language:Python
+StartUpWizard	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^class StartUpWizard(object):$/;"	c	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^from gettext import gettext as _$/;"	i	language:Python
+_appVersionInfoReceivedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _appVersionInfoReceivedCb(self, app, unused_version_information):$/;"	m	language:Python	class:StartUpWizard
+_cheatsheetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _cheatsheetCb(unused_button):$/;"	m	language:Python	class:StartUpWizard
+_deleteCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _deleteCb(self, unused_widget, unused_event):$/;"	m	language:Python	class:StartUpWizard
+_keyPressCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _keyPressCb(self, unused_widget, event):$/;"	m	language:Python	class:StartUpWizard
+_loadCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _loadCb(self, unused_recent_chooser):$/;"	m	language:Python	class:StartUpWizard
+_newProjectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _newProjectCb(self, unused_button):$/;"	m	language:Python	class:StartUpWizard
+_onBrowseButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _onBrowseButtonClickedCb(self, unused_button6):$/;"	m	language:Python	class:StartUpWizard
+_onMissingDepsButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _onMissingDepsButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:StartUpWizard
+_projectFailedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _projectFailedCb(self, unused_project_manager, unused_uri,$/;"	m	language:Python	class:StartUpWizard
+_projectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _projectLoadedCb(self, project_manager, unused_project, fully_loaded):$/;"	m	language:Python	class:StartUpWizard
+_projectLoadingCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _projectLoadingCb(self, unused_project_manager, unused_project):$/;"	m	language:Python	class:StartUpWizard
+_userManualCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def _userManualCb(unused_button):$/;"	m	language:Python	class:StartUpWizard
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/dialogs/startupwizard.py	/^    def __init__(self, app):$/;"	m	language:Python	class:StartUpWizard

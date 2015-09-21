@@ -1,0 +1,86 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+ClipAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    ClipPropertyChanged, TrackElementAdded$/;"	i	language:Python
+ClipPropertyChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    ClipPropertyChanged, TrackElementAdded$/;"	i	language:Python
+ClipRemoved	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    ClipPropertyChanged, TrackElementAdded$/;"	i	language:Python
+commitCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def commitCb(action_log, stack, nested, stacks):$/;"	m	language:Python	class:TestTimelineUndo
+common	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from tests import common$/;"	i	language:Python
+connectToObj	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def connectToObj(self, obj):$/;"	m	language:Python	class:SignalMonitor
+createTestClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^def createTestClip(clip_type):$/;"	f	language:Python
+createTestClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^from common import createTestClip$/;"	i	language:Python
+detect_leaks	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^detect_leaks = os.environ.get("PITIVI_TEST_DETECT_LEAKS", "1") not in ("0", "")$/;"	v	language:Python
+disconnectFromObj	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def disconnectFromObj(self, obj):$/;"	m	language:Python	class:SignalMonitor
+gc	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^import gc$/;"	i	language:Python
+gccollect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def gccollect(self):$/;"	m	language:Python	class:TestCase
+gctrack	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def gctrack(self):$/;"	m	language:Python	class:TestCase
+gcverify	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def gcverify(self):$/;"	m	language:Python	class:TestCase
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^from gi.repository import GES$/;"	i	language:Python
+getSampleUri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def getSampleUri(sample):$/;"	m	language:Python	class:TestCase
+getSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+getTimelineClips	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def getTimelineClips(self):$/;"	m	language:Python	class:TestTimelineUndo
+GnomeSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from gi.repository import Gst$/;"	i	language:Python
+INHIBIT_LOGOUT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+INHIBIT_SESSION_IDLE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+INHIBIT_SUSPEND	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+INHIBIT_USER_SWITCHING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+mock	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^import mock$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^import os$/;"	i	language:Python
+Pitivi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from pitivi.application import Pitivi$/;"	i	language:Python
+run	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def run(self, result=None):$/;"	m	language:Python	class:TestCase
+SELECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    UNSELECT$/;"	i	language:Python
+Selected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^from pitivi.utils.timeline import Selected$/;"	i	language:Python
+Selected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    UNSELECT$/;"	i	language:Python
+Selection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    UNSELECT$/;"	i	language:Python
+SELECT_ADD	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    UNSELECT$/;"	i	language:Python
+setUp	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def setUp(self):$/;"	m	language:Python	class:TestCase
+setUp	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def setUp(self):$/;"	m	language:Python	class:TestGnomeSystem
+setUp	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def setUp(self):$/;"	m	language:Python	class:TestSystem
+setUp	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def setUp(self):$/;"	m	language:Python	class:TestTimelineLogObserver
+setUp	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def setUp(self):$/;"	m	language:Python	class:TestTimelineUndo
+SignalMonitor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^class SignalMonitor(object):$/;"	c	language:Python
+System	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    INHIBIT_USER_SWITCHING$/;"	i	language:Python
+tearDown	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def tearDown(self):$/;"	m	language:Python	class:TestCase
+testAddClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testAddClip(self):$/;"	m	language:Python	class:TestTimelineUndo
+testAddEffectToClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testAddEffectToClip(self):$/;"	m	language:Python	class:TestTimelineUndo
+testBoolEvaluation	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    def testBoolEvaluation(self):$/;"	m	language:Python	class:TestSelected
+testBoolEvaluation	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    def testBoolEvaluation(self):$/;"	m	language:Python	class:TestSelection
+TestCase	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^class TestCase(unittest.TestCase):$/;"	c	language:Python
+TestCase	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^from unittest import TestCase$/;"	i	language:Python
+TestCase	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from unittest import TestCase$/;"	i	language:Python
+TestCase	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^from unittest import TestCase$/;"	i	language:Python
+testChangeEffectProperty	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testChangeEffectProperty(self):$/;"	m	language:Python	class:TestTimelineUndo
+testClipPropertyChange	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testClipPropertyChange(self):$/;"	m	language:Python	class:TestTimelineUndo
+testConnectionAndDisconnection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testConnectionAndDisconnection(self):$/;"	m	language:Python	class:TestTimelineLogObserver
+testGetSingleClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    def testGetSingleClip(self):$/;"	m	language:Python	class:TestSelection
+testGetUniqueFilename	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def testGetUniqueFilename(self):$/;"	m	language:Python	class:TestSystem
+TestGnomeSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^class TestGnomeSystem(TestCase):$/;"	c	language:Python
+testPowerInhibition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def testPowerInhibition(self):$/;"	m	language:Python	class:TestGnomeSystem
+testRemoveClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testRemoveClip(self):$/;"	m	language:Python	class:TestTimelineUndo
+testRemoveEffectFromClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testRemoveEffectFromClip(self):$/;"	m	language:Python	class:TestTimelineUndo
+testScreensaverInhibit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def testScreensaverInhibit(self):$/;"	m	language:Python	class:TestSystem
+TestSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^class TestSelected(TestCase):$/;"	c	language:Python
+TestSelection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^class TestSelection(TestCase):$/;"	c	language:Python
+testSleepInhibit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^    def testSleepInhibit(self):$/;"	m	language:Python	class:TestSystem
+TestSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_system.py	/^class TestSystem(TestCase):$/;"	c	language:Python
+TestTimelineLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^class TestTimelineLogObserver(TestCase):$/;"	c	language:Python
+TestTimelineUndo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^class TestTimelineUndo(TestCase):$/;"	c	language:Python
+testUngroup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def testUngroup(self):$/;"	m	language:Python	class:TestTimelineUndo
+TimelineLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    ClipPropertyChanged, TrackElementAdded$/;"	i	language:Python
+TimelineLogObserverSpy	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^class TimelineLogObserverSpy(TimelineLogObserver):$/;"	c	language:Python
+TrackElementAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    ClipPropertyChanged, TrackElementAdded$/;"	i	language:Python
+UndoableActionLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^from pitivi.undo.undo import UndoableActionLog$/;"	i	language:Python
+unittest	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^import unittest$/;"	i	language:Python
+UNSELECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_utils_timeline.py	/^    UNSELECT$/;"	i	language:Python
+_connectToClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _connectToClip(self, clip):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_connectToTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _connectToTimeline(self, timeline):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_connectToTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _connectToTrackElement(self, track_element):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_disconnectFromClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _disconnectFromClip(self, clip):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_disconnectFromTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _disconnectFromTimeline(self, timeline):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_disconnectFromTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/test_undo_timeline.py	/^    def _disconnectFromTrackElement(self, track_element):$/;"	m	language:Python	class:TimelineLogObserverSpy
+_getSignalCollectName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def _getSignalCollectName(self, signal):$/;"	m	language:Python	class:SignalMonitor
+_getSignalCounterName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def _getSignalCounterName(self, signal):$/;"	m	language:Python	class:SignalMonitor
+_signalCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def _signalCb(self, obj, *args):$/;"	m	language:Python	class:SignalMonitor
+_tracked_types	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    _tracked_types = (Gst.MiniObject, Gst.Element, Gst.Pad, Gst.Caps)$/;"	v	language:Python	class:TestCase
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/common.py	/^    def __init__(self, obj, *signals):$/;"	m	language:Python	class:SignalMonitor

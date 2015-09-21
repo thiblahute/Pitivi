@@ -1,0 +1,23 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+codecs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import codecs$/;"	i	language:Python
+default_product	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^default_product = "pitivi"$/;"	v	language:Python
+fixup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^   def fixup(m):$/;"	f	language:Python	function:unescape
+FOOTER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^FOOTER = '  <\/bugs>'$/;"	v	language:Python
+handle_data	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^    def handle_data(self, data):$/;"	m	language:Python	class:HP
+handle_endtag	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^    def handle_endtag(self, tag):$/;"	m	language:Python	class:HP
+handle_entityref	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^    def handle_entityref(self, name):$/;"	m	language:Python	class:HP
+handle_starttag	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^    def handle_starttag(self, tag, data):$/;"	m	language:Python	class:HP
+HEADER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^HEADER = '  <bugs>'$/;"	v	language:Python
+HP	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^class HP(HTMLParser.HTMLParser):$/;"	c	language:Python
+htmlentitydefs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^   import htmlentitydefs$/;"	i	language:Python
+HTMLParser	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import HTMLParser$/;"	i	language:Python
+main	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^def main(args):$/;"	f	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import os$/;"	i	language:Python
+re	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import re$/;"	i	language:Python
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import sys$/;"	i	language:Python
+TD_ID	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^TD_ID = 1$/;"	v	language:Python
+TD_SUMMARY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^TD_SUMMARY = 7$/;"	v	language:Python
+TD_SUMMARY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^TD_SUMMARY = 8$/;"	v	language:Python
+unescape	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^def unescape(text):$/;"	f	language:Python
+urllib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^import urllib$/;"	i	language:Python
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/docs/bugzilla	/^    def __init__(self):$/;"	m	language:Python	class:HP

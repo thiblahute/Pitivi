@@ -1,0 +1,164 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+ActivePropertyChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ActivePropertyChanged(UndoableAction):$/;"	c	language:Python
+activePropertyChangedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    activePropertyChangedAction = ActivePropertyChanged$/;"	v	language:Python	class:TimelineLogObserver
+addTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def addTrackElement(self, track_element):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:ClipAdded
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:ClipRemoved
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:ControlSourceValueAdded
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:ControlSourceValueRemoved
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:LayerAdded
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:LayerRemoved
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:TrackElementAdded
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:TrackElementPropertyChanged
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:TrackElementRemoved
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:UndoableAction
+begin	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def begin(self, action_group_name):$/;"	m	language:Python	class:UndoableActionLog
+checkpoint	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def checkpoint(self):$/;"	m	language:Python	class:UndoableActionLog
+clean	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def clean(self):$/;"	m	language:Python	class:UndoableAction
+clean	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def clean(self):$/;"	m	language:Python	class:UndoableActionLog
+clean	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def clean(self):$/;"	m	language:Python	class:UndoableActionStack
+ClipAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ClipAdded(UndoableAction):$/;"	c	language:Python
+ClipPropertyChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ClipPropertyChanged(UndoableAction):$/;"	c	language:Python
+ClipPropertyChangeTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ClipPropertyChangeTracker(PropertyChangeTracker):$/;"	c	language:Python
+ClipRemoved	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ClipRemoved(UndoableAction):$/;"	c	language:Python
+commit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def commit(self):$/;"	m	language:Python	class:UndoableActionLog
+connectToObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def connectToObject(self, control_source):$/;"	m	language:Python	class:KeyframeChangeTracker
+connectToObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def connectToObject(self, obj):$/;"	m	language:Python	class:ClipPropertyChangeTracker
+connectToObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def connectToObject(self, obj):$/;"	m	language:Python	class:PropertyChangeTracker
+ControlSourceKeyframeChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ControlSourceKeyframeChanged(UndoableAction):$/;"	c	language:Python
+ControlSourceValueAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ControlSourceValueAdded(UndoableAction):$/;"	c	language:Python
+ControlSourceValueRemoved	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class ControlSourceValueRemoved(UndoableAction):$/;"	c	language:Python
+dirty	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def dirty(self):$/;"	m	language:Python	class:UndoableActionLog
+disconnectFromObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def disconnectFromObject(self, control_source):$/;"	m	language:Python	class:KeyframeChangeTracker
+disconnectFromObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def disconnectFromObject(self, obj):$/;"	m	language:Python	class:ClipPropertyChangeTracker
+disconnectFromObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def disconnectFromObject(self, obj):$/;"	m	language:Python	class:PropertyChangeTracker
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ActivePropertyChanged
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ClipAdded
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ClipPropertyChanged
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ClipRemoved
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ControlSourceKeyframeChanged
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ControlSourceValueAdded
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:ControlSourceValueRemoved
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:LayerAdded
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:LayerRemoved
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:TrackElementAdded
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:TrackElementPropertyChanged
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def do(self):$/;"	m	language:Python	class:TrackElementRemoved
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def do(self):$/;"	m	language:Python	class:UndoableAction
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def do(self):$/;"	m	language:Python	class:UndoableActionStack
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from gi.repository import GES$/;"	i	language:Python
+getPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def getPipeline(self):$/;"	m	language:Python	class:TimelineLogObserver
+getPropChangedFromTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def getPropChangedFromTrackElement(self, track_element):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^from gi.repository import GObject$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from gi.repository import Gst$/;"	i	language:Python
+KeyframeChangeTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class KeyframeChangeTracker(GObject.Object):$/;"	c	language:Python
+LayerAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class LayerAdded(UndoableAction):$/;"	c	language:Python
+LayerRemoved	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class LayerRemoved(UndoableAction):$/;"	c	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+pipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    pipeline = property(getPipeline, setPipeline)$/;"	v	language:Python	class:TimelineLogObserver
+PropertyChangeTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from pitivi.undo.undo import PropertyChangeTracker, UndoableAction$/;"	i	language:Python
+PropertyChangeTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class PropertyChangeTracker(GObject.Object):$/;"	c	language:Python
+property_names	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    property_names = ["start", "duration", "in-point", "priority"]$/;"	v	language:Python	class:ClipPropertyChangeTracker
+property_names	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    property_names = []$/;"	v	language:Python	class:PropertyChangeTracker
+PROPS_TO_IGNORE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from pitivi.effects import PROPS_TO_IGNORE$/;"	i	language:Python
+push	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def push(self, action):$/;"	m	language:Python	class:UndoableActionLog
+push	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def push(self, action):$/;"	m	language:Python	class:UndoableActionStack
+redo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def redo(self):$/;"	m	language:Python	class:UndoableActionLog
+rollback	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def rollback(self):$/;"	m	language:Python	class:UndoableActionLog
+setPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def setPipeline(self, pipeline):$/;"	m	language:Python	class:TimelineLogObserver
+startObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def startObserving(self, timeline):$/;"	m	language:Python	class:TimelineLogObserver
+stopObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def stopObserving(self, timeline):$/;"	m	language:Python	class:TimelineLogObserver
+TimelineLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class TimelineLogObserver(Loggable):$/;"	c	language:Python
+timelinePropertyChangedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    timelinePropertyChangedAction = ClipPropertyChanged$/;"	v	language:Python	class:TimelineLogObserver
+TrackElementAdded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class TrackElementAdded(UndoableAction):$/;"	c	language:Python
+TrackElementChildPropertyTracker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class TrackElementChildPropertyTracker:$/;"	c	language:Python
+TrackElementPropertyChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class TrackElementPropertyChanged(UndoableAction):$/;"	c	language:Python
+TrackElementRemoved	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^class TrackElementRemoved(UndoableAction):$/;"	c	language:Python
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ActivePropertyChanged
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ClipAdded
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ClipPropertyChanged
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ClipRemoved
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ControlSourceKeyframeChanged
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ControlSourceValueAdded
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:ControlSourceValueRemoved
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:LayerAdded
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:LayerRemoved
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:TrackElementAdded
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:TrackElementPropertyChanged
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def undo(self):$/;"	m	language:Python	class:TrackElementRemoved
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def undo(self):$/;"	m	language:Python	class:UndoableAction
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def undo(self):$/;"	m	language:Python	class:UndoableActionLog
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def undo(self):$/;"	m	language:Python	class:UndoableActionStack
+UndoableAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^from pitivi.undo.undo import PropertyChangeTracker, UndoableAction$/;"	i	language:Python
+UndoableAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class UndoableAction(GObject.Object, Loggable):$/;"	c	language:Python
+UndoableActionLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class UndoableActionLog(GObject.Object, Loggable):$/;"	c	language:Python
+UndoableActionStack	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class UndoableActionStack(UndoableAction):$/;"	c	language:Python
+UndoError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class UndoError(Exception):$/;"	c	language:Python
+UndoWrongStateError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^class UndoWrongStateError(UndoError):$/;"	c	language:Python
+weakref	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^import weakref$/;"	i	language:Python
+_clipAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _clipAddedCb(self, layer, clip):$/;"	m	language:Python	class:TimelineLogObserver
+_clipPropertyChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _clipPropertyChangedCb(self, tracker, clip,$/;"	m	language:Python	class:TimelineLogObserver
+_clipRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _clipRemovedCb(self, layer, clip):$/;"	m	language:Python	class:TimelineLogObserver
+_clipTrackElementAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _clipTrackElementAddedCb(self, clip, track_element):$/;"	m	language:Python	class:TimelineLogObserver
+_clipTrackElementRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _clipTrackElementRemovedCb(self, clip, track_element):$/;"	m	language:Python	class:TimelineLogObserver
+_connectToClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _connectToClip(self, clip):$/;"	m	language:Python	class:TimelineLogObserver
+_connectToControlSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _connectToControlSource(self, track_element, binding, existed=False):$/;"	m	language:Python	class:TimelineLogObserver
+_connectToTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _connectToTimeline(self, timeline):$/;"	m	language:Python	class:TimelineLogObserver
+_connectToTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _connectToTrackElement(self, track_element):$/;"	m	language:Python	class:TimelineLogObserver
+_controlBindingAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _controlBindingAddedCb(self, track_element, binding):$/;"	m	language:Python	class:TimelineLogObserver
+_controlSourceKeyFrameAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _controlSourceKeyFrameAddedCb(self, source, keyframe, track_element,$/;"	m	language:Python	class:TimelineLogObserver
+_controlSourceKeyFrameMovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _controlSourceKeyFrameMovedCb(self, tracker, track_element,$/;"	m	language:Python	class:TimelineLogObserver
+_controlSourceKeyFrameRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _controlSourceKeyFrameRemovedCb(self, source, keyframe, track_element,$/;"	m	language:Python	class:TimelineLogObserver
+_disconnectFromClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _disconnectFromClip(self, clip):$/;"	m	language:Python	class:TimelineLogObserver
+_disconnectFromControlSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _disconnectFromControlSource(self, binding):$/;"	m	language:Python	class:TimelineLogObserver
+_disconnectFromTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _disconnectFromTimeline(self, timeline):$/;"	m	language:Python	class:TimelineLogObserver
+_disconnectFromTrackElement	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _disconnectFromTrackElement(self, track_element):$/;"	m	language:Python	class:TimelineLogObserver
+_discoverChildProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _discoverChildProperties(self, track_element):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+_done	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _done(self):$/;"	m	language:Python	class:UndoableAction
+_getKeyframeSnapshot	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _getKeyframeSnapshot(self, keyframe):$/;"	m	language:Python	class:KeyframeChangeTracker
+_getTopmostStack	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _getTopmostStack(self, pop=False):$/;"	m	language:Python	class:UndoableActionLog
+_keyframeAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _keyframeAddedCb(self, control_source, keyframe):$/;"	m	language:Python	class:KeyframeChangeTracker
+_keyframeMovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _keyframeMovedCb(self, control_source, keyframe, old_value=None):$/;"	m	language:Python	class:KeyframeChangeTracker
+_keyframeRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _keyframeRemovedCb(self, control_source, keyframe, old_value=None):$/;"	m	language:Python	class:KeyframeChangeTracker
+_layerAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _layerAddedCb(self, timeline, layer):$/;"	m	language:Python	class:TimelineLogObserver
+_layerRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _layerRemovedCb(self, timeline, layer):$/;"	m	language:Python	class:TimelineLogObserver
+_propertyChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _propertyChangedCb(self, track_element, unused_gstelement, pspec):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+_propertyChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _propertyChangedCb(self, object, property_value, property_name):$/;"	m	language:Python	class:PropertyChangeTracker
+_runAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _runAction(self, action_list, method_name):$/;"	m	language:Python	class:UndoableActionStack
+_runStack	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _runStack(self, unused_stack, run):$/;"	m	language:Python	class:UndoableActionLog
+_setSnapshot	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _setSnapshot(self, snapshot):$/;"	m	language:Python	class:ControlSourceKeyframeChanged
+_stackIsNested	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _stackIsNested(self, unused_stack):$/;"	m	language:Python	class:UndoableActionLog
+_takeCurrentSnapshot	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _takeCurrentSnapshot(self, control_source):$/;"	m	language:Python	class:KeyframeChangeTracker
+_takeCurrentSnapshot	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _takeCurrentSnapshot(cls, obj):$/;"	m	language:Python	class:PropertyChangeTracker
+_takeSnapshot	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _takeSnapshot(self):$/;"	m	language:Python	class:UndoableActionLog
+_timelineCommitedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _timelineCommitedCb(self, timeline):$/;"	m	language:Python	class:ClipPropertyChangeTracker
+_trackElementActiveChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _trackElementActiveChangedCb(self, track_element, active, add_effect_action):$/;"	m	language:Python	class:TimelineLogObserver
+_trackElementTrackSetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def _trackElementTrackSetCb(self, track_element, unused):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+_undone	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def _undone(self):$/;"	m	language:Python	class:UndoableAction
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    __gsignals__ = {$/;"	v	language:Python	class:KeyframeChangeTracker
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    __gsignals__ = {$/;"	v	language:Python	class:PropertyChangeTracker
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    __gsignals__ = {$/;"	v	language:Python	class:UndoableAction
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    __gsignals__ = {$/;"	v	language:Python	class:UndoableActionLog
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    __gsignals__ = {$/;"	v	language:Python	class:UndoableActionStack
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self):$/;"	m	language:Python	class:ClipPropertyChangeTracker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self):$/;"	m	language:Python	class:KeyframeChangeTracker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, action_log):$/;"	m	language:Python	class:TrackElementChildPropertyTracker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, clip, property_name, old_value, new_value):$/;"	m	language:Python	class:ClipPropertyChanged
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, clip, track_element, properties_watcher):$/;"	m	language:Python	class:TrackElementAdded
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, clip, track_element, properties_watcher):$/;"	m	language:Python	class:TrackElementRemoved
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, effect_action, active):$/;"	m	language:Python	class:ActivePropertyChanged
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, layer, clip):$/;"	m	language:Python	class:ClipAdded
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, layer, clip):$/;"	m	language:Python	class:ClipRemoved
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, log):$/;"	m	language:Python	class:TimelineLogObserver
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, timeline, layer):$/;"	m	language:Python	class:LayerAdded
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, timeline, layer):$/;"	m	language:Python	class:LayerRemoved
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, track_element, keyframe, old_snapshot, new_snapshot):$/;"	m	language:Python	class:ControlSourceKeyframeChanged
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, track_element, property_name, old_value, new_value):$/;"	m	language:Python	class:TrackElementPropertyChanged
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, track_element,$/;"	m	language:Python	class:ControlSourceValueAdded
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/timeline.py	/^    def __init__(self, track_element,$/;"	m	language:Python	class:ControlSourceValueRemoved
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def __init__(self):$/;"	m	language:Python	class:PropertyChangeTracker
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def __init__(self):$/;"	m	language:Python	class:UndoableAction
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def __init__(self, action_group_name):$/;"	m	language:Python	class:UndoableActionStack
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/undo/undo.py	/^    def __init__(self, app=None):$/;"	m	language:Python	class:UndoableActionLog

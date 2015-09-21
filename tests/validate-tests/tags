@@ -1,0 +1,38 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+add_options	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def add_options(self, parser):$/;"	m	language:Python	class:PitiviTestsManager
+BroadwayDaemon	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^class BroadwayDaemon(vfb_server.VirtualFrameBufferServer):$/;"	c	language:Python
+build_arguments	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def build_arguments(self):$/;"	m	language:Python	class:PitiviTest
+check	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def check(self):$/;"	m	language:Python	class:BroadwayDaemon
+GstValidateTest	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^from baseclasses import GstValidateTest, TestsManager, ScenarioManager$/;"	i	language:Python
+GST_VALIDATE_LAUNCHER_COMMAND	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/runtests	/^GST_VALIDATE_LAUNCHER_COMMAND = "gst-validate-launcher"$/;"	v	language:Python
+init	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def init(self):$/;"	m	language:Python	class:PitiviTestsManager
+list_tests	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def list_tests(self):$/;"	m	language:Python	class:PitiviTestsManager
+name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    name = "pitivi"$/;"	v	language:Python	class:PitiviTestsManager
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/runtests	/^import os$/;"	i	language:Python
+PitiviTest	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^class PitiviTest(GstValidateTest):$/;"	c	language:Python
+PitiviTestsManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^class PitiviTestsManager(TestsManager):$/;"	c	language:Python
+PITIVI_COMMAND	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^PITIVI_COMMAND = "pitivi"$/;"	v	language:Python
+Pitivi_DURATION_TOLERANCE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^Pitivi_DURATION_TOLERANCE = utils.GST_SECOND \/ 2$/;"	v	language:Python
+quote_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^def quote_uri(uri):$/;"	f	language:Python
+register_defaults	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def register_defaults(self):$/;"	m	language:Python	class:PitiviTestsManager
+ScenarioManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^from baseclasses import GstValidateTest, TestsManager, ScenarioManager$/;"	i	language:Python
+set_sample_paths	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def set_sample_paths(self):$/;"	m	language:Python	class:PitiviTest
+set_settings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def set_settings(self, options, args, reporter):$/;"	m	language:Python	class:PitiviTestsManager
+start	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def start(self):$/;"	m	language:Python	class:BroadwayDaemon
+stop	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def stop(self):$/;"	m	language:Python	class:BroadwayDaemon
+subprocess	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import subprocess$/;"	i	language:Python
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import sys$/;"	i	language:Python
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/runtests	/^import sys$/;"	i	language:Python
+TestsManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^from baseclasses import GstValidateTest, TestsManager, ScenarioManager$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import time$/;"	i	language:Python
+unquote	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^from urllib import unquote$/;"	i	language:Python
+urllib2	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import urllib2$/;"	i	language:Python
+urlparse	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import urlparse$/;"	i	language:Python
+utils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import utils$/;"	i	language:Python
+vfb_server	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^import vfb_server$/;"	i	language:Python
+_check_is_up	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def _check_is_up(self, timeout=60):$/;"	m	language:Python	class:BroadwayDaemon
+_scenarios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    _scenarios = ScenarioManager()$/;"	v	language:Python	class:PitiviTestsManager
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def __init__(self):$/;"	m	language:Python	class:PitiviTestsManager
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def __init__(self, classname, options, reporter, scenario,$/;"	m	language:Python	class:PitiviTest
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/validate-tests/pitivivalidate.py	/^    def __init__(self, options):$/;"	m	language:Python	class:BroadwayDaemon

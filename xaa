@@ -1,0 +1,16 @@
+394524 -rw-r-----+ 1 root root 403988480 Jul 21 17:24 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.31732.1437492261000000
+345752 -rw-r-----+ 1 root root 354045952 Jul 21 17:02 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.18107.1437490933000000
+341524 -rw-r-----+ 1 root root 349716480 Jul 21 16:02 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.13862.1437487377000000
+403320 -rw-r-----+ 1 root root 412991488 Jul 21 15:52 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.8375.1437486740000000
+342152 -rw-r-----+ 1 root root 350359552 Jul 21 15:41 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.4814.1437486116000000
+425048 -rw-r-----+ 1 root root 435240960 Jul 21 15:37 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.27778.1437485827000000
+127396 -rw-r-----+ 1 root root 130449408 Jul 21 15:31 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.9893.1437485496000000
+127392 -rw-r-----+ 1 root root 130445312 Jul 21 15:20 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.14237.1437484850000000
+102324 -rw-r-----+ 1 root root 104775680 Jul 21 15:14 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.12649.1437484487000000
+416680 -rw-r-----+ 1 root root 426676224 Jul 21 14:12 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.29964.1437480750000000
+416616 -rw-r-----+ 1 root root 426606592 Jul 21 14:02 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.18187.1437480135000000
+563324 -rw-r-----+ 1 root root 576835584 Jul 21 14:00 /var/lib/systemd/coredump/core.gitg.1000.0db1a166467a4d22ae1f552faec2aeb0.4601.1437480035000000
+103844 -rw-r-----+ 1 root root 106332160 Jul 21 13:43 /var/lib/systemd/coredump/core.gitg.1000.0db1a166467a4d22ae1f552faec2aeb0.3781.1437479018000000
+290440 -rw-r-----+ 1 root root 297406464 Jul 21 13:40 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.32006.1437478809000000
+127416 -rw-r-----+ 1 root root 130469888 Jul 21 12:32 /var/lib/systemd/coredump/core.python3.1000.0db1a166467a4d22ae1f552faec2aeb0.12871.1437474759000000
+ 35136 -rw-r-----  1 root root  35975168 Jul 21 10:37 /var/lib/systemd/coredump/core.pamac-daemon.0.0db1a166467a4d22ae1f552faec2aeb0.10435.1437467849000000

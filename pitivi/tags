@@ -1,0 +1,953 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+acceptable_tags	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^acceptable_tags = [$/;"	v	language:Python
+acodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def acodecsettings(self):$/;"	m	language:Python	class:Project
+acodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def acodecsettings(self, value):$/;"	m	language:Python	class:Project
+acodec_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def acodec_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+addEffectToClip	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def addEffectToClip(self, clip, factory_name, priority=None):$/;"	m	language:Python	class:EffectProperties
+addEffectToCurrentSelection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def addEffectToCurrentSelection(self, factory_name):$/;"	m	language:Python	class:EffectProperties
+addUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def addUris(self, uris):$/;"	m	language:Python	class:Project
+add_preview_request	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def add_preview_request(self, dialogbox):$/;"	m	language:Python	class:PreviewWidget
+aencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def aencoder(self):$/;"	m	language:Python	class:Project
+aencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def aencoder(self, value):$/;"	m	language:Python	class:Project
+and	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        if self.nb_remaining_file_to_import == 0 and nb_remaining_file_to_import:$/;"	i	language:Python
+APPNAME	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+APPURL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+argb_to_gdk_rgba	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.utils.ui import argb_to_gdk_rgba, gdk_rgba_to_argb$/;"	i	language:Python
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:AssetAddedAction
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:AssetRemovedAction
+AssetAddedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class AssetAddedAction(UndoableAction):$/;"	c	language:Python
+AssetPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.pipeline import AssetPipeline$/;"	i	language:Python
+AssetPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.pipeline import AssetPipeline, Seeker$/;"	i	language:Python
+AssetRemovedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class AssetRemovedAction(UndoableAction):$/;"	c	language:Python
+assetsForUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def assetsForUris(self, uris):$/;"	m	language:Python	class:Project
+at_least_one_asset_missing	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def at_least_one_asset_missing(self):$/;"	m	language:Python	class:Project
+at_least_one_asset_missing	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def at_least_one_asset_missing(self, value):$/;"	m	language:Python	class:Project
+audiochannels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiochannels(self):$/;"	m	language:Python	class:Project
+audiochannels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiochannels(self, value):$/;"	m	language:Python	class:Project
+AudioPresetManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+audiorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiorate(self):$/;"	m	language:Python	class:Project
+audiorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiorate(self, value):$/;"	m	language:Python	class:Project
+audio_channels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+audio_channels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+AUDIO_EFFECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    EffectsPropertiesManager$/;"	i	language:Python
+audio_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+audio_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+author	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def author(self):$/;"	m	language:Python	class:Project
+author	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def author(self, author):$/;"	m	language:Python	class:Project
+BACKGROUND_DEFAULT_COLOR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^BACKGROUND_DEFAULT_COLOR = 0xFF000000  # Black$/;"	v	language:Python
+BaseTabs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.tabsmanager import BaseTabs$/;"	i	language:Python
+beautify_ETA	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+beautify_factoryname	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^def beautify_factoryname(factory):$/;"	f	language:Python
+beautify_info	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+beautify_length	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    beautify_length, TIMELINE_CSS$/;"	i	language:Python
+beautify_length	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.ui import beautify_length, beautify_stream, SPACING$/;"	i	language:Python
+beautify_length	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+beautify_stream	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.ui import beautify_length, beautify_stream, SPACING$/;"	i	language:Python
+beautify_time_delta	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    beautify_length, TIMELINE_CSS$/;"	i	language:Python
+beautify_time_delta	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+bindCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindCombo(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def bindCombo(self, mgr, name, widget):$/;"	m	language:Python	class:RenderDialog
+bindFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindFractionWidget(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindHeight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def bindHeight(self, mgr):$/;"	m	language:Python	class:RenderDialog
+bindPar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindPar(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindSpinbutton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindSpinbutton(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindWidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def bindWidth(self, mgr):$/;"	m	language:Python	class:RenderDialog
+CachedEncoderList	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.render import CachedEncoderList$/;"	i	language:Python
+CachedEncoderList	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^class CachedEncoderList(object):$/;"	c	language:Python
+CairoDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class CairoDependency(ClassicDependency):$/;"	c	language:Python
+calculateEffectPriority	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def calculateEffectPriority(source_index, drop_index, drop_pos):$/;"	m	language:Python	class:EffectProperties
+cdll	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/__init__.py	/^from ctypes import cdll$/;"	i	language:Python
+channels_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def channels_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+check	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def check(self):$/;"	m	language:Python	class:Dependency
+check_requirements	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def check_requirements():$/;"	f	language:Python
+ClassicDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class ClassicDependency(Dependency):$/;"	c	language:Python
+clear_preview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def clear_preview(self):$/;"	m	language:Python	class:PreviewWidget
+ClipMediaPropsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.dialogs.clipmediaprops import ClipMediaPropsDialog$/;"	i	language:Python
+ClipProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^class ClipProperties(Gtk.Box, Loggable):$/;"	c	language:Python
+ClipProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.clipproperties import ClipProperties$/;"	i	language:Python
+ClipPropertiesError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^class ClipPropertiesError(Exception):$/;"	c	language:Python
+clipTrimPreview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def clipTrimPreview(self, clip, position):$/;"	m	language:Python	class:ViewerContainer
+clipTrimPreviewFinished	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def clipTrimPreviewFinished(self):$/;"	m	language:Python	class:ViewerContainer
+closeRunningProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def closeRunningProject(self):$/;"	m	language:Python	class:ProjectManager
+compare_basename	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def compare_basename(model, iter1, iter2, unused_user_data):$/;"	m	language:Python	class:MediaLibraryWidget
+configure	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi import configure$/;"	i	language:Python
+connectSpinButtonsToFlush	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def connectSpinButtonsToFlush(self):$/;"	m	language:Python	class:TransformationProperties
+containersettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def containersettings(self):$/;"	m	language:Python	class:Project
+containersettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def containersettings(self, value):$/;"	m	language:Python	class:Project
+createAudioNoPreset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createAudioNoPreset(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+createInfoBar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def createInfoBar(self, text):$/;"	m	language:Python	class:ClipProperties
+createMainWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def createMainWindow(self):$/;"	m	language:Python	class:Pitivi
+createNoPreset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def createNoPreset(self, mgr):$/;"	m	language:Python	class:RenderDialog
+createStockIcons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def createStockIcons():$/;"	m	language:Python	class:PitiviMainWindow
+createTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createTimeline(self):$/;"	m	language:Python	class:Project
+createVideoNoPreset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createVideoNoPreset(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+create_monitor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.validate import has_validate, create_monitor$/;"	i	language:Python
+darSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def darSelected(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+datetime	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from datetime import datetime$/;"	i	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default='')$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=0)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=460)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=620)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=False)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=os.path.expanduser("~"))$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               default=os.path.expanduser("~"))$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               default=PREVIEW_HEIGHT)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               default=PREVIEW_WIDTH)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               default=True)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               default=os.path.expanduser("~"))$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               default=SHOW_ICONVIEW)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               default=True)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default='49a0e0')$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default='ffa854')$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=0)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=0)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=240)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=25)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=320)$/;"	v	language:Python
+default	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               default=True)$/;"	v	language:Python
+DEFAULT_AUDIO_ENCODER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_AUDIO_ENCODER = "vorbisenc"$/;"	v	language:Python
+DEFAULT_MUXER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_MUXER = "oggmux"$/;"	v	language:Python
+DEFAULT_VIDEO_ENCODER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_VIDEO_ENCODER = "theoraenc"$/;"	v	language:Python
+Dependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class Dependency(object):$/;"	c	language:Python
+DepsManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.dialogs.depsmanager import DepsManager$/;"	i	language:Python
+description	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def description(self):$/;"	m	language:Python	class:Project
+description	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def description(self, description):$/;"	m	language:Python	class:Project
+destroy	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def destroy(self):$/;"	m	language:Python	class:RenderDialog
+disconnectSpinButtonsFromFlush	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def disconnectSpinButtonsFromFlush(self):$/;"	m	language:Python	class:TransformationProperties
+DiscovererVideoInfo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository.GstPbutils import DiscovererVideoInfo$/;"	i	language:Python
+display_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:AssetAddedAction
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:AssetRemovedAction
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:ProjectSettingsChanged
+dock	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def dock(self):$/;"	m	language:Python	class:ViewerContainer
+do_asset_added	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_asset_added(self, asset):$/;"	m	language:Python	class:Project
+do_drag_data_get	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^            def do_drag_data_get(self, path, selection_data):$/;"	m	language:Python	class:EffectProperties.__init__.EffectsListStore
+do_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def do_event(self, event):$/;"	m	language:Python	class:TransformationBox
+do_get_preferred_height	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def do_get_preferred_height(self):$/;"	m	language:Python	class:ViewerWidget
+do_get_preferred_width	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def do_get_preferred_width(self):$/;"	m	language:Python	class:ViewerWidget
+do_loaded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_loaded(self, unused_timeline):$/;"	m	language:Python	class:Project
+do_loading_error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_loading_error(self, unused_error, asset_id, unused_type):$/;"	m	language:Python	class:Project
+drag_notify_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def drag_notify_event(self, unused_widget, event):$/;"	m	language:Python	class:TitleEditor
+drag_possible_end_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def drag_possible_end_event(self):$/;"	m	language:Python	class:TitleEditor
+drag_press_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def drag_press_event(self, unused_widget, event):$/;"	m	language:Python	class:TitleEditor
+drag_release_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def drag_release_event(self, unused_widget, unused_event):$/;"	m	language:Python	class:TitleEditor
+drag_update_event	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def drag_update_event(self):$/;"	m	language:Python	class:TitleEditor
+DuplicatePresetNameException	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+DuplicatePresetNameException	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^        from pitivi.preset import DuplicatePresetNameException$/;"	i	language:Python
+EffectListWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.effects import EffectListWidget$/;"	i	language:Python
+EffectProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^class EffectProperties(Gtk.Expander, Loggable):$/;"	c	language:Python
+EffectsListStore	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^        class EffectsListStore(Gtk.ListStore, Gtk.TreeDragSource):$/;"	c	language:Python	function:EffectProperties.__init__
+EffectsManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.effects import EffectsManager$/;"	i	language:Python
+EffectsPropertiesManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    EffectsPropertiesManager$/;"	i	language:Python
+EFFECT_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.utils.ui import EFFECT_TARGET_ENTRY$/;"	i	language:Python
+environment	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               environment="PITIVI_EXPORT_FOLDER",$/;"	v	language:Python
+environment	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               environment="PITIVI_PROJECT_FOLDER",$/;"	v	language:Python
+environment	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               environment='PITIVI_IMPORT_FOLDER',$/;"	v	language:Python
+escape	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from xml.sax.saxutils import escape, unescape$/;"	i	language:Python
+exportProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def exportProject(self, project, uri):$/;"	m	language:Python	class:ProjectManager
+extension_for_muxer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^def extension_for_muxer(muxer):$/;"	f	language:Python
+factorylist	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^def factorylist(factories):$/;"	f	language:Python
+FileListErrorDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.dialogs.filelisterrordialog import FileListErrorDialog$/;"	i	language:Python
+FILE_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+flush_pending_rows	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def flush_pending_rows(self):$/;"	m	language:Python	class:MediaLibraryWidget
+focusTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def focusTimeline(self):$/;"	m	language:Python	class:PitiviMainWindow
+FOREGROUND_DEFAULT_COLOR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^FOREGROUND_DEFAULT_COLOR = 0xFFFFFFFF  # White$/;"	v	language:Python
+format_ns	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.misc import format_ns$/;"	i	language:Python
+FractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.widgets import FractionWidget$/;"	i	language:Python
+framerate_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def framerate_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+frame_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+frame_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import Gdk$/;"	i	language:Python
+Gdk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gi.repository import Gdk$/;"	i	language:Python
+GdkPixbuf	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import GdkPixbuf$/;"	i	language:Python
+GdkPixbuf	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import GdkPixbuf$/;"	i	language:Python
+GdkPixbuf	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import GdkPixbuf$/;"	i	language:Python
+GdkX11	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^                from gi.repository import GdkX11$/;"	i	language:Python
+gdk_rgba_to_argb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.utils.ui import argb_to_gdk_rgba, gdk_rgba_to_argb$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import GES$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gi.repository import GES$/;"	i	language:Python
+getAssetForUri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def getAssetForUri(self, uri):$/;"	m	language:Python	class:MediaLibraryWidget
+getAudioCaps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getAudioCaps(self):$/;"	m	language:Python	class:Project
+getDAR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getDAR(self):$/;"	m	language:Python	class:Project
+getLatest	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def getLatest(self):$/;"	m	language:Python	class:Pitivi
+getpwuid	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pwd import getpwuid$/;"	i	language:Python
+getSAR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getSAR(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+getSelectedAssets	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def getSelectedAssets(self):$/;"	m	language:Python	class:MediaLibraryWidget
+getSelectedItems	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def getSelectedItems(self):$/;"	m	language:Python	class:MediaLibraryWidget
+getSelectedPaths	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def getSelectedPaths(self):$/;"	m	language:Python	class:MediaLibraryWidget
+getSystem	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.system import getSystem$/;"	i	language:Python
+getVideoCaps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getVideoCaps(self, render=False):$/;"	m	language:Python	class:Project
+getVideoWidthAndHeight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getVideoWidthAndHeight(self, render=False):$/;"	m	language:Python	class:Project
+get_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+get_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+get_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.settings import GlobalSettings, xdg_cache_home, get_dir$/;"	i	language:Python
+get_pixmap_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+get_pixmap_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.configure import get_ui_dir, get_pixmap_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.configure import get_ui_dir, get_pixmap_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+gi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    import gi$/;"	i	language:Python
+GICheck	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class GICheck(ClassicDependency):$/;"	c	language:Python
+GIDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class GIDependency(Dependency):$/;"	c	language:Python
+Gio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from gi.repository import Gio$/;"	i	language:Python
+Gio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import Gio$/;"	i	language:Python
+Gio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import Gio$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gi.repository import GLib$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import GLib$/;"	i	language:Python
+GlobalSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.settings import GlobalSettings, xdg_cache_home, get_dir$/;"	i	language:Python
+GlobalSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.settings import GlobalSettings$/;"	i	language:Python
+GlobalSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.settings import GlobalSettings$/;"	i	language:Python
+GlobalSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.settings import GlobalSettings$/;"	i	language:Python
+GlobalSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.settings import GlobalSettings$/;"	i	language:Python
+GnomeDesktop	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^        from gi.repository import GnomeDesktop$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^        from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gi.repository import GObject$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gi.repository import GObject$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^            from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import Gst$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gi.repository import Gst$/;"	i	language:Python
+GstDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class GstDependency(GIDependency):$/;"	c	language:Python
+GstElementSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.utils.widgets import GstElementSettingsDialog$/;"	i	language:Python
+GstPbutils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import GstPbutils$/;"	i	language:Python
+GstPbutils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import GstPbutils$/;"	i	language:Python
+GstPbutils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GstPbutils$/;"	i	language:Python
+GstPluginDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class GstPluginDependency(Dependency):$/;"	c	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^            from gi.repository import GstValidate$/;"	i	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        from gi.repository import GstValidate$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import Gtk$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gi.repository import Gtk$/;"	i	language:Python
+GtkDependency	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^class GtkDependency(GIDependency):$/;"	c	language:Python
+HARD_DEPENDENCIES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^HARD_DEPENDENCIES = [GICheck("3.14.0"),$/;"	v	language:Python
+hasUnsavedModifications	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def hasUnsavedModifications(self):$/;"	m	language:Python	class:Project
+has_validate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.validate import has_validate, create_monitor$/;"	i	language:Python
+HIDDEN_EFFECTS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    EffectsPropertiesManager$/;"	i	language:Python
+info_name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    beautify_length, TIMELINE_CSS$/;"	i	language:Python
+info_name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+INHIBIT_REASON	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    INHIBIT_REASON = _("Currently rendering")$/;"	v	language:Python	class:RenderDialog
+INHIBIT_REASON	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    INHIBIT_REASON = _("Currently playing")$/;"	v	language:Python	class:ViewerContainer
+initialize_modules	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def initialize_modules():$/;"	f	language:Python
+in_devel	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+isLatest	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def isLatest(self):$/;"	m	language:Python	class:Pitivi
+isWritable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key="hpane-position",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key="last-export-folder",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key="last-folder",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key="main-hpane-position",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key="vpane-position",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='effect-vpaned-position',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='element-settings-dialog-height',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='element-settings-dialog-width',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='info-displayed-counter',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='last-current-version',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               key='timeline-autoripple',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               key='do-preview-on-clip-import',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               key='video-preview-height',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               key='video-preview-width',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               key='close-import-dialog-after-import',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               key='last-clip-view',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               key='last-folder',$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="clicked-point-color",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="docked",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="height",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="point-color",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="point-size",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="width",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="x-pos",$/;"	v	language:Python
+key	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^                               key="y-pos",$/;"	v	language:Python
+listSources	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def listSources(self):$/;"	m	language:Python	class:Project
+loadProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def loadProject(self, uri):$/;"	m	language:Python	class:ProjectManager
+log	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^import pitivi.utils.loggable as log$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+md5	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from hashlib import md5$/;"	i	language:Python
+md5	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from hashlib import md5$/;"	i	language:Python
+MediaLibraryWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.medialibrary import MediaLibraryWidget$/;"	i	language:Python
+MediaLibraryWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^class MediaLibraryWidget(Gtk.Box, Loggable):$/;"	c	language:Python
+missing_soft_deps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^missing_soft_deps = {}$/;"	v	language:Python
+missing_soft_deps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.check import missing_soft_deps$/;"	i	language:Python
+missing_soft_deps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.check import missing_soft_deps$/;"	i	language:Python
+model	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+moveEffect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def moveEffect(self, clip, source_index, drop_index):$/;"	m	language:Python	class:EffectProperties
+muxer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def muxer(self):$/;"	m	language:Python	class:Project
+muxer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def muxer(self, value):$/;"	m	language:Python	class:Project
+muxer_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def muxer_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def name(self):$/;"	m	language:Python	class:Project
+name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def name(self, name):$/;"	m	language:Python	class:Project
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^            self.nb_remaining_file_to_import = nb_remaining_file_to_import$/;"	i	language:Python
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        if self.nb_remaining_file_to_import == 0 and nb_remaining_file_to_import:$/;"	i	language:Python
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = nb_remaining_file_to_import$/;"	i	language:Python
+newBlankProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def newBlankProject(self, emission=True, ignore_unsaved_changes=False):$/;"	m	language:Python	class:ProjectManager
+ngettext	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gettext import ngettext, gettext as _$/;"	i	language:Python
+openCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def openCb(self, unused_app, giofiles, unused_count, unused_hint):$/;"	m	language:Python	class:Pitivi
+openProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def openProject(self):$/;"	m	language:Python	class:PitiviMainWindow
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^import os$/;"	i	language:Python
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^import os$/;"	i	language:Python
+OTHER_KNOWN_FORMATS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^OTHER_KNOWN_FORMATS = ("video\/mp2t",)$/;"	v	language:Python
+PADDING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.utils.ui import PADDING, SPACING$/;"	i	language:Python
+Pango	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from gi.repository import Pango$/;"	i	language:Python
+Pango	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gi.repository import Pango$/;"	i	language:Python
+Pango	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gi.repository import Pango$/;"	i	language:Python
+Pango	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gi.repository import Pango$/;"	i	language:Python
+parSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def parSelected(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+PathWalker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.utils.misc import PathWalker, quote_uri, path_from_uri$/;"	i	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.misc import quote_uri, path_from_uri$/;"	i	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.utils.misc import show_user_manual, path_from_uri$/;"	i	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.utils.misc import PathWalker, quote_uri, path_from_uri$/;"	i	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.utils.misc import show_user_manual, path_from_uri$/;"	i	language:Python
+pause	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def pause(self):$/;"	m	language:Python	class:PreviewWidget
+Pipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import Pipeline$/;"	i	language:Python
+PipelineError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import PipelineError, Seeker$/;"	i	language:Python
+Pitivi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^class Pitivi(Gtk.Application, Loggable):$/;"	c	language:Python
+pitivi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^import pitivi.utils.loggable as log$/;"	i	language:Python
+PitiviMainWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.mainwindow import PitiviMainWindow$/;"	i	language:Python
+PitiviMainWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^class PitiviMainWindow(Gtk.ApplicationWindow, Loggable):$/;"	c	language:Python
+pixel_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+play	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def play(self):$/;"	m	language:Python	class:PreviewWidget
+PlayPauseButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^class PlayPauseButton(Gtk.Button, Loggable):$/;"	c	language:Python
+PreferencesDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^            from pitivi.dialogs.prefs import PreferencesDialog$/;"	i	language:Python
+preview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def preview(self):$/;"	m	language:Python	class:PreviewAssetWindow
+PreviewAssetWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^class PreviewAssetWindow(Gtk.Window):$/;"	c	language:Python
+previewUri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def previewUri(self, uri):$/;"	m	language:Python	class:PreviewWidget
+PreviewWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.mediafilespreviewer import PreviewWidget$/;"	i	language:Python
+PreviewWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^class PreviewWidget(Gtk.Grid, Loggable):$/;"	c	language:Python
+PreviewWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.mediafilespreviewer import PreviewWidget$/;"	i	language:Python
+PREVIEW_HEIGHT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^PREVIEW_HEIGHT = 100$/;"	v	language:Python
+PREVIEW_WIDTH	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^PREVIEW_WIDTH = 250$/;"	v	language:Python
+project	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    project = property(_getProject, _setProject)$/;"	v	language:Python	class:ClipProperties
+Project	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class Project(Loggable, GES.Project):$/;"	c	language:Python
+ProjectLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.project import ProjectManager, ProjectLogObserver$/;"	i	language:Python
+ProjectLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectLogObserver(UndoableAction):$/;"	c	language:Python
+ProjectManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.project import ProjectManager, ProjectLogObserver$/;"	i	language:Python
+ProjectManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectManager(GObject.Object, Loggable):$/;"	c	language:Python
+ProjectSettingsChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectSettingsChanged(UndoableAction):$/;"	c	language:Python
+ProjectSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^        from pitivi.project import ProjectSettingsDialog$/;"	i	language:Python
+ProjectSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectSettingsDialog():$/;"	c	language:Python
+ProjectSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^        from pitivi.project import ProjectSettingsDialog$/;"	i	language:Python
+pycanberra	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^        import pycanberra$/;"	i	language:Python
+quote_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.misc import quote_uri, path_from_uri$/;"	i	language:Python
+quote_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from pitivi.utils.misc import PathWalker, quote_uri, path_from_uri$/;"	i	language:Python
+quote_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+release	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def release(self):$/;"	m	language:Python	class:Project
+RELEASES_URL	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.configure import VERSION, RELEASES_URL$/;"	i	language:Python
+RenderDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^        from pitivi.render import RenderDialog$/;"	i	language:Python
+RenderDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^class RenderDialog(Loggable):$/;"	c	language:Python
+RenderingProgressDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^class RenderingProgressDialog(GObject.Object):$/;"	c	language:Python
+RenderPresetManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^        from pitivi.preset import RenderPresetManager$/;"	i	language:Python
+render_scale	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def render_scale(self):$/;"	m	language:Python	class:Project
+render_scale	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def render_scale(self, value):$/;"	m	language:Python	class:Project
+revertToSavedProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def revertToSavedProject(self):$/;"	m	language:Python	class:ProjectManager
+RippleUpdateGroup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.ripple_update_group import RippleUpdateGroup$/;"	i	language:Python
+RippleUpdateGroup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.utils.ripple_update_group import RippleUpdateGroup$/;"	i	language:Python
+sample_rate_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def sample_rate_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+saveProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def saveProject(self):$/;"	m	language:Python	class:PitiviMainWindow
+saveProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def saveProject(self, uri=None, formatter_type=None, backup=False):$/;"	m	language:Python	class:ProjectManager
+saveProjectAs	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def saveProjectAs(self):$/;"	m	language:Python	class:PitiviMainWindow
+saveProjectAsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def saveProjectAsDialog(self):$/;"	m	language:Python	class:PitiviMainWindow
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section="main-window",$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='effect-configuration',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='export',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='export',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='export',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='user-interface',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='version',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               section='version',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               section='filechooser-preview',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               section='filechooser-preview',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^                               section='filechooser-preview',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               section='clip-library',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               section='clip-library',$/;"	v	language:Python
+section	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               section='clip-library',$/;"	v	language:Python
+Seeker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import PipelineError, Seeker$/;"	i	language:Python
+Seeker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.utils.pipeline import Seeker$/;"	i	language:Python
+Seeker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.pipeline import AssetPipeline, Seeker$/;"	i	language:Python
+SELECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from pitivi.utils.timeline import SELECT$/;"	i	language:Python
+selectionChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def selectionChangedCb(self, selection):$/;"	m	language:Python	class:TitleEditor
+self	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = self.__countRemainingFilesToImport()$/;"	i	language:Python
+setAudioProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setAudioProperties(self, nbchanns=-1, rate=-1):$/;"	m	language:Python	class:Project
+setDisplayAspectRatio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def setDisplayAspectRatio(self, ratio):$/;"	m	language:Python	class:ViewerContainer
+setDisplayAspectRatio	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def setDisplayAspectRatio(self, ratio):$/;"	m	language:Python	class:ViewerWidget
+setEncoders	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setEncoders(self, muxer="", vencoder="", aencoder=""):$/;"	m	language:Python	class:Project
+setFilesizeEstimate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def setFilesizeEstimate(self, estimated_filesize=None):$/;"	m	language:Python	class:RenderingProgressDialog
+setModificationState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setModificationState(self, state):$/;"	m	language:Python	class:Project
+setPause	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def setPause(self):$/;"	m	language:Python	class:PlayPauseButton
+setPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def setPipeline(self, pipeline, position=None):$/;"	m	language:Python	class:ViewerContainer
+setPlay	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def setPlay(self):$/;"	m	language:Python	class:PlayPauseButton
+setupCss	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def setupCss(self):$/;"	m	language:Python	class:PitiviMainWindow
+setupValidateScenario	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setupValidateScenario(self):$/;"	m	language:Python	class:Project
+setVideoRestriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setVideoRestriction(self, name, value):$/;"	m	language:Python	class:Project
+set_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+set_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    audio_channels, get_combo_value, set_combo_value, beautify_ETA$/;"	i	language:Python
+set_rendering	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def set_rendering(self, rendering):$/;"	m	language:Python	class:Project
+set_sensitive	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def set_sensitive(self, value):$/;"	m	language:Python	class:PlayPauseButton
+set_source	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def set_source(self, source):$/;"	m	language:Python	class:TitleEditor
+showImportSourcesDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def showImportSourcesDialog(self):$/;"	m	language:Python	class:MediaLibraryWidget
+showProjectSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def showProjectSettingsDialog(self):$/;"	m	language:Python	class:PitiviMainWindow
+showProjectStatus	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def showProjectStatus(self):$/;"	m	language:Python	class:PitiviMainWindow
+showRenderDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def showRenderDialog(self, project):$/;"	m	language:Python	class:PitiviMainWindow
+show_error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def show_error(self, unused_uri):$/;"	m	language:Python	class:PreviewWidget
+SHOW_ICONVIEW	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^SHOW_ICONVIEW = 2$/;"	v	language:Python
+show_preview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def show_preview(self, uri, info):$/;"	m	language:Python	class:PreviewWidget
+SHOW_TREEVIEW	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^SHOW_TREEVIEW = 1$/;"	v	language:Python
+show_user_manual	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.utils.misc import show_user_manual, path_from_uri$/;"	i	language:Python
+show_user_manual	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from pitivi.utils.misc import show_user_manual, path_from_uri$/;"	i	language:Python
+shutdown	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def shutdown(self):$/;"	m	language:Python	class:Pitivi
+SOFT_DEPENDENCIES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    ($/;"	v	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from pitivi.utils.ui import PADDING, SPACING$/;"	i	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    beautify_length, TIMELINE_CSS$/;"	i	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.ui import beautify_length, beautify_stream, SPACING$/;"	i	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.ui import SPACING$/;"	i	language:Python
+startAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def startAction(self):$/;"	m	language:Python	class:RenderDialog
+startObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def startObserving(self, project):$/;"	m	language:Python	class:ProjectLogObserver
+StartUpWizard	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.dialogs.startupwizard import StartUpWizard$/;"	i	language:Python
+stopObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def stopObserving(self, project):$/;"	m	language:Python	class:ProjectLogObserver
+STORE_MODEL_STRUCTURE	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^STORE_MODEL_STRUCTURE = ($/;"	v	language:Python
+subprocess	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^import subprocess$/;"	i	language:Python
+SUPPORTED_FILE_FORMATS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^SUPPORTED_FILE_FORMATS = {$/;"	v	language:Python
+switchContextTab	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def switchContextTab(self, bClip):$/;"	m	language:Python	class:PitiviMainWindow
+sys	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^import sys$/;"	i	language:Python
+tabSwitchedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def tabSwitchedCb(self, unused_notebook, page_widget, unused_page_index):$/;"	m	language:Python	class:TitleEditor
+tarfile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^import tarfile$/;"	i	language:Python
+threading	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^import threading$/;"	i	language:Python
+ThreadMaster	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.threads import ThreadMaster$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^import time$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from time import time$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^import time$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from time import time$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^import time$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from time import time$/;"	i	language:Python
+timeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    timeline = property(_getTimeline, _setTimeline)$/;"	v	language:Python	class:ClipProperties
+timeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    timeline = property(_getTimeline, _setTimeline)$/;"	v	language:Python	class:EffectProperties
+timeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    timeline = property(_getTimeline, _setTimeline)$/;"	v	language:Python	class:TransformationProperties
+TimelineContainer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.timeline.timeline import TimelineContainer$/;"	i	language:Python
+TimelineLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.undo.timeline import TimelineLogObserver$/;"	i	language:Python
+TIMELINE_CSS	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    beautify_length, TIMELINE_CSS$/;"	i	language:Python
+TimeWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from pitivi.utils.widgets import TimeWidget$/;"	i	language:Python
+TitleEditor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.titleeditor import TitleEditor$/;"	i	language:Python
+TitleEditor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^class TitleEditor(Loggable):$/;"	c	language:Python
+togglePlayback	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def togglePlayback(self):$/;"	m	language:Python	class:PreviewWidget
+TransformationBox	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^class TransformationBox(Gtk.EventBox, Loggable):$/;"	c	language:Python
+TransformationProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^class TransformationProperties(Gtk.Expander):$/;"	c	language:Python
+TransitionsListWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.transitions import TransitionsListWidget$/;"	i	language:Python
+type_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               type_=int)$/;"	v	language:Python
+type_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               type_=int)$/;"	v	language:Python
+type_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               type_=int)$/;"	v	language:Python
+type_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^                               type_=int)$/;"	v	language:Python
+type_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^                               type_=int,$/;"	v	language:Python
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:AssetAddedAction
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:AssetRemovedAction
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:ProjectSettingsChanged
+UndoableAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.undo.undo import UndoableAction$/;"	i	language:Python
+UndoableActionLog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.undo.undo import UndoableActionLog$/;"	i	language:Python
+undock	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def undock(self, *unused_widget):$/;"	m	language:Python	class:ViewerContainer
+unescape	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from xml.sax.saxutils import escape, unescape$/;"	i	language:Python
+unicode_error_dialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+unquote	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from urllib.parse import unquote$/;"	i	language:Python
+unquote	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from urllib.parse import unquote$/;"	i	language:Python
+unset_source	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def unset_source(self):$/;"	m	language:Python	class:TitleEditor
+updateAll	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def updateAll(self, path=None):$/;"	m	language:Python	class:EffectProperties
+updateAvailableEncoders	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def updateAvailableEncoders(self):$/;"	m	language:Python	class:RenderDialog
+updateDarFromCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromCombo(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateDarFromFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromFractionWidget(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateDarFromPar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromPar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateFilename	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def updateFilename(self, basename):$/;"	m	language:Python	class:RenderDialog
+updateHeight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateHeight(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateMetadata	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateMetadata(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updatePar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        def updatePar(value):$/;"	f	language:Python	function:ProjectSettingsDialog.bindPar
+updateParFromCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromCombo(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateParFromDar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromDar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateParFromFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromFractionWidget(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updatePosition	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def updatePosition(self, fraction):$/;"	m	language:Python	class:RenderingProgressDialog
+updateProgressbarETA	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def updateProgressbarETA(self, time_estimation):$/;"	m	language:Python	class:RenderingProgressDialog
+updateResolution	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def updateResolution(self):$/;"	m	language:Python	class:RenderDialog
+updateSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateSettings(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateTitle	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def updateTitle(self):$/;"	m	language:Python	class:PitiviMainWindow
+updateUI	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateUI(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateWidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateWidth(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+update_restriction_caps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def update_restriction_caps(self):$/;"	m	language:Python	class:Project
+uri_is_valid	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.utils.misc import uri_is_valid$/;"	i	language:Python
+URI_TARGET_ENTRY	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    URI_TARGET_ENTRY, FILE_TARGET_ENTRY, SPACING$/;"	i	language:Python
+urlparse	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from urllib.parse import urlparse$/;"	i	language:Python
+utils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^import pitivi.utils.loggable as log$/;"	i	language:Python
+validate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    from pitivi.utils import validate$/;"	i	language:Python
+vcodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vcodecsettings(self):$/;"	m	language:Python	class:Project
+vcodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vcodecsettings(self, value):$/;"	m	language:Python	class:Project
+vcodec_setter	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def vcodec_setter(self, widget, value):$/;"	m	language:Python	class:RenderDialog
+vencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vencoder(self):$/;"	m	language:Python	class:Project
+vencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vencoder(self, value):$/;"	m	language:Python	class:Project
+VERSION	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.configure import VERSION, RELEASES_URL$/;"	i	language:Python
+VERSION	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.configure import in_devel, VERSION, APPNAME, APPURL, get_pixmap_dir, get_ui_dir$/;"	i	language:Python
+videoheight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videoheight(self):$/;"	m	language:Python	class:Project
+videoheight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videoheight(self, value):$/;"	m	language:Python	class:Project
+videopar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videopar(self):$/;"	m	language:Python	class:Project
+videopar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videopar(self, value):$/;"	m	language:Python	class:Project
+VideoPresetManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+videorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videorate(self):$/;"	m	language:Python	class:Project
+videorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videorate(self, value):$/;"	m	language:Python	class:Project
+videowidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videowidth(self):$/;"	m	language:Python	class:Project
+videowidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videowidth(self, value):$/;"	m	language:Python	class:Project
+VIDEO_EFFECT	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    EffectsPropertiesManager$/;"	i	language:Python
+ViewerContainer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from pitivi.viewer import ViewerContainer$/;"	i	language:Python
+ViewerContainer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^class ViewerContainer(Gtk.Box, Loggable):$/;"	c	language:Python
+ViewerWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from pitivi.viewer import ViewerWidget$/;"	i	language:Python
+ViewerWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^class ViewerWidget(Gtk.AspectFrame, Loggable):$/;"	c	language:Python
+widthHeightLinked	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def widthHeightLinked(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+write_action	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def write_action(self, action, properties={}):$/;"	m	language:Python	class:Pitivi
+x11	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/__init__.py	/^x11 = cdll.LoadLibrary('libX11.so')$/;"	v	language:Python
+xdg_cache_home	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.settings import GlobalSettings, xdg_cache_home, get_dir$/;"	i	language:Python
+year	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def year(self):$/;"	m	language:Python	class:Project
+year	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def year(self, year):$/;"	m	language:Python	class:Project
+Zoomable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^from pitivi.utils.timeline import Zoomable$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^from gettext import ngettext, gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^from gettext import gettext as _$/;"	i	language:Python
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^from gettext import gettext as _$/;"	i	language:Python
+_aboutCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _aboutCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_aboutResponseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _aboutResponseCb(self, dialog, unused_response):$/;"	m	language:Python	class:PitiviMainWindow
+_actionLogCleaned	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _actionLogCleaned(self, action_log):$/;"	m	language:Python	class:Pitivi
+_actionLogCommit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _actionLogCommit(self, action_log, unused_stack, nested):$/;"	m	language:Python	class:Pitivi
+_actionLogRedo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _actionLogRedo(self, action_log, unused_stack):$/;"	m	language:Python	class:Pitivi
+_actionLogUndo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _actionLogUndo(self, action_log, unused_stack):$/;"	m	language:Python	class:Pitivi
+_activate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _activate(self):$/;"	m	language:Python	class:TitleEditor
+_activateCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _activateCb(self, unused_app):$/;"	m	language:Python	class:Pitivi
+_addAsset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _addAsset(self, asset):$/;"	m	language:Python	class:MediaLibraryWidget
+_addAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _addAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_addRenderPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _addRenderPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_addUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _addUris(self, uris):$/;"	m	language:Python	class:MediaLibraryWidget
+_addVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _addVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_allSourcesInHomedir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _allSourcesInHomedir(self, sources):$/;"	m	language:Python	class:ProjectManager
+_appendTag	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _appendTag(self, taglist, tag, unused_udata):$/;"	m	language:Python	class:PreviewWidget
+_assetAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _assetAddedCb(self, unused_project, asset,$/;"	m	language:Python	class:MediaLibraryWidget
+_assetAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _assetAddedCb(self, project, asset):$/;"	m	language:Python	class:ProjectLogObserver
+_assetRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _assetRemovedCb(self, unused_project, asset):$/;"	m	language:Python	class:MediaLibraryWidget
+_assetRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _assetRemovedCb(self, project, asset):$/;"	m	language:Python	class:ProjectLogObserver
+_audioEncoderChangedComboCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _audioEncoderChangedComboCb(self, combo):$/;"	m	language:Python	class:RenderDialog
+_audioOutputCheckbuttonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _audioOutputCheckbuttonToggledCb(self, unused_audio):$/;"	m	language:Python	class:RenderDialog
+_audioSettingsButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _audioSettingsButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_backCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _backCb(self, unused_button):$/;"	m	language:Python	class:ViewerContainer
+_backgroundColorButtonCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _backgroundColorButtonCb(self, widget):$/;"	m	language:Python	class:TitleEditor
+_buildCombinations	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _buildCombinations(self):$/;"	m	language:Python	class:CachedEncoderList
+_buildEncoders	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _buildEncoders(self):$/;"	m	language:Python	class:CachedEncoderList
+_builderConnectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _builderConnectCb(self, builder, gobject, signal_name, handler_name,$/;"	m	language:Python	class:PitiviMainWindow
+_busMessageCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _busMessageCb(self, unused_bus, message):$/;"	m	language:Python	class:RenderDialog
+_calculateNbLoadingAssets	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _calculateNbLoadingAssets(self):$/;"	m	language:Python	class:Project
+_calculatePreviewWindowSize	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _calculatePreviewWindowSize(self):$/;"	m	language:Python	class:PreviewAssetWindow
+_cancelButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _cancelButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderingProgressDialog
+_cancelRender	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _cancelRender(self, *unused_args):$/;"	m	language:Python	class:RenderDialog
+_canLoadUri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _canLoadUri(self, filterinfo, unused_uri):$/;"	m	language:Python	class:PitiviMainWindow
+_canSinkCaps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _canSinkCaps(self, muxer, ocaps, muxsinkcaps=[]):$/;"	m	language:Python	class:CachedEncoderList
+_channelsComboChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _channelsComboChangedCb(self, combo):$/;"	m	language:Python	class:RenderDialog
+_checkForExistingFile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _checkForExistingFile(self, *unused_args):$/;"	m	language:Python	class:RenderDialog
+_checkVersion	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _checkVersion(self):$/;"	m	language:Python	class:Pitivi
+_check_audiosinks	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def _check_audiosinks():$/;"	f	language:Python
+_check_gst_python	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def _check_gst_python():$/;"	f	language:Python
+_check_videosink	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def _check_videosink():$/;"	f	language:Python
+_cleanBackup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _cleanBackup(self, uri):$/;"	m	language:Python	class:ProjectManager
+_clickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _clickedCb(self, unused):$/;"	m	language:Python	class:PlayPauseButton
+_clipPropertiesCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _clipPropertiesCb(self, unused_widget=None):$/;"	m	language:Python	class:MediaLibraryWidget
+_closeButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _closeButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_closeButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _closeButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderingProgressDialog
+_commit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _commit(self):$/;"	m	language:Python	class:Project
+_configureCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _configureCb(self, unused_widget, event):$/;"	m	language:Python	class:PitiviMainWindow
+_connectTimelineSelection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _connectTimelineSelection(self, timeline):$/;"	m	language:Python	class:EffectProperties
+_connectToProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _connectToProject(self, project):$/;"	m	language:Python	class:PitiviMainWindow
+_connectToProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _connectToProject(self, project):$/;"	m	language:Python	class:MediaLibraryWidget
+_connect_signals	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _connect_signals(self):$/;"	m	language:Python	class:TitleEditor
+_constrainSarButtonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _constrainSarButtonToggledCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_containerContextHelpClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _containerContextHelpClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_createActions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _createActions(self):$/;"	m	language:Python	class:Pitivi
+_createCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _createCb(self, unused_button):$/;"	m	language:Python	class:TitleEditor
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _createUi(self):$/;"	m	language:Python	class:PitiviMainWindow
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _createUi(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _createUi(self):$/;"	m	language:Python	class:RenderDialog
+_createUI	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _createUI(self):$/;"	m	language:Python	class:TitleEditor
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _createUi(self):$/;"	m	language:Python	class:ViewerContainer
+_create_headerbar_buttons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _create_headerbar_buttons(self):$/;"	m	language:Python	class:PitiviMainWindow
+_deactivate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _deactivate(self):$/;"	m	language:Python	class:TitleEditor
+_defaultValuesCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _defaultValuesCb(self, widget):$/;"	m	language:Python	class:TransformationProperties
+_deleteCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _deleteCb(self, unused_widget, unused_data=None):$/;"	m	language:Python	class:PitiviMainWindow
+_deleteEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _deleteEventCb(self, unused_dialog_widget, unused_event):$/;"	m	language:Python	class:RenderingProgressDialog
+_deleteEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _deleteEventCb(self, unused_window, unused_event):$/;"	m	language:Python	class:RenderDialog
+_destroyedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _destroyedCb(self, unused_self):$/;"	m	language:Python	class:PitiviMainWindow
+_destroyProgressWindow	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _destroyProgressWindow(self):$/;"	m	language:Python	class:RenderDialog
+_destroy_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _destroy_cb(self, widget):$/;"	m	language:Python	class:PreviewWidget
+_dialogBoxResponseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _dialogBoxResponseCb(self, dialogbox, response):$/;"	m	language:Python	class:MediaLibraryWidget
+_disconnectFromGst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _disconnectFromGst(self):$/;"	m	language:Python	class:RenderDialog
+_disconnectFromPipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _disconnectFromPipeline(self):$/;"	m	language:Python	class:ViewerContainer
+_disconnectFromProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _disconnectFromProject(self, project):$/;"	m	language:Python	class:PitiviMainWindow
+_disconnect_signals	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _disconnect_signals(self):$/;"	m	language:Python	class:TitleEditor
+_displayClipView	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _displayClipView(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_displayRenderSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _displayRenderSettings(self):$/;"	m	language:Python	class:RenderDialog
+_displaySettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _displaySettings(self):$/;"	m	language:Python	class:RenderDialog
+_dndDataReceivedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _dndDataReceivedCb(self, unused_widget, unused_context, unused_x,$/;"	m	language:Python	class:MediaLibraryWidget
+_dndDragBeginCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _dndDragBeginCb(self, unused_view, context):$/;"	m	language:Python	class:MediaLibraryWidget
+_dndDragDataGetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _dndDragDataGetCb(self, unused_view, unused_context, data, unused_info, unused_timestamp):$/;"	m	language:Python	class:MediaLibraryWidget
+_dndDragEndCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _dndDragEndCb(self, unused_view, unused_context):$/;"	m	language:Python	class:MediaLibraryWidget
+_dragDataReceivedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _dragDataReceivedCb(self, treeview, drag_context, x, y, selection_data, unused_info, timestamp):$/;"	m	language:Python	class:EffectProperties
+_dragLeaveCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _dragLeaveCb(self, unused_tree_view, unused_drag_context, unused_timestamp):$/;"	m	language:Python	class:EffectProperties
+_dragMotionCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _dragMotionCb(self, unused_tree_view, unused_drag_context, unused_x, unused_y, unused_timestamp):$/;"	m	language:Python	class:EffectProperties
+_durationChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _durationChangedCb(self, unused_pipeline, duration):$/;"	m	language:Python	class:ViewerContainer
+_effectActiveToggleCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _effectActiveToggleCb(self, cellrenderertoggle, path):$/;"	m	language:Python	class:EffectProperties
+_elementAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _elementAddedCb(self, unused_bin, element):$/;"	m	language:Python	class:RenderDialog
+_elementSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _elementSettingsDialog(self, factory, settings_attr):$/;"	m	language:Python	class:RenderDialog
+_emitChange	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _emitChange(self, signal, key=None, value=None):$/;"	m	language:Python	class:Project
+_ensureAudioRestrictions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureAudioRestrictions(self):$/;"	m	language:Python	class:Project
+_ensureLayer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureLayer(self):$/;"	m	language:Python	class:Project
+_ensureTracks	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureTracks(self):$/;"	m	language:Python	class:Project
+_ensureVideoRestrictions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureVideoRestrictions(self):$/;"	m	language:Python	class:Project
+_entryActivateCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _entryActivateCb(self, unused_entry):$/;"	m	language:Python	class:ViewerContainer
+_errorCreatingAssetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _errorCreatingAssetCb(self, unused_project, error, id, type):$/;"	m	language:Python	class:MediaLibraryWidget
+_errorDialogBoxCloseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _errorDialogBoxCloseCb(self, dialog):$/;"	m	language:Python	class:MediaLibraryWidget
+_errorDialogBoxResponseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _errorDialogBoxResponseCb(self, dialog, unused_response):$/;"	m	language:Python	class:MediaLibraryWidget
+_expandedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _expandedCb(self, expander, params):$/;"	m	language:Python	class:EffectProperties
+_expandedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _expandedCb(self, expander, params):$/;"	m	language:Python	class:TransformationProperties
+_exportProjectAsTarCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _exportProjectAsTarCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_externalWindowConfigureCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _externalWindowConfigureCb(self, unused_window, event):$/;"	m	language:Python	class:ViewerContainer
+_externalWindowDeleteCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _externalWindowDeleteCb(self, unused_window, unused_event):$/;"	m	language:Python	class:ViewerContainer
+_factory_formats	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    _factory_formats = {}$/;"	v	language:Python	class:RenderDialog
+_fillPresetsTreeview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _fillPresetsTreeview(self, treeview, mgr, update_buttons_func):$/;"	m	language:Python	class:ProjectSettingsDialog
+_fillPresetsTreeview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _fillPresetsTreeview(self, treeview, mgr, update_buttons_func):$/;"	m	language:Python	class:RenderDialog
+_findCompatibleEncoders	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _findCompatibleEncoders(self, encoders, muxer, muxsinkcaps=[]):$/;"	m	language:Python	class:CachedEncoderList
+_findEffect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _findEffect(self, name):$/;"	m	language:Python	class:TransformationProperties
+_findOrCreateEffect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _findOrCreateEffect(self, name):$/;"	m	language:Python	class:TransformationProperties
+_flushPipeLineCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _flushPipeLineCb(self, widget):$/;"	m	language:Python	class:TransformationProperties
+_fontButtonCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _fontButtonCb(self, widget):$/;"	m	language:Python	class:TitleEditor
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, module):$/;"	m	language:Python	class:CairoDependency
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, module):$/;"	m	language:Python	class:Dependency
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, module):$/;"	m	language:Python	class:GICheck
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, module):$/;"	m	language:Python	class:GstDependency
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, module):$/;"	m	language:Python	class:GtkDependency
+_format_version	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _format_version(self, plugin):$/;"	m	language:Python	class:GstPluginDependency
+_forwardCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _forwardCb(self, unused_button):$/;"	m	language:Python	class:ViewerContainer
+_frameRateComboChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _frameRateComboChangedCb(self, combo):$/;"	m	language:Python	class:RenderDialog
+_frontTextColorButtonCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _frontTextColorButtonCb(self, widget):$/;"	m	language:Python	class:TitleEditor
+_generateThumbnails	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _generateThumbnails(self, uri):$/;"	m	language:Python	class:MediaLibraryWidget
+_generateThumbnailsThread	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _generateThumbnailsThread(self, missing_thumbs):$/;"	m	language:Python	class:MediaLibraryWidget
+_getAndConnectToEffect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _getAndConnectToEffect(self, widget_name, property_name):$/;"	m	language:Python	class:TransformationProperties
+_getElementFactoryName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _getElementFactoryName(self, elements, profile):$/;"	m	language:Python	class:Project
+_getFilesizeEstimate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _getFilesizeEstimate(self):$/;"	m	language:Python	class:RenderDialog
+_getIcon	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _getIcon(self, iconname, alternate=None, size=48):$/;"	m	language:Python	class:MediaLibraryWidget
+_getProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _getProject(self):$/;"	m	language:Python	class:ClipProperties
+_getSelectedPathsIconView	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _getSelectedPathsIconView(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_getSelectedPathsTreeView	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _getSelectedPathsTreeView(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_getThumbnailer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _getThumbnailer():$/;"	m	language:Python	class:MediaLibraryWidget
+_getThumbnailInDir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _getThumbnailInDir(self, dir, hash):$/;"	m	language:Python	class:MediaLibraryWidget
+_getTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _getTimeline(self):$/;"	m	language:Python	class:ClipProperties
+_getTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _getTimeline(self):$/;"	m	language:Python	class:EffectProperties
+_getTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _getTimeline(self):$/;"	m	language:Python	class:TransformationProperties
+_getUniquePresetName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _getUniquePresetName(mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_getUniquePresetName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _getUniquePresetName(mgr):$/;"	m	language:Python	class:RenderDialog
+_goToEndCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _goToEndCb(self, unused_button):$/;"	m	language:Python	class:ViewerContainer
+_goToStartCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _goToStartCb(self, unused_button):$/;"	m	language:Python	class:ViewerContainer
+_handle_asset_loaded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _handle_asset_loaded(self, asset=None, unused_asset_id=None):$/;"	m	language:Python	class:Project
+_hidePresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _hidePresetManagerError(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_hidePresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _hidePresetManagerError(self, mgr):$/;"	m	language:Python	class:RenderDialog
+_iconViewButtonPressEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _iconViewButtonPressEventCb(self, iconview, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_iconViewButtonReleaseEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _iconViewButtonReleaseEventCb(self, iconview, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_importSourcesCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _importSourcesCb(self, unused_action):$/;"	m	language:Python	class:MediaLibraryWidget
+_initButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _initButtons(self):$/;"	m	language:Python	class:TransformationProperties
+_initializeComboboxModels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _initializeComboboxModels(self):$/;"	m	language:Python	class:RenderDialog
+_insertEndCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _insertEndCb(self, unused_action):$/;"	m	language:Python	class:MediaLibraryWidget
+_installPlugins	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _installPlugins(self, details, missingPluginsCallback):$/;"	m	language:Python	class:PitiviMainWindow
+_instance	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    _instance = None$/;"	v	language:Python	class:CachedEncoderList
+_isValidateScenario	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _isValidateScenario(self, uri):$/;"	m	language:Python	class:ProjectManager
+_itemOrRowActivatedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _itemOrRowActivatedCb(self, unused_view, path, *unused_column):$/;"	m	language:Python	class:MediaLibraryWidget
+_keyPressCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _keyPressCb(self, unused_widget, event):$/;"	m	language:Python	class:PreviewAssetWindow
+_leavePreviewCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _leavePreviewCb(self, window, unused):$/;"	m	language:Python	class:PreviewAssetWindow
+_makeBackupURI	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _makeBackupURI(self, uri):$/;"	m	language:Python	class:ProjectManager
+_maybePlayFinishedSound	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _maybePlayFinishedSound():$/;"	m	language:Python	class:RenderDialog
+_mediaLibraryPlayCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _mediaLibraryPlayCb(self, unused_medialibrary, asset):$/;"	m	language:Python	class:PitiviMainWindow
+_mediaLibrarySourceRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _mediaLibrarySourceRemovedCb(self, unused_project, asset):$/;"	m	language:Python	class:PitiviMainWindow
+_menuCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _menuCb(self, unused_action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_missingURICb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _missingURICb(self, project, error, asset):$/;"	m	language:Python	class:ProjectManager
+_muxerComboChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _muxerComboChangedCb(self, muxer_combo):$/;"	m	language:Python	class:RenderDialog
+_newPresetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _newPresetCb(self, unused_model, path, unused_iter_, column, renderer, treeview):$/;"	m	language:Python	class:ProjectSettingsDialog
+_newPresetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _newPresetCb(self, unused_model, path, unused_iter_, column, renderer, treeview):$/;"	m	language:Python	class:RenderDialog
+_newProjectCreatedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _newProjectCreatedCb(self, unused_app, project):$/;"	m	language:Python	class:MediaLibraryWidget
+_newProjectFailedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _newProjectFailedCb(self, unused_pitivi, unused_reason, unused_uri):$/;"	m	language:Python	class:MediaLibraryWidget
+_newProjectLoaded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _newProjectLoaded(self, unused_project_manager, project, unused_fully_loaded):$/;"	m	language:Python	class:Pitivi
+_newProjectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _newProjectLoadedCb(self, app, project, unused_fully_loaded):$/;"	m	language:Python	class:EffectProperties
+_newProjectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _newProjectLoadedCb(self, unused_app, project, unused_fully_ready):$/;"	m	language:Python	class:MediaLibraryWidget
+_newProjectLoadingCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _newProjectLoadingCb(self, unused_project_manager, uri):$/;"	m	language:Python	class:Pitivi
+_newProjectMenuCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _newProjectMenuCb(self, unused_action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_okButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _okButtonClickedCb(self, unused_button, settings_attr):$/;"	m	language:Python	class:RenderDialog
+_onValueChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _onValueChangedCb(self, spinbtn, prop):$/;"	m	language:Python	class:TransformationProperties
+_on_b_details_clicked_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _on_b_details_clicked_cb(self, unused_button):$/;"	m	language:Python	class:PreviewWidget
+_on_motion_notify_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _on_motion_notify_cb(self, widget, event):$/;"	m	language:Python	class:PreviewWidget
+_on_seeker_press_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _on_seeker_press_cb(self, widget, event):$/;"	m	language:Python	class:PreviewWidget
+_on_start_stop_clicked_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _on_start_stop_clicked_cb(self, button):$/;"	m	language:Python	class:PreviewWidget
+_on_zoom_clicked_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _on_zoom_clicked_cb(self, button, increment):$/;"	m	language:Python	class:PreviewWidget
+_openProjectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _openProjectCb(self, unused_action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_pauseButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _pauseButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderingProgressDialog
+_pauseRender	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _pauseRender(self, unused_progress):$/;"	m	language:Python	class:RenderDialog
+_pipelineDied	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _pipelineDied(self, unused_pipeline):$/;"	m	language:Python	class:ProjectManager
+_pipelineEosCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _pipelineEosCb(self, unused_pipeline):$/;"	m	language:Python	class:PreviewWidget
+_pipelineErrorCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _pipelineErrorCb(self, unused_message, unused_detail):$/;"	m	language:Python	class:PreviewWidget
+_pipelineStateChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _pipelineStateChangedCb(self, unused_pipeline, state, old_state):$/;"	m	language:Python	class:ViewerContainer
+_playButtonCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _playButtonCb(self, unused_button, unused_playing):$/;"	m	language:Python	class:ViewerContainer
+_playRenderedFileButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _playRenderedFileButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderingProgressDialog
+_positionCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _positionCb(self, unused_pipeline, position):$/;"	m	language:Python	class:ViewerContainer
+_prefsCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _prefsCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_presetChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetChangedCb(self, selection, mgr, update_preset_buttons_func):$/;"	m	language:Python	class:ProjectSettingsDialog
+_presetChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _presetChangedCb(self, selection, mgr, update_preset_buttons_func):$/;"	m	language:Python	class:RenderDialog
+_presetNameEditedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetNameEditedCb(self, unused_renderer, path, new_text, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_presetNameEditedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _presetNameEditedCb(self, unused_renderer, path, new_text, mgr):$/;"	m	language:Python	class:RenderDialog
+_presetNameEditingStartedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetNameEditingStartedCb(self, unused_renderer, unused_editable, unused_path, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_presetNameEditingStartedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _presetNameEditingStartedCb(self, unused_renderer, unused_editable, unused_path, mgr):$/;"	m	language:Python	class:RenderDialog
+_projectChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectChangedCb(self, unused_project):$/;"	m	language:Python	class:PitiviMainWindow
+_projectChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _projectChangedCb(self, project):$/;"	m	language:Python	class:ProjectManager
+_projectClosed	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _projectClosed(self, unused_project_manager, project):$/;"	m	language:Python	class:Pitivi
+_projectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _projectLoadedCb(self, unused_project, unused_timeline):$/;"	m	language:Python	class:ProjectManager
+_projectManagerClosingProjectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerClosingProjectCb(self, project_manager, project):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerMissingUriCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerMissingUriCb(self, unused_project_manager, project, unused_error, asset):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerNewProjectFailedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerNewProjectFailedCb(self, unused_project_manager, uri, exception):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerNewProjectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerNewProjectLoadedCb(self, project_manager, project, unused_fully_loaded):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerNewProjectLoadingCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerNewProjectLoadingCb(self, unused_project_manager, uri):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerProjectClosedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerProjectClosedCb(self, unused_project_manager, project):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerProjectSavedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerProjectSavedCb(self, unused_project_manager, project, uri):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerRevertingToSavedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerRevertingToSavedCb(self, unused_project_manager, unused_project):$/;"	m	language:Python	class:PitiviMainWindow
+_projectManagerSaveProjectFailedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectManagerSaveProjectFailedCb(self, unused_project_manager, uri, exception=None):$/;"	m	language:Python	class:PitiviMainWindow
+_projectSettingsButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _projectSettingsButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_projectSettingsCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _projectSettingsCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_propertyChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _propertyChangedCb(self, source, unused_gstelement, pspec):$/;"	m	language:Python	class:TitleEditor
+_quitCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _quitCb(self, unused_action, unused_param):$/;"	m	language:Python	class:Pitivi
+_redoCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _redoCb(self, unused_action, unused_param):$/;"	m	language:Python	class:Pitivi
+_registryFeatureAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _registryFeatureAddedCb(self, registry, feature):$/;"	m	language:Python	class:CachedEncoderList
+_removeAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _removeAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_removeClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _removeClickedCb(self, unused_widget=None):$/;"	m	language:Python	class:MediaLibraryWidget
+_removeEffect	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _removeEffect(self, effect):$/;"	m	language:Python	class:EffectProperties
+_removeEffectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _removeEffectCb(self, toolbutton):$/;"	m	language:Python	class:EffectProperties
+_removeEffectConfigurationWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _removeEffectConfigurationWidget(self):$/;"	m	language:Python	class:EffectProperties
+_removeRenderPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _removeRenderPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_removeSources	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _removeSources(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_removeSourcesCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _removeSourcesCb(self, unused_action):$/;"	m	language:Python	class:MediaLibraryWidget
+_removeVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _removeVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_renderButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _renderButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_renderCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _renderCb(self, unused_button):$/;"	m	language:Python	class:PitiviMainWindow
+_renderDialogDestroyCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _renderDialogDestroyCb(self, unused_dialog):$/;"	m	language:Python	class:PitiviMainWindow
+_renderingSettingsChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _renderingSettingsChangedCb(self, project, unused_item=None, unused_value=None):$/;"	m	language:Python	class:PitiviMainWindow
+_resetErrorList	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _resetErrorList(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_responseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _responseCb(self, unused_widget, response):$/;"	m	language:Python	class:ProjectSettingsDialog
+_restoreFromBackupDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _restoreFromBackupDialog(self, time_diff):$/;"	m	language:Python	class:ProjectManager
+_revertToSavedProjectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _revertToSavedProjectCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_rowUnderMouseSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _rowUnderMouseSelected(self, view, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_sampleRateComboChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _sampleRateComboChangedCb(self, combo):$/;"	m	language:Python	class:RenderDialog
+_saveAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_saveBackupCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveBackupCb(self, unused_project, unused_uri):$/;"	m	language:Python	class:ProjectManager
+_saveProjectAsCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _saveProjectAsCb(self, unused_action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_saveProjectCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _saveProjectCb(self, action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_saveRenderPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _saveRenderPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_saveVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_saveWindowSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _saveWindowSettings(self):$/;"	m	language:Python	class:PitiviMainWindow
+_scaleSpinbuttonChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _scaleSpinbuttonChangedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_scenarioDoneCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _scenarioDoneCb(self, scenario):$/;"	m	language:Python	class:Project
+_screenshotCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _screenshotCb(self, unused_action):$/;"	m	language:Python	class:PitiviMainWindow
+_searchEntryChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _searchEntryChangedCb(self, entry):$/;"	m	language:Python	class:MediaLibraryWidget
+_searchEntryIconClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _searchEntryIconClickedCb(self, entry, icon_pos, unused_event):$/;"	m	language:Python	class:MediaLibraryWidget
+_seekFromTimecodeWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _seekFromTimecodeWidget(self):$/;"	m	language:Python	class:ViewerContainer
+_selectDarRadiobuttonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _selectDarRadiobuttonToggledCb(self, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_selectionChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _selectionChangedCb(self, selection,):$/;"	m	language:Python	class:EffectProperties
+_selectionChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _selectionChangedCb(self, timeline):$/;"	m	language:Python	class:TransformationProperties
+_selectLastImportedUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _selectLastImportedUris(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_selectSources	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _selectSources(self, sources_uris):$/;"	m	language:Python	class:MediaLibraryWidget
+_selectUnusedSources	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _selectUnusedSources(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_setChildProperty	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _setChildProperty(self, name, value):$/;"	m	language:Python	class:TitleEditor
+_setClipView	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _setClipView(self, view_type):$/;"	m	language:Python	class:MediaLibraryWidget
+_setDefaultPositions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _setDefaultPositions(self):$/;"	m	language:Python	class:PitiviMainWindow
+_setEffectDragable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _setEffectDragable(self):$/;"	m	language:Python	class:EffectProperties
+_setProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _setProject(self, project):$/;"	m	language:Python	class:ClipProperties
+_setProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _setProject(self, project):$/;"	m	language:Python	class:PitiviMainWindow
+_setRowVisible	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _setRowVisible(self, model, iter, data):$/;"	m	language:Python	class:MediaLibraryWidget
+_setScenarioFile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _setScenarioFile(self, uri):$/;"	m	language:Python	class:Pitivi
+_setTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _setTimeline(self, timeline):$/;"	m	language:Python	class:ClipProperties
+_setTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _setTimeline(self, timeline):$/;"	m	language:Python	class:EffectProperties
+_setTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _setTimeline(self, timeline):$/;"	m	language:Python	class:TransformationProperties
+_settingsChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _settingsChanged(self, unused_project, unused_key, unused_value):$/;"	m	language:Python	class:RenderDialog
+_settingsChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _settingsChangedCb(self, project, item, value):$/;"	m	language:Python	class:ProjectLogObserver
+_setUiActive	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _setUiActive(self, active=True):$/;"	m	language:Python	class:ViewerContainer
+_setupUiConstraints	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _setupUiConstraints(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_setupViewAsDragAndDropSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _setupViewAsDragAndDropSource(self, view):$/;"	m	language:Python	class:MediaLibraryWidget
+_setWidgetText	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _setWidgetText(self):$/;"	m	language:Python	class:TitleEditor
+_set_keyboard_shortcuts	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _set_keyboard_shortcuts(self):$/;"	m	language:Python	class:PitiviMainWindow
+_set_restriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _set_restriction(profile, name, value):$/;"	m	language:Python	class:Project
+_showEffectConfigurationWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _showEffectConfigurationWidget(self, effect):$/;"	m	language:Python	class:EffectProperties
+_showExportDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _showExportDialog(self, project):$/;"	m	language:Python	class:PitiviMainWindow
+_showPresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _showPresetManagerError(self, mgr, error_markup):$/;"	m	language:Python	class:ProjectSettingsDialog
+_showPresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _showPresetManagerError(self, mgr, error_markup):$/;"	m	language:Python	class:RenderDialog
+_showRenderErrorDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _showRenderErrorDialog(self, error, unused_details):$/;"	m	language:Python	class:RenderDialog
+_showSaveAsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _showSaveAsDialog(self):$/;"	m	language:Python	class:PitiviMainWindow
+_showSaveScreenshotDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _showSaveScreenshotDialog(self):$/;"	m	language:Python	class:PitiviMainWindow
+_shutDown	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _shutDown(self):$/;"	m	language:Python	class:RenderDialog
+_sizeCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _sizeCb(self, unused_widget, unused_area):$/;"	m	language:Python	class:ViewerWidget
+_sourceIsUsed	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _sourceIsUsed(self, asset):$/;"	m	language:Python	class:MediaLibraryWidget
+_sourceListMissingPluginsCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _sourceListMissingPluginsCb($/;"	m	language:Python	class:PitiviMainWindow
+_sourcesStartedImportingCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _sourcesStartedImportingCb(self, project):$/;"	m	language:Python	class:MediaLibraryWidget
+_sourcesStoppedImportingCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _sourcesStoppedImportingCb(self, unused_project):$/;"	m	language:Python	class:MediaLibraryWidget
+_startupCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _startupCb(self, unused_app):$/;"	m	language:Python	class:Pitivi
+_string_to_list	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def _string_to_list(version):$/;"	f	language:Python
+_syncDoUndo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _syncDoUndo(self, action_log):$/;"	m	language:Python	class:Pitivi
+_tag_found_cb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _tag_found_cb(self, abus, mess):$/;"	m	language:Python	class:PreviewWidget
+_textChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _textChangedCb(self, unused_updated_obj):$/;"	m	language:Python	class:TitleEditor
+_timelineDurationChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _timelineDurationChangedCb(self, timeline, unused_duration):$/;"	m	language:Python	class:PitiviMainWindow
+_toggleFullscreen	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def _toggleFullscreen(self, widget):$/;"	m	language:Python	class:ViewerContainer
+_toggleViewTypeCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _toggleViewTypeCb(self, widget):$/;"	m	language:Python	class:MediaLibraryWidget
+_trackElementAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _trackElementAddedCb(self, unused_clip, track_element):$/;"	m	language:Python	class:EffectProperties
+_trackElementRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _trackElementRemovedCb(self, unused_clip, track_element):$/;"	m	language:Python	class:EffectProperties
+_treeViewButtonPressEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _treeViewButtonPressEventCb(self, treeview, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_treeViewButtonReleaseEventCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _treeViewButtonReleaseEventCb(self, unused_treeview, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_treeviewDefocusedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _treeviewDefocusedCb(self, unused_widget, unused_event, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_treeviewDefocusedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _treeviewDefocusedCb(self, unused_widget, unused_event, mgr):$/;"	m	language:Python	class:RenderDialog
+_treeViewQueryTooltipCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _treeViewQueryTooltipCb(self, view, x, y, keyboard_mode, tooltip):$/;"	m	language:Python	class:EffectProperties
+_treeviewSelectionChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _treeviewSelectionChangedCb(self, treeview):$/;"	m	language:Python	class:EffectProperties
+_tryUsingBackupFile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _tryUsingBackupFile(self, uri):$/;"	m	language:Python	class:ProjectManager
+_try_importing_component	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _try_importing_component(self):$/;"	m	language:Python	class:ClassicDependency
+_try_importing_component	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _try_importing_component(self):$/;"	m	language:Python	class:Dependency
+_try_importing_component	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _try_importing_component(self):$/;"	m	language:Python	class:GIDependency
+_try_importing_component	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def _try_importing_component(self):$/;"	m	language:Python	class:GstPluginDependency
+_undoCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _undoCb(self, unused_action, unused_param):$/;"	m	language:Python	class:Pitivi
+_updateAudioPresetButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateAudioPresetButtons(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateAudioSaveButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateAudioSaveButton(self, unused_in, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateBoxVisibility	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _updateBoxVisibility(self):$/;"	m	language:Python	class:TransformationProperties
+_updateCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateCombo(self, unused, combo, fraction):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateDraggedPaths	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _updateDraggedPaths(self, view, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_updateEffectConfigUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _updateEffectConfigUi(self):$/;"	m	language:Python	class:EffectProperties
+_updateEncoderCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updateEncoderCombo(self, encoder_combo, preferred_encoder):$/;"	m	language:Python	class:RenderDialog
+_updateFilesizeEstimateCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updateFilesizeEstimateCb(self):$/;"	m	language:Python	class:RenderDialog
+_updateFraction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateFraction(self, unused, fraction, combo):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateFromSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _updateFromSource(self):$/;"	m	language:Python	class:TitleEditor
+_updatePositionCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updatePositionCb(self, unused_pipeline, position):$/;"	m	language:Python	class:RenderDialog
+_updateProgressbar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _updateProgressbar(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_updateRenderPresetButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updateRenderPresetButtons(self):$/;"	m	language:Python	class:RenderDialog
+_updateRenderSaveButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updateRenderSaveButton(self, unused_in, button):$/;"	m	language:Python	class:RenderDialog
+_updateSar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateSar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def _updateSource(self, updated_obj):$/;"	m	language:Python	class:TitleEditor
+_updateSpinButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _updateSpinButtons(self):$/;"	m	language:Python	class:TransformationProperties
+_updateTimeEstimateCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _updateTimeEstimateCb(self):$/;"	m	language:Python	class:RenderDialog
+_updateTreeview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _updateTreeview(self):$/;"	m	language:Python	class:EffectProperties
+_updateVideoPresetButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateVideoPresetButtons(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateVideoSaveButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateVideoSaveButton(self, unused_in, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_update_position	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def _update_position(self, *unused_args):$/;"	m	language:Python	class:PreviewWidget
+_userManualCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def _userManualCb(self, unused_action, unused_param):$/;"	m	language:Python	class:PitiviMainWindow
+_vcontentNotifyCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _vcontentNotifyCb(self, paned, gparamspec):$/;"	m	language:Python	class:EffectProperties
+_versionInfoReceivedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def _versionInfoReceivedCb(self, giofile, result, user_data):$/;"	m	language:Python	class:Pitivi
+_version_to_string	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^def _version_to_string(version):$/;"	f	language:Python
+_videoEncoderComboChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _videoEncoderComboChangedCb(self, combo):$/;"	m	language:Python	class:RenderDialog
+_videoOutputCheckbuttonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _videoOutputCheckbuttonToggledCb(self, unused_video):$/;"	m	language:Python	class:RenderDialog
+_videoSettingsButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def _videoSettingsButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:RenderDialog
+_viewErrorsButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewErrorsButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewGetFirstSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewGetFirstSelected(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewGetPathAtPos	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewGetPathAtPos(self, event):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewHasSelection	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewHasSelection(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewSelectionChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewSelectionChangedCb(self, unused):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewSelectPath	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewSelectPath(self, path):$/;"	m	language:Python	class:MediaLibraryWidget
+_viewUnselectAll	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _viewUnselectAll(self):$/;"	m	language:Python	class:MediaLibraryWidget
+_warningInfoBarDismissedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def _warningInfoBarDismissedCb(self, unused_button):$/;"	m	language:Python	class:MediaLibraryWidget
+_zoomViewerCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def _zoomViewerCb(self, scale):$/;"	m	language:Python	class:TransformationProperties
+__bool__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def __bool__(self):$/;"	m	language:Python	class:Dependency	file:
+__countRemainingFilesToImport	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = self.__countRemainingFilesToImport()$/;"	i	language:Python
+__countRemainingFilesToImport	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __countRemainingFilesToImport(self):$/;"	m	language:Python	class:Project	file:
+__createNewViewer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __createNewViewer(self):$/;"	m	language:Python	class:ViewerContainer	file:
+__get_best_size	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def __get_best_size(self, width_in, height_in):$/;"	m	language:Python	class:PreviewWidget	file:
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Pitivi
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    __gsignals__ = {$/;"	v	language:Python	class:MediaLibraryWidget
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Project
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    __gsignals__ = {$/;"	v	language:Python	class:ProjectManager
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    __gsignals__ = {$/;"	v	language:Python	class:RenderingProgressDialog
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    __gsignals__ = {$/;"	v	language:Python	class:PlayPauseButton
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    __gsignals__ = {$/;"	v	language:Python	class:ViewerContainer
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    __gsignals__ = {}$/;"	v	language:Python	class:ViewerWidget
+__gtype_name__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    __gtype_name__ = 'ViewerContainer'$/;"	v	language:Python	class:ViewerContainer
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/application.py	/^    def __init__(self):$/;"	m	language:Python	class:Pitivi
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def __init__(self, modulename, version_required_string=None, additional_message=None):$/;"	m	language:Python	class:Dependency
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def __init__(self, version_required_string):$/;"	m	language:Python	class:CairoDependency
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def __init__(self, version_required_string):$/;"	m	language:Python	class:GICheck
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^            def __init__(self, *args):$/;"	m	language:Python	class:EffectProperties.__init__.EffectsListStore
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def __init__(self, app):$/;"	m	language:Python	class:ClipProperties
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def __init__(self, app, action_log):$/;"	m	language:Python	class:TransformationProperties
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    def __init__(self, app, effects_properties_manager, clip_properties):$/;"	m	language:Python	class:EffectProperties
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def __init__(self, app):$/;"	m	language:Python	class:PitiviMainWindow
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mainwindow.py	/^    def __init__(self, asset, main_window):$/;"	m	language:Python	class:PreviewAssetWindow
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/mediafilespreviewer.py	/^    def __init__(self, settings, minimal=False):$/;"	m	language:Python	class:PreviewWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/medialibrary.py	/^    def __init__(self, app, uiman):$/;"	m	language:Python	class:MediaLibraryWidget
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, app):$/;"	m	language:Python	class:ProjectManager
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, app, name="", uri=None, scenario=None, **unused_kwargs):$/;"	m	language:Python	class:Project
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, log):$/;"	m	language:Python	class:ProjectLogObserver
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, parent_window, project):$/;"	m	language:Python	class:ProjectSettingsDialog
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, asset):$/;"	m	language:Python	class:AssetAddedAction
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, asset):$/;"	m	language:Python	class:AssetRemovedAction
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, old, new):$/;"	m	language:Python	class:ProjectSettingsChanged
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def __init__(self, app, parent):$/;"	m	language:Python	class:RenderingProgressDialog
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def __init__(self, app, project, timeline_ui):$/;"	m	language:Python	class:RenderDialog
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/titleeditor.py	/^    def __init__(self, app):$/;"	m	language:Python	class:TitleEditor
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __init__(self):$/;"	m	language:Python	class:PlayPauseButton
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __init__(self, app):$/;"	m	language:Python	class:TransformationBox
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __init__(self, app):$/;"	m	language:Python	class:ViewerContainer
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __init__(self, sink, app=None):$/;"	m	language:Python	class:ViewerWidget
+__new__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/render.py	/^    def __new__(cls, *args, **kwargs):$/;"	m	language:Python	class:CachedEncoderList	file:
+__repr__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/check.py	/^    def __repr__(self):$/;"	m	language:Python	class:Dependency	file:
+__setAudioRestriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __setAudioRestriction(self, name, value):$/;"	m	language:Python	class:Project	file:
+__setupEditSource	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/viewer.py	/^    def __setupEditSource(self):$/;"	m	language:Python	class:TransformationBox	file:
+__signals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/clipproperties.py	/^    __signals__ = {$/;"	v	language:Python	class:TransformationProperties

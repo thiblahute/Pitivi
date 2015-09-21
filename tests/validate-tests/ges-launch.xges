@@ -1,0 +1,21 @@
+<ges version='0.1'>
+  <project properties='properties;' metadatas='metadatas;'>
+    <encoding-profiles>
+    </encoding-profiles>
+    <ressources>
+      <asset id='file:///home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/samples/30fps_numeroted_frames_red.mkv' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)2500000000;' metadatas='metadatas;' />
+    </ressources>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)0;' metadatas='metadatas, duration=(guint64)2000000000;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;NULL&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ format\=\(string\)S32LE\,\ channels\=\(int\)2\,\ rate\=\(int\)44100\,\ layout\=\(string\)interleaved&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <layer priority='0' properties='properties, auto-transition=(boolean)false;' metadatas='metadatas, volume=(float)1;'>
+        <clip id='0' asset-id='file:///home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/tests/samples/30fps_numeroted_frames_red.mkv' type-name='GESUriClip' layer-priority='0' track-types='4' start='500000000' duration='1500000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip0, mute=(boolean)false, is-image=(boolean)false;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)0, posx=(int)0, posy=(int)0, width=(int)0;'>
+          </source>
+        </clip>
+      </layer>
+      <groups>
+      </groups>
+    </timeline>
+</project>
+</ges>
