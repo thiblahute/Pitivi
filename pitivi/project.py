@@ -596,7 +596,6 @@ class ProjectManager(GObject.Object, Loggable):
         project.author = getpwuid(os.getuid()).pw_gecos.split(",")[0]
 
         project.createTimeline()
-        project._ensureTracks()
         project.update_restriction_caps()
         self.current_project = project
         self.emit("new-project-created", project)
@@ -1060,8 +1059,8 @@ class Project(Loggable, GES.Project):
         """ vmethod, get called on "loaded" """
 
         self._ensureTracks()
+        self._ensureLayer()
         self.timeline.props.auto_transition = True
-        # self._ensureLayer()
         if self.scenario is not None:
             return
 
