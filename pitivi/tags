@@ -1,0 +1,214 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+acodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def acodecsettings(self):$/;"	m	language:Python	class:Project
+acodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def acodecsettings(self, value):$/;"	m	language:Python	class:Project
+addUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def addUris(self, uris):$/;"	m	language:Python	class:Project
+aencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def aencoder(self):$/;"	m	language:Python	class:Project
+aencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def aencoder(self, value):$/;"	m	language:Python	class:Project
+and	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        if self.nb_remaining_file_to_import == 0 and nb_remaining_file_to_import:$/;"	i	language:Python
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:AssetAddedAction
+asScenarioAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def asScenarioAction(self):$/;"	m	language:Python	class:AssetRemovedAction
+AssetAddedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class AssetAddedAction(UndoableAction):$/;"	c	language:Python
+AssetRemovedAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class AssetRemovedAction(UndoableAction):$/;"	c	language:Python
+assetsForUris	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def assetsForUris(self, uris):$/;"	m	language:Python	class:Project
+at_least_one_asset_missing	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def at_least_one_asset_missing(self):$/;"	m	language:Python	class:Project
+at_least_one_asset_missing	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def at_least_one_asset_missing(self, value):$/;"	m	language:Python	class:Project
+audiochannels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiochannels(self):$/;"	m	language:Python	class:Project
+audiochannels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiochannels(self, value):$/;"	m	language:Python	class:Project
+AudioPresetManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+audiorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiorate(self):$/;"	m	language:Python	class:Project
+audiorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def audiorate(self, value):$/;"	m	language:Python	class:Project
+audio_channels	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+audio_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+author	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def author(self):$/;"	m	language:Python	class:Project
+author	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def author(self, author):$/;"	m	language:Python	class:Project
+beautify_time_delta	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+bindCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindCombo(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindFractionWidget(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindPar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindPar(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+bindSpinbutton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def bindSpinbutton(self, mgr, name, widget):$/;"	m	language:Python	class:ProjectSettingsDialog
+CachedEncoderList	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.render import CachedEncoderList$/;"	i	language:Python
+closeRunningProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def closeRunningProject(self):$/;"	m	language:Python	class:ProjectManager
+containersettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def containersettings(self):$/;"	m	language:Python	class:Project
+containersettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def containersettings(self, value):$/;"	m	language:Python	class:Project
+createAudioNoPreset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createAudioNoPreset(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+createTimeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createTimeline(self):$/;"	m	language:Python	class:Project
+createVideoNoPreset	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def createVideoNoPreset(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+create_monitor	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.validate import has_validate, create_monitor$/;"	i	language:Python
+darSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def darSelected(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+datetime	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from datetime import datetime$/;"	i	language:Python
+DEFAULT_AUDIO_ENCODER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_AUDIO_ENCODER = "vorbisenc"$/;"	v	language:Python
+DEFAULT_MUXER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_MUXER = "oggmux"$/;"	v	language:Python
+DEFAULT_VIDEO_ENCODER	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^DEFAULT_VIDEO_ENCODER = "theoraenc"$/;"	v	language:Python
+description	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def description(self):$/;"	m	language:Python	class:Project
+description	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def description(self, description):$/;"	m	language:Python	class:Project
+display_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:AssetAddedAction
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:AssetRemovedAction
+do	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do(self):$/;"	m	language:Python	class:ProjectSettingsChanged
+do_asset_added	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_asset_added(self, asset):$/;"	m	language:Python	class:Project
+do_loaded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_loaded(self, unused_timeline):$/;"	m	language:Python	class:Project
+do_loading_error	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def do_loading_error(self, unused_error, asset_id, unused_type):$/;"	m	language:Python	class:Project
+DuplicatePresetNameException	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+exportProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def exportProject(self, project, uri):$/;"	m	language:Python	class:ProjectManager
+FractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.widgets import FractionWidget$/;"	i	language:Python
+frame_rates	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+GES	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GES$/;"	i	language:Python
+getAudioCaps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getAudioCaps(self):$/;"	m	language:Python	class:Project
+getDAR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getDAR(self):$/;"	m	language:Python	class:Project
+getpwuid	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pwd import getpwuid$/;"	i	language:Python
+getSAR	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getSAR(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+getVideoCaps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getVideoCaps(self, render=False):$/;"	m	language:Python	class:Project
+getVideoWidthAndHeight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def getVideoWidthAndHeight(self, render=False):$/;"	m	language:Python	class:Project
+get_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+get_ui_dir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.configure import get_ui_dir$/;"	i	language:Python
+GLib	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GLib$/;"	i	language:Python
+GObject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GObject$/;"	i	language:Python
+Gst	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import Gst$/;"	i	language:Python
+GstPbutils	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import GstPbutils$/;"	i	language:Python
+GstValidate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        from gi.repository import GstValidate$/;"	i	language:Python
+Gtk	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gi.repository import Gtk$/;"	i	language:Python
+hasUnsavedModifications	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def hasUnsavedModifications(self):$/;"	m	language:Python	class:Project
+has_validate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.validate import has_validate, create_monitor$/;"	i	language:Python
+isWritable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+listSources	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def listSources(self):$/;"	m	language:Python	class:Project
+loadProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def loadProject(self, uri):$/;"	m	language:Python	class:ProjectManager
+Loggable	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.loggable import Loggable$/;"	i	language:Python
+muxer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def muxer(self):$/;"	m	language:Python	class:Project
+muxer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def muxer(self, value):$/;"	m	language:Python	class:Project
+name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def name(self):$/;"	m	language:Python	class:Project
+name	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def name(self, name):$/;"	m	language:Python	class:Project
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^            self.nb_remaining_file_to_import = nb_remaining_file_to_import$/;"	i	language:Python
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        if self.nb_remaining_file_to_import == 0 and nb_remaining_file_to_import:$/;"	i	language:Python
+nb_remaining_file_to_import	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = nb_remaining_file_to_import$/;"	i	language:Python
+newBlankProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def newBlankProject(self, emission=True, ignore_unsaved_changes=False):$/;"	m	language:Python	class:ProjectManager
+os	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^import os$/;"	i	language:Python
+parSelected	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def parSelected(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+path_from_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+Pipeline	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import Pipeline$/;"	i	language:Python
+PipelineError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import PipelineError, Seeker$/;"	i	language:Python
+pixel_aspect_ratios	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+Project	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class Project(Loggable, GES.Project):$/;"	c	language:Python
+ProjectLogObserver	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectLogObserver(UndoableAction):$/;"	c	language:Python
+ProjectManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectManager(GObject.Object, Loggable):$/;"	c	language:Python
+ProjectSettingsChanged	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectSettingsChanged(UndoableAction):$/;"	c	language:Python
+ProjectSettingsDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^class ProjectSettingsDialog():$/;"	c	language:Python
+quote_uri	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+release	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def release(self):$/;"	m	language:Python	class:Project
+render_scale	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def render_scale(self):$/;"	m	language:Python	class:Project
+render_scale	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def render_scale(self, value):$/;"	m	language:Python	class:Project
+revertToSavedProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def revertToSavedProject(self):$/;"	m	language:Python	class:ProjectManager
+RippleUpdateGroup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.ripple_update_group import RippleUpdateGroup$/;"	i	language:Python
+saveProject	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def saveProject(self, uri=None, formatter_type=None, backup=False):$/;"	m	language:Python	class:ProjectManager
+Seeker	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.pipeline import PipelineError, Seeker$/;"	i	language:Python
+self	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = self.__countRemainingFilesToImport()$/;"	i	language:Python
+setAudioProperties	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setAudioProperties(self, nbchanns=-1, rate=-1):$/;"	m	language:Python	class:Project
+setEncoders	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setEncoders(self, muxer="", vencoder="", aencoder=""):$/;"	m	language:Python	class:Project
+setModificationState	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setModificationState(self, state):$/;"	m	language:Python	class:Project
+setupValidateScenario	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setupValidateScenario(self):$/;"	m	language:Python	class:Project
+setVideoRestriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def setVideoRestriction(self, name, value):$/;"	m	language:Python	class:Project
+set_combo_value	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+set_rendering	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def set_rendering(self, rendering):$/;"	m	language:Python	class:Project
+SPACING	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    pixel_aspect_ratios, display_aspect_ratios, SPACING$/;"	i	language:Python
+startObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def startObserving(self, project):$/;"	m	language:Python	class:ProjectLogObserver
+stopObserving	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def stopObserving(self, project):$/;"	m	language:Python	class:ProjectLogObserver
+tarfile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^import tarfile$/;"	i	language:Python
+time	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from time import time$/;"	i	language:Python
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:AssetAddedAction
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:AssetRemovedAction
+undo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def undo(self):$/;"	m	language:Python	class:ProjectSettingsChanged
+UndoableAction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.undo.undo import UndoableAction$/;"	i	language:Python
+unicode_error_dialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from pitivi.utils.misc import quote_uri, path_from_uri, isWritable, unicode_error_dialog$/;"	i	language:Python
+updateDarFromCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromCombo(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateDarFromFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromFractionWidget(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateDarFromPar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateDarFromPar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateHeight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateHeight(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateMetadata	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateMetadata(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updatePar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        def updatePar(value):$/;"	f	language:Python	function:ProjectSettingsDialog.bindPar
+updateParFromCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromCombo(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateParFromDar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromDar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateParFromFractionWidget	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateParFromFractionWidget(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateSettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateSettings(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateUI	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateUI(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+updateWidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def updateWidth(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+update_restriction_caps	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def update_restriction_caps(self):$/;"	m	language:Python	class:Project
+vcodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vcodecsettings(self):$/;"	m	language:Python	class:Project
+vcodecsettings	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vcodecsettings(self, value):$/;"	m	language:Python	class:Project
+vencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vencoder(self):$/;"	m	language:Python	class:Project
+vencoder	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def vencoder(self, value):$/;"	m	language:Python	class:Project
+videoheight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videoheight(self):$/;"	m	language:Python	class:Project
+videoheight	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videoheight(self, value):$/;"	m	language:Python	class:Project
+videopar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videopar(self):$/;"	m	language:Python	class:Project
+videopar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videopar(self, value):$/;"	m	language:Python	class:Project
+VideoPresetManager	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    VideoPresetManager$/;"	i	language:Python
+videorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videorate(self):$/;"	m	language:Python	class:Project
+videorate	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videorate(self, value):$/;"	m	language:Python	class:Project
+videowidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videowidth(self):$/;"	m	language:Python	class:Project
+videowidth	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def videowidth(self, value):$/;"	m	language:Python	class:Project
+widthHeightLinked	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def widthHeightLinked(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+year	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def year(self):$/;"	m	language:Python	class:Project
+year	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def year(self, year):$/;"	m	language:Python	class:Project
+_	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^from gettext import gettext as _$/;"	i	language:Python
+_addAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _addAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_addVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _addVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_allSourcesInHomedir	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _allSourcesInHomedir(self, sources):$/;"	m	language:Python	class:ProjectManager
+_assetAddedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _assetAddedCb(self, project, asset):$/;"	m	language:Python	class:ProjectLogObserver
+_assetRemovedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _assetRemovedCb(self, project, asset):$/;"	m	language:Python	class:ProjectLogObserver
+_calculateNbLoadingAssets	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _calculateNbLoadingAssets(self):$/;"	m	language:Python	class:Project
+_cleanBackup	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _cleanBackup(self, uri):$/;"	m	language:Python	class:ProjectManager
+_commit	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _commit(self):$/;"	m	language:Python	class:Project
+_constrainSarButtonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _constrainSarButtonToggledCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_createUi	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _createUi(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_emitChange	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _emitChange(self, signal, key=None, value=None):$/;"	m	language:Python	class:Project
+_ensureAudioRestrictions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureAudioRestrictions(self):$/;"	m	language:Python	class:Project
+_ensureLayer	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureLayer(self):$/;"	m	language:Python	class:Project
+_ensureTracks	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureTracks(self):$/;"	m	language:Python	class:Project
+_ensureVideoRestrictions	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _ensureVideoRestrictions(self):$/;"	m	language:Python	class:Project
+_fillPresetsTreeview	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _fillPresetsTreeview(self, treeview, mgr, update_buttons_func):$/;"	m	language:Python	class:ProjectSettingsDialog
+_getElementFactoryName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _getElementFactoryName(self, elements, profile):$/;"	m	language:Python	class:Project
+_getUniquePresetName	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _getUniquePresetName(mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_handle_asset_loaded	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _handle_asset_loaded(self, asset=None, unused_asset_id=None):$/;"	m	language:Python	class:Project
+_hidePresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _hidePresetManagerError(self, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_isValidateScenario	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _isValidateScenario(self, uri):$/;"	m	language:Python	class:ProjectManager
+_makeBackupURI	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _makeBackupURI(self, uri):$/;"	m	language:Python	class:ProjectManager
+_missingURICb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _missingURICb(self, project, error, asset):$/;"	m	language:Python	class:ProjectManager
+_newPresetCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _newPresetCb(self, unused_model, path, unused_iter_, column, renderer, treeview):$/;"	m	language:Python	class:ProjectSettingsDialog
+_pipelineDied	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _pipelineDied(self, unused_pipeline):$/;"	m	language:Python	class:ProjectManager
+_presetChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetChangedCb(self, selection, mgr, update_preset_buttons_func):$/;"	m	language:Python	class:ProjectSettingsDialog
+_presetNameEditedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetNameEditedCb(self, unused_renderer, path, new_text, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_presetNameEditingStartedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _presetNameEditingStartedCb(self, unused_renderer, unused_editable, unused_path, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_projectChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _projectChangedCb(self, project):$/;"	m	language:Python	class:ProjectManager
+_projectLoadedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _projectLoadedCb(self, unused_project, unused_timeline):$/;"	m	language:Python	class:ProjectManager
+_removeAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _removeAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_removeVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _removeVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_responseCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _responseCb(self, unused_widget, response):$/;"	m	language:Python	class:ProjectSettingsDialog
+_restoreFromBackupDialog	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _restoreFromBackupDialog(self, time_diff):$/;"	m	language:Python	class:ProjectManager
+_saveAudioPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveAudioPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_saveBackupCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveBackupCb(self, unused_project, unused_uri):$/;"	m	language:Python	class:ProjectManager
+_saveVideoPresetButtonClickedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _saveVideoPresetButtonClickedCb(self, unused_button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_scenarioDoneCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _scenarioDoneCb(self, scenario):$/;"	m	language:Python	class:Project
+_selectDarRadiobuttonToggledCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _selectDarRadiobuttonToggledCb(self, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_settingsChangedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _settingsChangedCb(self, project, item, value):$/;"	m	language:Python	class:ProjectLogObserver
+_setupUiConstraints	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _setupUiConstraints(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_set_restriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _set_restriction(profile, name, value):$/;"	m	language:Python	class:Project
+_showPresetManagerError	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _showPresetManagerError(self, mgr, error_markup):$/;"	m	language:Python	class:ProjectSettingsDialog
+_treeviewDefocusedCb	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _treeviewDefocusedCb(self, unused_widget, unused_event, mgr):$/;"	m	language:Python	class:ProjectSettingsDialog
+_tryUsingBackupFile	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _tryUsingBackupFile(self, uri):$/;"	m	language:Python	class:ProjectManager
+_updateAudioPresetButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateAudioPresetButtons(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateAudioSaveButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateAudioSaveButton(self, unused_in, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateCombo	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateCombo(self, unused, combo, fraction):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateFraction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateFraction(self, unused, fraction, combo):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateSar	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateSar(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateVideoPresetButtons	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateVideoPresetButtons(self):$/;"	m	language:Python	class:ProjectSettingsDialog
+_updateVideoSaveButton	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def _updateVideoSaveButton(self, unused_in, button):$/;"	m	language:Python	class:ProjectSettingsDialog
+__countRemainingFilesToImport	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^        self.nb_remaining_file_to_import = self.__countRemainingFilesToImport()$/;"	i	language:Python
+__countRemainingFilesToImport	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __countRemainingFilesToImport(self):$/;"	m	language:Python	class:Project	file:
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    __gsignals__ = {$/;"	v	language:Python	class:Project
+__gsignals__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    __gsignals__ = {$/;"	v	language:Python	class:ProjectManager
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, app):$/;"	m	language:Python	class:ProjectManager
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, app, name="", uri=None, scenario=None, **unused_kwargs):$/;"	m	language:Python	class:Project
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, log):$/;"	m	language:Python	class:ProjectLogObserver
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, parent_window, project):$/;"	m	language:Python	class:ProjectSettingsDialog
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, asset):$/;"	m	language:Python	class:AssetAddedAction
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, asset):$/;"	m	language:Python	class:AssetRemovedAction
+__init__	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __init__(self, project, old, new):$/;"	m	language:Python	class:ProjectSettingsChanged
+__setAudioRestriction	/home/thiblahute/devel/pitivi/1.0-uninstalled/pitivi/pitivi/project.py	/^    def __setAudioRestriction(self, name, value):$/;"	m	language:Python	class:Project	file:
