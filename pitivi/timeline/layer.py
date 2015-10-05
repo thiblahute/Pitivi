@@ -36,7 +36,7 @@ from pitivi.utils import ui
 from pitivi.utils import timeline as timelineUtils
 
 
-class BaseLayerControl(Gtk.Box, Loggable):
+class StripControl(Gtk.Box, Loggable):
 
     """
     A box of widgets for controlling a video or audio strip.
@@ -44,12 +44,12 @@ class BaseLayerControl(Gtk.Box, Loggable):
 
     __gtype_name__ = 'LayerControl'
 
-    def __init__(self, layer, app, type_name):
+    def __init__(self, bLayer, app, type_name):
         Gtk.Box.__init__(self, spacing=0)
         Loggable.__init__(self)
 
         self._app = app
-        self.layer = layer
+        self.bLayer = bLayer
         self._selected = False
         self.__type_name = type_name
         self.__meta_name = type_name + "::name"
@@ -77,7 +77,7 @@ class BaseLayerControl(Gtk.Box, Loggable):
         self.name_entry.set_tooltip_text(
             _("Set a personalized name for this layer"))
         self.name_entry.connect("key-press-event", self._keyPressCb)
-        layer.bLayer.connect("notify::priority", self.__layerPriorityChangedCb)
+        bLayer.connect("notify::priority", self.__layerPriorityChangedCb)
         self.__resetLayerName()
         grid.add(self.name_entry)
 
@@ -86,7 +86,7 @@ class BaseLayerControl(Gtk.Box, Loggable):
         self.show_all()
 
     def __del__(self):
-        self.layer.bLayer.disconnect_by_func(self.__layerPriorityChangedCb)
+        self.bLayer.disconnect_by_func(self.__layerPriorityChangedCb)
 
     def __layerPriorityChangedCb(self, bLayer, pspec):
         self.__resetLayerName()
@@ -98,10 +98,10 @@ class BaseLayerControl(Gtk.Box, Loggable):
         return re.findall("%s [0-9]+$" % self.__type_name, name)
 
     def __resetLayerName(self):
-        name = self.layer.bLayer.get_meta(self.__meta_name)
+        name = self.bLayer.get_meta(self.__meta_name)
         if name is None or self.__nameIsDefault(name):
-            name = '%s %d' % (self.__type_name, self.layer.bLayer.get_priority())
-            self.layer.bLayer.set_meta(self.__meta_name, name)
+            name = '%s %d' % (self.__type_name, self.bLayer.get_priority())
+            self.bLayer.set_meta(self.__meta_name, name)
         self.name_entry.set_text(name)
 
     def _getIconName(self):
@@ -137,7 +137,7 @@ class BaseLayerControl(Gtk.Box, Loggable):
         return True
 
     def _keyPressCb(self, unused_widget, event):
-        self.layer.bLayer.set_meta(self.__meta_name, self.name_entry.get_text())
+        self.bLayer.set_meta(self.__meta_name, self.name_entry.get_text())
         self._app.project_manager.current_project.setModificationState(True)
 
     def getHeight(self):
@@ -159,29 +159,23 @@ class BaseLayerControl(Gtk.Box, Loggable):
             self.sep.hide()
 
 
-class VideoLayerControl(BaseLayerControl):
-    """
-    Layer control class for video layers
-    """
+class VideoStripControl(StripControl):
 
-    __gtype_name__ = 'VideoLayerControl'
+    __gtype_name__ = 'VideoStripControl'
 
-    def __init__(self, layer, app):
-        BaseLayerControl.__init__(self, layer, app, "video")
+    def __init__(self, bLayer, app):
+        StripControl.__init__(self, bLayer, app, "video")
 
     def _getIconName(self):
         return "video-x-generic"
 
 
-class AudioLayerControl(BaseLayerControl):
-    """
-    Layer control class for audio layers
-    """
+class AudioStripControl(StripControl):
 
-    __gtype_name__ = 'AudioLayerControl'
+    __gtype_name__ = 'AudioStripControl'
 
-    def __init__(self, layer, app):
-        BaseLayerControl.__init__(self, layer, app, "audio")
+    def __init__(self, bLayer, app):
+        StripControl.__init__(self, bLayer, app, "audio")
 
     def _getIconName(self):
         return "audio-x-generic"
@@ -278,13 +272,13 @@ class LayerControls(Gtk.EventBox, Loggable):
         self.before_sep = SpacedSeparator(Gtk.PositionType.TOP)
         content.attach(self.before_sep, 0, 0, 2, 1)
 
-        self.video_control = VideoLayerControl(self, self.app)
+        self.video_control = VideoStripControl(bLayer, self.app)
         self.video_control.force_show_all()
         self.video_control.props.height_request = ui.LAYER_HEIGHT / 2
         self.video_control.props.hexpand = True
         content.attach(self.video_control, 0, 1, 1, 1)
 
-        self.audio_control = AudioLayerControl(self, self.app)
+        self.audio_control = AudioStripControl(bLayer, self.app)
         self.audio_control.hide()
         self.audio_control.props.height_request = ui.LAYER_HEIGHT / 2
         self.audio_control.props.hexpand = True
