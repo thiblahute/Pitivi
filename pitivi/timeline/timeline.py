@@ -582,7 +582,6 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
         event_widget = self.get_event_widget(event)
         if event_widget and self._getParentOfType(event_widget, LayerControls):
             # Never seek when the LayerControls box has been clicked
-
             return False
 
         if self.allowSeek:
@@ -826,14 +825,14 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
         self._project.setModificationState(True)
 
     def _addLayer(self, bLayer):
-        control = LayerControls(bLayer, self.app)
-        self.__layers_controls_vbox.pack_start(control, False, False, 0)
-        bLayer.control_ui = control
-
         layer = Layer(bLayer, self)
         bLayer.ui = layer
         self._layers.append(layer)
         layer.connect("remove-me", self._removeLayerCb)
+
+        control = LayerControls(layer, self.app)
+        self.__layers_controls_vbox.pack_start(control, False, False, 0)
+        bLayer.control_ui = control
 
         layer_widget = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         layer_widget.pack_start(layer.before_sep, False, False, 0)
