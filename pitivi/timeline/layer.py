@@ -19,6 +19,7 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
 # Boston, MA 02110-1301, USA.
+
 import re
 
 from gi.repository import Gdk
@@ -38,7 +39,7 @@ from pitivi.utils import timeline as timelineUtils
 class BaseLayerControl(Gtk.Box, Loggable):
 
     """
-    Base Layer control classes
+    A box of widgets for controlling a video or audio strip.
     """
 
     __gtype_name__ = 'LayerControl'
@@ -66,22 +67,21 @@ class BaseLayerControl(Gtk.Box, Loggable):
 
         self.set_orientation(Gtk.Orientation.VERTICAL)
 
-        table = Gtk.Table(n_rows=2, n_columns=2)
-        table.set_border_width(ui.PADDING)
-        table.set_row_spacings(3)
-        table.set_col_spacings(3)
-
-        self.pack_start(table, True, True, 0)
+        grid = Gtk.Grid()
+        grid.set_margin_top(ui.SPACING + 3)
+        grid.set_margin_left(3)
+        grid.set_column_spacing(3)
+        self.pack_start(grid, True, True, 0)
 
         self.name_entry = Gtk.Entry()
         self.name_entry.set_tooltip_text(
             _("Set a personalized name for this layer"))
-        self.name_entry.set_property("secondary-icon-name", self._getIconName())
         self.name_entry.connect("key-press-event", self._keyPressCb)
-
         layer.bLayer.connect("notify::priority", self.__layerPriorityChangedCb)
         self.__resetLayerName()
-        table.attach(self.name_entry, 0, 2, 0, 2)
+        grid.add(self.name_entry)
+
+        grid.add(Gtk.Image.new_from_icon_name(self._getIconName(), Gtk.IconSize.LARGE_TOOLBAR))
 
         self.show_all()
 
