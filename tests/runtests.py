@@ -45,10 +45,24 @@ def get_build_dir():
     return os.path.abspath(build_dir)
 
 
+def _prepend_env_path(name, value):
+    os.environ[name] = os.pathsep.join(value +
+                                       os.environ.get(name, "").split(
+                                           os.pathsep))
+
+
 def setup():
+    res = True
     # Make available to configure.py the top level dir.
     pitivi_dir = get_pitivi_dir()
     os.environ.setdefault('PITIVI_TOP_LEVEL_DIR', pitivi_dir)
+
+    _prepend_env_path("GST_PRESET_PATH", [
+        os.path.join(pitivi_dir, "data", "videopresets"),
+        os.path.join(pitivi_dir, "data", "audiopresets")])
+
+    _prepend_env_path("GST_ENCODING_TARGET_PATH", [
+        os.path.join(pitivi_dir, "data", "encoding-profiles")])
 
     # Make available the compiled C code.
     build_dir = get_build_dir()
@@ -58,10 +72,12 @@ def setup():
     # Make sure the modules are initialized correctly.
     from pitivi import check
     check.initialize_modules()
-    assert(check.check_requirements())
+    res = check.check_requirements()
 
     from pitivi.utils import loggable as log
     log.init('PITIVI_DEBUG')
+
+    return res
 
 if __name__ == "__main__":
     setup()

@@ -464,6 +464,7 @@ class TimelineElement(Gtk.Layout, timelineUtils.Zoomable, Loggable):
     # Gtk implementation
     def do_set_property(self, property_id, value, pspec):
         Gtk.Layout.do_set_property(self, property_id, value, pspec)
+        self.passthrough = os.path.exists(self.wavefile)
 
     def __showKeyframes(self):
         if self.timeline.app.project_manager.current_project.pipeline.getState() == Gst.State.PLAYING:
@@ -969,9 +970,16 @@ class UriClip(SourceClip):
 
     def __init__(self, layer, bClip):
         super(UriClip, self).__init__(layer, bClip)
+        self.props.has_tooltip = True
+        self.set_tooltip_markup(misc.filename_from_uri(self.bClip.get_uri()))
 
-        self.set_tooltip_markup(misc.filename_from_uri(bClip.get_uri()))
         self.bClip.selected.connect("selected-changed", self._selectedChangedCb)
+
+    def do_query_tooltip(self, x, y, keyboard_mode, tooltip):
+        tooltip.set_markup(misc.filename_from_uri(
+            self.bClip.get_asset().props.id))
+
+        return True
 
     def _childAdded(self, clip, child):
         super(UriClip, self)._childAdded(clip, child)
