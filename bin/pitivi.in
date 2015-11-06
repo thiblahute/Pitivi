@@ -77,6 +77,8 @@ def _add_pitivi_path():
         root = os.path.join(LIBDIR, 'pitivi', 'python')
         localedir = os.path.join(DATADIR, "locale")
 
+        data_dir = os.path.join(DATADIR, "pitivi")
+
     if not root in sys.path:
         sys.path.append(root)
 
