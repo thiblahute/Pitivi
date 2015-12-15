@@ -24,6 +24,7 @@ from unittest import TestCase
 
 from gi.repository import GES
 from gi.repository import Gst
+from gi.repository import GstController
 
 from tests import common
 
@@ -137,6 +138,31 @@ class TestTimelineUndo(TestCase):
         self.assertEqual([layer1, layer2, layer3], self.timeline.get_layers())
         self.action_log.redo()
         self.assertEqual([layer1, layer3], self.timeline.get_layers())
+
+    def testControlSourceValueAdded(self):
+        uri = common.TestCase.getSampleUri("tears_of_steel.webm")
+        asset = GES.UriClipAsset.request_sync(uri)
+        clip = asset.extract()
+        self.layer.add_clip(clip)
+        source = clip.get_children(False)[1]
+        self.assertTrue(isinstance(source, GES.VideoUriSource))
+
+        control_source = GstController.InterpolationControlSource()
+        control_source.props.mode = GstController.InterpolationMode.LINEAR
+        source.set_control_source(control_source, "alpha", "direct")
+
+        self.action_log.begin("keyframe added")
+        self.assertTrue(control_source.set(Gst.SECOND * 0.5, 0.2))
+        self.action_log.commit()
+
+        self.assertEqual(1, len(control_source.get_all()))
+        self.action_log.undo()
+        self.assertEqual(0, len(control_source.get_all()))
+        self.action_log.redo()
+        keyframes = control_source.get_all()
+        self.assertEqual(1, len(keyframes))
+        self.assertEqual(Gst.SECOND * 0.5, keyframes[0].timestamp)
+        self.assertEqual(0.2, keyframes[0].value)
 
     def testAddClip(self):
         stacks = []
