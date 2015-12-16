@@ -462,25 +462,31 @@ class ControlSourceValueRemoved(UndoableAction):
 
 class ControlSourceKeyframeChanged(UndoableAction):
 
-    def __init__(self, track_element, keyframe, old_snapshot, new_snapshot):
+    def __init__(self, control_source, keyframe, old_snapshot, new_snapshot):
         UndoableAction.__init__(self)
-        self.track_element = track_element
+        self.control_source = control_source
         self.keyframe = keyframe
         self.old_snapshot = old_snapshot
         self.new_snapshot = new_snapshot
 
     def do(self):
         self._setSnapshot(self.new_snapshot)
+        self._setControlSourceValue(self.new_snapshot)
         self._done()
 
     def undo(self):
         self._setSnapshot(self.old_snapshot)
+        self._setControlSourceValue(self.old_snapshot)
         self._undone()
 
     def _setSnapshot(self, snapshot):
         time, value = snapshot
-        self.keyframe.setTime(time)
-        self.keyframe.setValue(value)
+        self.keyframe.time = time
+        self.keyframe.value = value
+
+    def _setControlSourceValue(self, snapshot):
+        time, value = snapshot
+        self.control_source.set(time, value)
 
 
 class ActivePropertyChanged(UndoableAction):
@@ -701,9 +707,9 @@ class TimelineLogObserver(Loggable):
         action = self.activePropertyChangedAction(add_effect_action, active)
         self.log.push(action)
 
-    def _controlSourceKeyFrameMovedCb(self, tracker, track_element,
+    def _controlSourceKeyFrameMovedCb(self, tracker, control_source,
                                       keyframe, old_snapshot, new_snapshot):
-        action = ControlSourceKeyframeChanged(track_element, keyframe,
+        action = ControlSourceKeyframeChanged(control_source, keyframe,
                                               old_snapshot, new_snapshot)
         self.log.push(action)
 
