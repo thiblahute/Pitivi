@@ -164,6 +164,32 @@ class TestTimelineUndo(TestCase):
         self.assertEqual(Gst.SECOND * 0.5, keyframes[0].timestamp)
         self.assertEqual(0.2, keyframes[0].value)
 
+    def testControlSourceValueRemoved(self):
+        uri = common.TestCase.getSampleUri("tears_of_steel.webm")
+        asset = GES.UriClipAsset.request_sync(uri)
+        clip = asset.extract()
+        self.layer.add_clip(clip)
+        source = clip.get_children(False)[1]
+        self.assertTrue(isinstance(source, GES.VideoUriSource))
+
+        control_source = GstController.InterpolationControlSource()
+        control_source.props.mode = GstController.InterpolationMode.LINEAR
+        source.set_control_source(control_source, "alpha", "direct")
+        self.assertTrue(control_source.set(Gst.SECOND * 0.5, 0.2))
+
+        self.action_log.begin("keyframe removed")
+        self.assertTrue(control_source.unset(Gst.SECOND * 0.5))
+        self.action_log.commit()
+
+        self.assertEqual(0, len(control_source.get_all()))
+        self.action_log.undo()
+        keyframes = control_source.get_all()
+        self.assertEqual(1, len(keyframes))
+        self.assertEqual(Gst.SECOND * 0.5, keyframes[0].timestamp)
+        self.assertEqual(0.2, keyframes[0].value)
+        self.action_log.redo()
+        self.assertEqual(0, len(control_source.get_all()))
+
     def testAddClip(self):
         stacks = []
         self.action_log.connect("commit", TestTimelineUndo.commitCb, stacks)
