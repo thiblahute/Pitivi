@@ -447,3 +447,102 @@ class TestTimelineUndo(TestCase):
         self.assertEqual(1, len(timeline_clips))
         self.assertEqual(5 * Gst.SECOND, timeline_clips[0].get_start())
         self.assertEqual(0.5 * Gst.SECOND, timeline_clips[0].get_duration())
+
+    def testGroupTitleClip(self):
+        clip1 = GES.TitleClip()
+        clip2 = GES.TitleClip()
+
+        clip1.set_start(0 * Gst.SECOND)
+        clip1.set_duration(1 * Gst.SECOND)
+        clip2.set_start(1 * Gst.SECOND)
+        clip2.set_duration(1 * Gst.SECOND)
+
+        self.layer.add_clip(clip1)
+        self.layer.add_clip(clip2)
+
+        self.assertEqual(2, len(self.layer.get_clips()))
+
+        self.action_log.begin("group")
+        group = GES.Container.group([clip1, clip2])
+        self.action_log.commit()
+
+        self.assertEqual(2, len(self.layer.get_clips()))
+        self.assertEqual(group, clip1.get_toplevel_parent())
+        self.assertEqual(group, clip2.get_toplevel_parent())
+
+        self.action_log.undo()
+        self.assertEqual(2, len(self.layer.get_clips()))
+        clip1 = self.layer.get_clips()[0]
+        clip2 = self.layer.get_clips()[1]
+        self.assertEqual(clip1, clip1.get_toplevel_parent())
+        self.assertEqual(clip2, clip2.get_toplevel_parent())
+
+        self.action_log.redo()
+        group = clip1.get_toplevel_parent()
+        self.assertTrue(isinstance(group, GES.Group))
+        self.assertEqual(2, len(self.layer.get_clips()))
+        self.assertEqual(group, clip1.get_toplevel_parent())
+        self.assertEqual(group, clip2.get_toplevel_parent())
+
+    def testGroupUriClip(self):
+        uri = common.TestCase.getSampleUri("tears_of_steel.webm")
+        asset = GES.UriClipAsset.request_sync(uri)
+        clip = asset.extract()
+        self.layer.add_clip(clip)
+
+        self.assertEqual(1, len(self.layer.get_clips()))
+        ungrouped = GES.Container.ungroup(clip, False)
+        self.assertEqual(2, len(self.layer.get_clips()))
+
+        clip1 = self.layer.get_clips()[0]
+        clip2 = self.layer.get_clips()[1]
+
+        self.action_log.begin("group")
+        GES.Container.group([clip1, clip2])
+        self.action_log.commit()
+        self.assertEqual(1, len(self.layer.get_clips()))
+
+        self.action_log.undo()
+        self.assertEqual(2, len(self.layer.get_clips()))
+        self.action_log.redo()
+        self.assertEqual(1, len(self.layer.get_clips()))
+
+    def testGroupUriClipDifferentLayers(self):
+        uri1 = common.TestCase.getSampleUri("tears_of_steel.webm")
+        asset1 = GES.UriClipAsset.request_sync(uri1)
+        clip1 = asset1.extract()
+
+        uri2 = common.TestCase.getSampleUri("30fps_numeroted_frames_blue.webm")
+        asset2 = GES.UriClipAsset.request_sync(uri2)
+        clip2 = asset2.extract()
+
+        layer1 = self.layer
+        layer2 = self.timeline.append_layer()
+        layer1.add_clip(clip1)
+        layer2.add_clip(clip2)
+
+        self.assertEqual(1, len(layer1.get_clips()))
+        self.assertEqual(1, len(layer2.get_clips()))
+
+        self.action_log.begin("group")
+        group = GES.Container.group([clip1, clip2])
+        self.action_log.commit()
+
+        self.assertEqual(1, len(layer1.get_clips()))
+        self.assertEqual(1, len(layer2.get_clips()))
+        self.assertEqual(group, clip1.get_toplevel_parent())
+        self.assertEqual(group, clip2.get_toplevel_parent())
+
+        self.action_log.undo()
+        self.assertEqual(1, len(layer1.get_clips()))
+        self.assertEqual(1, len(layer2.get_clips()))
+        self.assertEqual(clip1, clip1.get_toplevel_parent())
+        self.assertEqual(clip2, clip2.get_toplevel_parent())
+
+        self.action_log.redo()
+        self.assertEqual(1, len(layer1.get_clips()))
+        self.assertEqual(1, len(layer2.get_clips()))
+        group = clip1.get_toplevel_parent()
+        self.assertTrue(isinstance(group, GES.Group))
+        self.assertEqual(group, clip1.get_toplevel_parent())
+        self.assertEqual(group, clip2.get_toplevel_parent())
