@@ -304,15 +304,34 @@ class ClipAdded(UndoableAction):
         UndoableAction.__init__(self)
         self.layer = layer
         self.clip = clip
+        self.is_group = False
+        self.group_children = []
 
     def do(self):
-        self.clip.set_name(None)
-        self.layer.add_clip(self.clip)
+        if len(self.clip.get_children(False)) >= 2:
+            # We check if the clip is a group. If so, we ungroup it.
+            # GES.Container.ungroup(self.clip, False)
+            self.group_children = self.clip.ungroup(False)
+        else:
+            self.clip.set_name(None)
+            self.layer.add_clip(self.clip)
         self.layer.get_timeline().get_asset().pipeline.commit_timeline()
         self._done()
 
     def undo(self):
-        self.layer.remove_clip(self.clip)
+        track_element = self.clip.get_children(False)[0]
+        self.is_group = self.is_group or hasattr(track_element, "old_parent")
+        if self.is_group:
+            # We check if the current clip was the result of a call to the
+            # callback function timeline.timeline._groupSelected
+            if not self.group_children:
+                self.group_children.append(track_element.old_parent)
+                self.group_children.append(self.clip)
+            if hasattr(track_element.old_parent, "ui"):
+                track_element.old_parent.ui.timeline.current_group.ungroup(False)
+            self.clip = GES.Container.group(self.group_children)
+        else:
+            self.layer.remove_clip(self.clip)
         self.layer.get_timeline().get_asset().pipeline.commit_timeline()
         self._undone()
 
@@ -687,6 +706,10 @@ class TimelineLogObserver(Loggable):
             action = TrackElementRemoved(clip, track_element,
                                          self.children_props_tracker)
             self.log.push(action)
+        elif isinstance(clip, GES.UriClip):
+            if len(clip.get_children(False)) >= 1:
+                # The element has been removed from a group. We hold its parent.
+                track_element.old_parent = clip
 
     def _controlSourceKeyFrameAddedCb(self, source, keyframe, track_element,
                                       property_name):
