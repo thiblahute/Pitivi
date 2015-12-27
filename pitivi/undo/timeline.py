@@ -23,6 +23,7 @@ from gi.repository import Gst
 from gi.repository import GES
 from gi.repository import GObject
 
+from pitivi.utils.misc import is_grouped, is_ungrouped
 from pitivi.utils.loggable import Loggable
 from pitivi.undo.undo import PropertyChangeTracker, UndoableAction
 from pitivi.effects import PROPS_TO_IGNORE
@@ -129,36 +130,26 @@ class TrackElementAdded(UndoableAction):
         self.gnl_obj_props = []
         self._properties_watcher = properties_watcher
         self._props_changed = []
-        self.is_group = False
-        self.group_children = []
 
     def do(self):
-        if not self.is_group:
-            self.track_element = self.clip.add_asset(self.asset)
-            for prop_name, prop_value in self.track_element_props:
-                self.track_element.set_child_property(prop_name, prop_value)
-            self.clip.get_layer().get_timeline().get_asset().pipeline.commit_timeline()
-            self._props_changed = []
-        else:
-            self.group_children[0].ui.timeline.resetSelectionGroup()
-            self.clip = GES.Container.group(self.group_children)
+        self.track_element = self.clip.add_asset(self.asset)
+        for prop_name, prop_value in self.track_element_props:
+            self.track_element.set_child_property(prop_name, prop_value)
+        self.clip.get_layer().get_timeline().get_asset().pipeline.commit_timeline()
+        self._props_changed = []
         self._done()
 
     def undo(self):
-        self.is_group = bool(self.group_children)
-        if not self.is_group:
-            props = self.track_element.list_children_properties()
-            self.track_element_props = [(prop.name, self.track_element.get_child_property(prop.name)[1])
-                                        for prop in props
-                                        if prop.flags & GObject.PARAM_WRITABLE and prop.name not in PROPS_TO_IGNORE]
-            self.clip.remove(self.track_element)
-            self._props_changed =\
-                self._properties_watcher.getPropChangedFromTrackElement(
-                    self.track_element)
-            del self.track_element
-            self.track_element = None
-        else:
-            self.group_children = self.clip.ungroup(False)
+        props = self.track_element.list_children_properties()
+        self.track_element_props = [(prop.name, self.track_element.get_child_property(prop.name)[1])
+                                    for prop in props
+                                    if prop.flags & GObject.PARAM_WRITABLE and prop.name not in PROPS_TO_IGNORE]
+        self.clip.remove(self.track_element)
+        self._props_changed =\
+            self._properties_watcher.getPropChangedFromTrackElement(
+                self.track_element)
+        del self.track_element
+        self.track_element = None
         self._undone()
 
     def asScenarioAction(self):
@@ -314,35 +305,15 @@ class ClipAdded(UndoableAction):
         UndoableAction.__init__(self)
         self.layer = layer
         self.clip = clip
-        self.is_group = False
-        self.group_children = []
 
     def do(self):
-        if len(self.clip.get_children(False)) >= 2:
-            # We check if the clip is a group. If so, we ungroup it.
-            # GES.Container.ungroup(self.clip, False)
-            self.group_children = self.clip.ungroup(False)
-        else:
-            self.clip.set_name(None)
-            self.layer.add_clip(self.clip)
+        self.clip.set_name(None)
+        self.layer.add_clip(self.clip)
         self.layer.get_timeline().get_asset().pipeline.commit_timeline()
         self._done()
 
     def undo(self):
-        track_element = self.clip.get_children(False)[0]
-        self.is_group = self.is_group or hasattr(track_element, "old_parent")
-        if self.is_group:
-            # We check if the current clip was the result of a call to the
-            # callback function timeline.timeline._groupSelected
-            if not self.group_children:
-                self.group_children.append(track_element.old_parent)
-                self.group_children.append(self.clip)
-            if hasattr(track_element.old_parent, "ui"):
-                # We cannot group these clips if they are currently added to the current group.
-                track_element.old_parent.ui.timeline.current_group.ungroup(False)
-            self.clip = GES.Container.group(self.group_children)
-        else:
-            self.layer.remove_clip(self.clip)
+        self.layer.remove_clip(self.clip)
         self.layer.get_timeline().get_asset().pipeline.commit_timeline()
         self._undone()
 
@@ -392,6 +363,56 @@ class ClipRemoved(UndoableAction):
         st = Gst.Structure.new_empty("remove-clip")
         st.set_value("name", self.clip.get_name())
         return st
+
+
+class Grouped(UndoableAction):
+
+    def __init__(self, container, child):
+        UndoableAction.__init__(self)
+        self.container = container
+        self.child = child
+
+    def do(self):
+        if isinstance(self.container, GES.UriClip):
+            if hasattr(self.group_children[0], "ui"):
+                self.group_children[0].ui.timeline.resetSelectionGroup()
+            self.container = GES.Container.group(self.group_children)
+        self._done()
+
+    def undo(self):
+        if isinstance(self.container, GES.UriClip):
+            self.group_children = self.container.ungroup(False)
+        self._undone()
+
+
+class Ungrouped(UndoableAction):
+
+    def __init__(self, container):
+        UndoableAction.__init__(self)
+        self.container = container
+        self.timeline = container.get_timeline()
+        self.group_children = []
+
+    def do(self):
+        if isinstance(self.container, GES.UriClip):
+            self.group_children = self.container.ungroup(False)
+        self.timeline.get_asset().pipeline.commit_timeline()
+        self._done()
+
+    def undo(self):
+        if isinstance(self.container, GES.UriClip):
+            track_element = self.container.get_children(False)[0]
+            # We check if the current clip was the result of a call to the
+            # callback function timeline.timeline._groupSelected
+            if not self.group_children:
+                self.group_children.append(track_element.old_parent)
+                self.group_children.append(self.container)
+            if hasattr(track_element.old_parent, "ui"):
+                # We cannot group these clips if they are currently added to the current group.
+                track_element.old_parent.ui.timeline.current_group.ungroup(False)
+            self.container = GES.Container.group(self.group_children)
+        self.timeline.get_asset().pipeline.commit_timeline()
+        self._undone()
 
 
 class LayerAdded(UndoableAction):
@@ -711,19 +732,25 @@ class TimelineLogObserver(Loggable):
             action = TrackElementAdded(clip, track_element,
                                        self.children_props_tracker)
             self.log.push(action)
-        elif isinstance(clip, GES.UriClip):
-            if len(clip.get_children(False)) >= 2:
-                # A container group has been created.
-                action = TrackElementAdded(clip, track_element,
-                                           self.children_props_tracker)
-                action.is_group = True
-                action.group_children = clip.get_children(False)
+        elif is_grouped(clip):
+            # A container group has been created.
+            action = Grouped(clip, track_element)
+            self.log.push(action)
+        elif is_ungrouped(clip):
+            if self.log.stacks:
+                # We remove unnecesary actions.
+                top = self.log.stacks[-1]
+                self.log.stacks[-1].done_actions = [action for action in
+                    self.log.stacks[-1].done_actions if not isinstance(action, ClipAdded)]
+                action = Ungrouped(clip)
                 self.log.push(action)
 
     def _clipTrackElementRemovedCb(self, clip, track_element):
         self.debug("%s REMOVED from (%s)" % (track_element, clip))
         self._disconnectFromTrackElement(track_element)
         if isinstance(track_element, GES.BaseEffect):
+            action = TrackElementRemoved(clip, track_element,
+                                         self.children_props_tracker)
             self.log.push(action)
         elif isinstance(clip, GES.UriClip):
             if len(clip.get_children(False)) >= 1:

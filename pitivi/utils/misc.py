@@ -29,6 +29,7 @@ from urllib.parse import urlparse, unquote, urlsplit
 
 from gi.repository import GLib
 from gi.repository import Gst
+from gi.repository import GES
 from gi.repository import Gtk
 
 from gettext import gettext as _
@@ -254,3 +255,18 @@ def unicode_error_dialog():
     dialog.set_title(_("Error while decoding a string"))
     dialog.run()
     dialog.destroy()
+
+
+def is_ungrouped(obj):
+    if isinstance(obj, GES.UriClip):
+        if len(obj.get_children(False)) >= 1:
+            track_element = obj.get_children(False)[0]
+            return hasattr(track_element, "old_parent")
+    return False
+
+
+def is_grouped(obj):
+    if isinstance(obj, GES.UriClip):
+        if len(obj.get_children(False)) >= 2:
+            return True
+    return False
