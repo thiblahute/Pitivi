@@ -446,7 +446,6 @@ class PitiviMainWindow(Gtk.ApplicationWindow, Loggable):
         self.render_button.set_sensitive(False)  # The only one we have to set.
         self.render_button.connect("clicked", self._renderCb)
 
-        # TODO: Add these back once we revisit undo/redo T3360
         self._headerbar.pack_start(undo_button)
         self._headerbar.pack_start(redo_button)
         self._headerbar.pack_start(separator)
