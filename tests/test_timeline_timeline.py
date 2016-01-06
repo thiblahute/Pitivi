@@ -48,7 +48,18 @@ class BaseTestTimeline(common.TestCase):
         timeline = timeline_container.timeline
         timeline.get_parent = mock.MagicMock()
 
+        timeline.app.settings.leftClickAlsoSeeks = False
+
         return timeline
+
+    def addClipsSimple(self, timeline, num_clips):
+        layer = timeline.bTimeline.append_layer()
+
+        asset = GES.UriClipAsset.request_sync(
+            common.getSampleUri("tears_of_steel.webm"))
+
+        return [layer.add_asset(asset, i * 10, 0, 10, GES.TrackType.UNKNOWN)
+                for i in range(num_clips)]
 
 
 class TestLayers(BaseTestTimeline):
@@ -143,13 +154,7 @@ class TestGrouping(BaseTestTimeline):
     def groupClips(self, num_clips):
         timeline = self.createTimeline()
         timeline.app.settings.leftClickAlsoSeeks = False
-        layer = timeline.bTimeline.append_layer()
-
-        asset = GES.UriClipAsset.request_sync(
-            common.getSampleUri("tears_of_steel.webm"))
-
-        clips = [layer.add_asset(asset, i * 10, 0, 10, GES.TrackType.UNKNOWN)
-                 for i in range(num_clips)]
+        clips = self.addClipsSimple(timeline, num_clips)
 
         # Press <ctrl> so selecting in ADD mode
         timeline.sendFakeEvent(Event(event_type=Gdk.EventType.KEY_PRESS,
@@ -157,7 +162,7 @@ class TestGrouping(BaseTestTimeline):
 
         # Select the 2 clips
         for clip in clips:
-            self.toggleClipSelection(clip)
+            self.toggleClipSelection(clip, True)
 
         before_grouping_timeline_group = timeline.current_group
 
@@ -193,7 +198,7 @@ class TestGrouping(BaseTestTimeline):
         self.assertEqual(len(clips), num_clips)
 
         # Deselect one grouped clip clips
-        self.toggleClipSelection(clips[0])
+        self.toggleClipSelection(clips[0], False)
 
         # Make sure it deselect all clips from the group
         for clip in clips:
@@ -214,18 +219,49 @@ class TestGrouping(BaseTestTimeline):
         for clip in clips:
             self.assertIsNone(clip.get_parent())
 
+    def testGroupSplittedClipAndSelectGroup(self):
+        position = 5
+
+        def fakeGetPosition():
+            return position
+
+        timeline = self.createTimeline()
+        clips = self.addClipsSimple(timeline, 1)
+        self.toggleClipSelection(clips[0], True)
+
+        timeline.bTimeline.get_asset().pipeline.getPosition = fakeGetPosition
+        layer = timeline.bTimeline.get_layers()[0]
+
+        # Split
+        timeline.parent.split_action.emit("activate", None)
+        clips = layer.get_clips()
+        self.assertEqual(len(clips), 2)
+
+        # Only the first clip is selected so select the
+        # second one
+        self.assertTrue(clips[0].selected.selected)
+        self.assertFalse(clips[1].selected.selected)
+
+        timeline.sendFakeEvent(Event(event_type=Gdk.EventType.KEY_PRESS,
+                                     keyval=Gdk.KEY_Control_L))
+        self.toggleClipSelection(clips[1], True)
+        timeline.sendFakeEvent(Event(event_type=Gdk.EventType.KEY_RELEASE,
+                                     keyval=Gdk.KEY_Control_L))
+
+        for clip in clips:
+            self.assertTrue(clip.selected.selected)
+
+        # And group the too parts
+        timeline.parent.group_action.emit("activate", None)
+
+        self.toggleClipSelection(clips[1], True)
+
 
 class TestCopyPaste(BaseTestTimeline):
     def copyClips(self, num_clips):
         timeline = self.createTimeline()
-        timeline.app.settings.leftClickAlsoSeeks = False
-        layer = timeline.bTimeline.append_layer()
 
-        asset = GES.UriClipAsset.request_sync(
-            common.getSampleUri("tears_of_steel.webm"))
-
-        clips = [layer.add_asset(asset, i * 10, 0, 10, GES.TrackType.UNKNOWN)
-                 for i in range(num_clips)]
+        clips = self.addClipsSimple(timeline, num_clips)
 
         # Press <ctrl> so selecting in ADD mode
         timeline.sendFakeEvent(Event(event_type=Gdk.EventType.KEY_PRESS,
@@ -233,7 +269,7 @@ class TestCopyPaste(BaseTestTimeline):
 
         # Select the 2 clips
         for clip in clips:
-            self.toggleClipSelection(clip)
+            self.toggleClipSelection(clip, True)
 
         self.assertTrue(timeline.parent.copy_action.props.enabled)
         self.assertFalse(timeline.parent.paste_action.props.enabled)
@@ -251,9 +287,8 @@ class TestCopyPaste(BaseTestTimeline):
         timeline = self.copyClips(2)
 
         layer = timeline.bTimeline.get_layers()[0]
-        project = timeline.bTimeline.get_asset()
-
         # Monkey patching the pipeline.getPosition method
+        project = timeline.bTimeline.get_asset()
         project.pipeline.getPosition = fakeGetPosition
 
         clips = layer.get_clips()
