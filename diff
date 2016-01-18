@@ -1,0 +1,651 @@
+commit d84bf24626a46900eccad54dffe578a291f65de1
+Author: Thibault Saunier <tsaunier@gnome.org>
+Date:   Fri Nov 6 22:47:09 2015 +0100
+
+    Implement proxy editing
+    
+    And create proxies by default for all assets in a format we do not
+    consider as properly handled.
+    
+    Make use of GstTranscoder to do the transcoding from the file format
+    in use to the intermediary format
+    
+    Fixes https://phabricator.freedesktop.org/T3404
+    Fixes https://phabricator.freedesktop.org/T3405
+    
+    Differential Revision: https://phabricator.freedesktop.org/D505
+
+diff --git a/tests/Makefile.am b/tests/Makefile.am
+index 7b138c0..9d4744d 100644
+--- a/tests/Makefile.am
++++ b/tests/Makefile.am
+@@ -9,9 +9,11 @@ tests =	\
+ 	test_common.py \
+ 	test_log.py \
+ 	test_mainwindow.py \
++	test_media_library.py \
+ 	test_misc.py \
+ 	test_prefs.py \
+ 	test_preset.py \
++	test_previewers.py \
+ 	test_project.py \
+ 	test_system.py \
+ 	test_timeline_layer.py \
+diff --git a/tests/__init__.py b/tests/__init__.py
+index 7ec5f82..5c16f03 100644
+--- a/tests/__init__.py
++++ b/tests/__init__.py
+@@ -1,4 +1,5 @@
+ #!/usr/bin/env python3
+ 
+ from . import runtests
+-runtests.setup()
++if not runtests.setup():
++    raise ImportError("Could not setup testsuite")
+diff --git a/tests/common.py b/tests/common.py
+index de0c81f..f01f64d 100644
+--- a/tests/common.py
++++ b/tests/common.py
+@@ -2,19 +2,55 @@
+ A collection of objects to use for testing
+ """
+ 
+-from gi.repository import Gst
+ import os
+ import gc
+ import unittest
++import tempfile
++
++from gi.repository import Gst
+ 
++from unittest import mock
++from pitivi import check
++
++from pitivi.application import Pitivi
+ from pitivi.utils.timeline import Selected
++from pitivi.utils.loggable import Loggable
++from pitivi.utils.proxy import ProxyManager, ProxyingStrategy
++
++detect_leaks = os.environ.get("PITIVI_TEST_DETECT_LEAKS", "0") not in ("0", "")
++os.environ["PITIVI_USER_CACHE_DIR"] = tempfile.mkdtemp("pitiviTestsuite")
++
++
++def cleanPitiviMock(ptv):
++    ptv.settings = None
++    ptv.proxy_manager = None
++
++
++def getPitiviMock(settings=None, proxyingStrategy=ProxyingStrategy.NOTHING,
++                  numTranscodingJobs=4):
++    ptv = mock.MagicMock()
+ 
+-detect_leaks = os.environ.get("PITIVI_TEST_DETECT_LEAKS", "1") not in ("0", "")
++    ptv.write_action = mock.MagicMock(spec=Pitivi.write_action)
++    check.check_requirements()
+ 
++    if not settings:
++        settings = mock.MagicMock()
++        settings.proxyingStrategy = proxyingStrategy
++        settings.numTranscodingJobs = numTranscodingJobs
+ 
+-class TestCase(unittest.TestCase):
++    ptv.settings = settings
++    ptv.proxy_manager = ProxyManager(ptv)
++
++    return ptv
++
++
++class TestCase(unittest.TestCase, Loggable):
+     _tracked_types = (Gst.MiniObject, Gst.Element, Gst.Pad, Gst.Caps)
+ 
++    def __init__(self, *args):
++        Loggable.__init__(self)
++        unittest.TestCase.__init__(self, *args)
++
+     def gctrack(self):
+         self.gccollect()
+         self._tracked = []
+@@ -77,10 +113,20 @@ class TestCase(unittest.TestCase):
+         self._result = result
+         unittest.TestCase.run(self, result)
+ 
+-    @staticmethod
+-    def getSampleUri(sample):
+-        dir = os.path.dirname(os.path.abspath(__file__))
+-        return "file://%s/samples/%s" % (dir, sample)
++
++def getSampleUri(sample):
++    assets_dir = os.path.dirname(os.path.abspath(__file__))
++    return "file://%s/samples/%s" % (assets_dir, sample)
++
++
++def cleanProxySamples():
++    _dir = "/%s/samples/" % (os.path.dirname(os.path.abspath(__file__)))
++    proxy_manager = ProxyManager(mock.MagicMock())
++
++    for f in os.listdir(_dir):
++        if f.endswith(proxy_manager.proxy_extension):
++            f = os.path.join(_dir, f)
++            os.remove(f)
+ 
+ 
+ class SignalMonitor(object):
+diff --git a/tests/runtests.py b/tests/runtests.py
+index a50f93b..4883fce 100644
+--- a/tests/runtests.py
++++ b/tests/runtests.py
+@@ -45,11 +45,25 @@ def get_build_dir():
+     return os.path.abspath(build_dir)
+ 
+ 
++def _prepend_env_path(name, value):
++    os.environ[name] = os.pathsep.join(value +
++                                       os.environ.get(name, "").split(
++                                           os.pathsep))
++
++
+ def setup():
++    res = True
+     # Make available to configure.py the top level dir.
+     pitivi_dir = get_pitivi_dir()
+     os.environ.setdefault('PITIVI_TOP_LEVEL_DIR', pitivi_dir)
+ 
++    _prepend_env_path("GST_PRESET_PATH", [
++        os.path.join(pitivi_dir, "data", "videopresets"),
++        os.path.join(pitivi_dir, "data", "audiopresets")])
++
++    _prepend_env_path("GST_ENCODING_TARGET_PATH", [
++        os.path.join(pitivi_dir, "data", "encoding-profiles")])
++
+     # Make available the compiled C code.
+     build_dir = get_build_dir()
+     libs_dir = os.path.join(build_dir, "pitivi/coptimizations/.libs")
+@@ -58,11 +72,13 @@ def setup():
+     # Make sure the modules are initialized correctly.
+     from pitivi import check
+     check.initialize_modules()
+-    assert(check.check_requirements())
++    res = check.check_requirements()
+ 
+     from pitivi.utils import loggable as log
+     log.init('PITIVI_DEBUG')
+ 
++    return res
++
+ if __name__ == "__main__":
+     setup()
+ 
+diff --git a/tests/test_media_library.py b/tests/test_media_library.py
+new file mode 100644
+index 0000000..070dd4a
+--- /dev/null
++++ b/tests/test_media_library.py
+@@ -0,0 +1,189 @@
++# -*- coding: utf-8 -*-
++#
++# Copyright (c) 2015, Thibault Saunier <tsaunier@gnome.org>
++#
++# This program is free software; you can redistribute it and/or
++# modify it under the terms of the GNU Lesser General Public
++# License as published by the Free Software Foundation; either
++# version 2.1 of the License, or (at your option) any later version.
++#
++# This program is distributed in the hope that it will be useful,
++# but WITHOUT ANY WARRANTY; without even the implied warranty of
++# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++# Lesser General Public License for more details.
++#
++# You should have received a copy of the GNU Lesser General Public
++# License along with this program; if not, write to the
++# Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
++# Boston, MA 02110-1301, USA.
++
++import os
++
++from unittest import mock
++from gettext import gettext as _
++
++from gi.repository import GES
++from gi.repository import Gst
++from gi.repository import GLib
++
++from pitivi import medialibrary
++from pitivi.project import ProjectManager
++from pitivi.timeline import timeline
++from pitivi.utils.proxy import ProxyingStrategy
++
++from tests import common
++
++
++def fakeSwitchProxies(asset):
++    timeline.TimelineContainer.switchProxies(mock.MagicMock(), asset)
++
++
++class TestMediaLibrary(common.TestCase):
++    def __init__(self, *args):
++        common.TestCase.__init__(self, *args)
++        self.app = None
++        self.medialibrary = None
++        self.mainloop = None
++
++    def tearDown(self):
++        self.clean()
++        common.TestCase.tearDown(self)
++
++    def clean(self):
++        self.mainloop = None
++
++        if self.app:
++            self.app = common.cleanPitiviMock(self.app)
++
++        if self.medialibrary:
++            self.medialibrary.finalize()
++            self.medialibrary = None
++
++    def _customSetUp(self, settings):
++        # Always make sure we start with a clean medialibrary, and no other
++        # is connected to some assets.
++        self.clean()
++
++        self.mainloop = GLib.MainLoop.new(None, False)
++        self.check_no_transcoding = False
++        self.app = common.getPitiviMock(settings)
++        self.app.project_manager = ProjectManager(self.app)
++        self.medialibrary = medialibrary.MediaLibraryWidget(self.app)
++        self.app.project_manager.newBlankProject(ignore_unsaved_changes=True)
++        self.app.project_manager.current_project.connect(
++            "loaded", self.projectLoadedCb)
++        self.mainloop.run()
++
++    def projectLoadedCb(self, unused_project, unused_timeline):
++        self.mainloop.quit()
++
++    def _progressBarCb(self, progressbar, unused_pspecunused):
++        if self.check_no_transcoding:
++            self.assertTrue(progressbar.props.fraction == 1.0 or
++                            progressbar.props.fraction == 0.0,
++                            "Some transcoding is happening, got progress: %f"
++                            % progressbar.props.fraction)
++
++        if progressbar.props.fraction == 1.0:
++            self.assertEqual(len(self.medialibrary.storemodel),
++                             len(self.samples))
++            self.mainloop.quit()
++
++    def _createAssets(self, samples):
++        self.samples = samples
++        for sample_name in samples:
++            self.app.project_manager.current_project.create_asset(
++                common.getSampleUri(sample_name), GES.UriClip,)
++
++    def runCheckImport(self, assets, proxying_strategy=ProxyingStrategy.ALL,
++                       check_no_transcoding=False, clean_proxies=True):
++        settings = mock.MagicMock()
++        settings.proxyingStrategy = proxying_strategy
++        settings.numTranscodingJobs = 4
++        settings.lastClipView = medialibrary.SHOW_TREEVIEW
++
++        self._customSetUp(settings)
++        self.check_no_transcoding = check_no_transcoding
++
++        self.medialibrary._progressbar.connect(
++            "notify::fraction", self._progressBarCb)
++
++        if clean_proxies:
++            common.cleanProxySamples()
++
++        self._createAssets(assets)
++        self.mainloop.run()
++        self.assertFalse(self.medialibrary._progressbar.props.visible)
++
++    def stopUsingProxies(self, delete_proxies=False):
++        sample_name = "30fps_numeroted_frames_red.mkv"
++        self.runCheckImport([sample_name])
++
++        asset_uri = common.getSampleUri(sample_name)
++        proxy = self.medialibrary.storemodel[0][medialibrary.COL_ASSET]
++
++        self.assertEqual(proxy.props.proxy_target.props.id, asset_uri)
++
++        self.app.project_manager.current_project.disableProxiesForAssets(
++            [proxy], delete_proxies)
++        self.assertEqual(len(self.medialibrary.storemodel),
++                         len(self.samples))
++
++        self.assertEqual(self.medialibrary.storemodel[0][medialibrary.COL_URI],
++                         asset_uri)
++
++    def testTranscoding(self):
++        self.runCheckImport(["30fps_numeroted_frames_red.mkv"])
++
++    def testDisableProxies(self):
++        self.runCheckImport(["30fps_numeroted_frames_red.mkv"],
++                            ProxyingStrategy.NOTHING, True)
++
++    def testReuseProxies(self):
++        # Create proxies
++        self.runCheckImport(["30fps_numeroted_frames_red.mkv"])
++        self.info("Now trying to import again, checking that no"
++                  " transcoding is done.")
++        self.runCheckImport(["30fps_numeroted_frames_red.mkv"],
++                            check_no_transcoding=True,
++                            clean_proxies=False)
++
++    def testNewlyImportedAssetSelected(self):
++        self.runCheckImport(["30fps_numeroted_frames_red.mkv",
++                            "30fps_numeroted_frames_blue.webm"])
++
++        self.assertEqual(len(list(self.medialibrary.getSelectedPaths())),
++                         len(self.samples))
++
++    def testStopUsingProxies(self, delete_proxies=False):
++        self.stopUsingProxies()
++
++    def testDeleteProxy(self):
++        self.stopUsingProxies(True)
++
++        asset = self.medialibrary.storemodel[0][medialibrary.COL_ASSET]
++        proxy_uri = self.app.proxy_manager.getProxyUri(asset)
++
++        # Requesting UriClip sync will return None if the asset is not in cache
++        # this way we make sure that this asset used to exist
++        proxy = GES.Asset.request(GES.UriClip, proxy_uri)
++        self.assertIsNotNone(proxy)
++        self.assertFalse(os.path.exists(Gst.uri_get_location(proxy_uri)))
++
++        self.assertEqual(asset.get_proxy(), None)
++
++        # And let's recreate the proxy file.
++        self.app.project_manager.current_project.useProxiesForAssets(
++            [asset])
++        self.assertEqual(asset.creation_progress, 0)
++
++        # Check that the info column notifies the user about progress
++        self.assertTrue(_("Proxy creation progress: ") in
++                        self.medialibrary.storemodel[0][medialibrary.COL_INFOTEXT])
++
++        # Run the mainloop and let _progressBarCb stop it when the proxy is
++        # ready
++        self.mainloop.run()
++
++        self.assertEqual(asset.creation_progress, 100)
++        self.assertEqual(asset.get_proxy(), proxy)
+diff --git a/tests/test_previewers.py b/tests/test_previewers.py
+new file mode 100644
+index 0000000..d88e602
+--- /dev/null
++++ b/tests/test_previewers.py
+@@ -0,0 +1,62 @@
++# -*- coding: utf-8 -*-
++#
++# Copyright (c) 2015, Thibault Saunier <tsaunier@gnome.org>
++#
++# This program is free software; you can redistribute it and/or
++# modify it under the terms of the GNU Lesser General Public
++# License as published by the Free Software Foundation; either
++# version 2.1 of the License, or (at your option) any later version.
++#
++# This program is distributed in the hope that it will be useful,
++# but WITHOUT ANY WARRANTY; without even the implied warranty of
++# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++# Lesser General Public License for more details.
++#
++# You should have received a copy of the GNU Lesser General Public
++# License along with this program; if not, write to the
++# Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
++# Boston, MA 02110-1301, USA.
++
++import os
++import pickle
++
++from unittest import mock
++
++from gi.repository import GES, Gst
++
++from tests import common
++from tests.test_media_library import TestMediaLibrary
++
++from pitivi.timeline.previewers import getThumbnailCache, THUMB_HEIGHT, \
++    get_wavefile_location_for_uri
++
++
++class TestPreviewers(common.TestCase):
++    def testCreateThumbnailBin(self):
++        pipeline = Gst.parse_launch("uridecodebin name=decode uri=file:///some/thing"
++                                    " waveformbin name=wavebin ! fakesink qos=false name=faked")
++        self.assertTrue(pipeline)
++        wavebin = pipeline.get_by_name("wavebin")
++        self.assertTrue(wavebin)
++
++    def testWaveFormAndThumbnailCreated(self):
++        testmedialib = TestMediaLibrary()
++        sample_name = "1sec_simpsons_trailer.mp4"
++        testmedialib.runCheckImport([sample_name])
++
++        sample_uri = common.getSampleUri(sample_name)
++        asset = GES.UriClipAsset.request_sync(sample_uri)
++
++        thumb_cache = getThumbnailCache(asset)
++        width, height = thumb_cache.getImagesSize()
++        self.assertEqual(height, THUMB_HEIGHT)
++        self.assertTrue(thumb_cache[0] is not None)
++        self.assertTrue(thumb_cache[Gst.SECOND / 2] is not None)
++
++        wavefile = get_wavefile_location_for_uri(sample_uri)
++        self.assertTrue(os.path.exists(wavefile), wavefile)
++
++        with open(wavefile, "rb") as fsamples:
++            samples = pickle.load(fsamples)
++
++        self.assertTrue(bool(samples))
+diff --git a/tests/test_project.py b/tests/test_project.py
+index 229d84e..d2be228 100644
+--- a/tests/test_project.py
++++ b/tests/test_project.py
+@@ -22,21 +22,21 @@ import os
+ import tempfile
+ import time
+ 
+-from unittest import TestCase
+-
++from unittest import TestCase, mock
+ from gi.repository import GES
+ from gi.repository import GLib
+ from gi.repository import Gst
+ 
+-from tests import common
+-
+ from pitivi.application import Pitivi
+ from pitivi.project import ProjectManager, Project
+ from pitivi.utils.misc import uri_is_reachable
++from pitivi.utils.proxy import ProxyingStrategy
++
++from tests import common
+ 
+ 
+ def _createRealProject(name=None):
+-    app = Pitivi()
++    app = common.getPitiviMock(proxyingStrategy=ProxyingStrategy.NOTHING)
+     project_manager = ProjectManager(app)
+     project_manager.newBlankProject()
+     project = project_manager.current_project
+@@ -60,6 +60,9 @@ class MockProject(object):
+     def disconnect_by_function(self, ignored):
+         pass
+ 
++    def finalize(self):
++        pass
++
+ 
+ class ProjectManagerListener(object):
+ 
+@@ -88,7 +91,8 @@ class ProjectManagerListener(object):
+ class TestProjectManager(TestCase):
+ 
+     def setUp(self):
+-        self.manager = ProjectManager(None)
++        app = mock.MagicMock()
++        self.manager = ProjectManager(app)
+         self.listener = ProjectManagerListener(self.manager)
+         self.signals = self.listener.signals
+ 
+@@ -358,31 +362,39 @@ class TestProjectLoading(common.TestCase):
+             os.remove(xges_path)
+ 
+     def testAssetAddingRemovingAdding(self):
+-        def loaded(project, timeline, mainloop, result, uris):
+-            result[0] = True
+-            project.addUris(uris)
++        def loadingProgressCb(project, progress, estimated_time,
++                              self, result, uris):
++
++            def readd(mainloop, result, uris):
++                project.addUris(uris)
++                result[2] = True
++                mainloop.quit()
++
++            if progress < 100:
++                return
+ 
+-        def added(project, mainloop, result, uris):
+             result[1] = True
+             assets = project.list_assets(GES.UriClip)
++            self.assertEqual(len(assets), 1)
+             asset = assets[0]
+             project.remove_asset(asset)
+-            GLib.idle_add(readd, mainloop, result, uris)
++            GLib.idle_add(readd, self.mainloop, result, uris)
+ 
+-        def readd(mainloop, result, uris):
++        def loadedCb(project, timeline, mainloop, result, uris):
++            result[0] = True
+             project.addUris(uris)
+-            result[2] = True
+-            mainloop.quit()
+-
+-        def quit(mainloop):
+-            mainloop.quit()
+ 
+         # Create a blank project and add an asset.
+         project = _createRealProject()
+         result = [False, False, False]
+-        uris = [self.getSampleUri("tears_of_steel.webm")]
+-        project.connect("loaded", loaded, self.mainloop, result, uris)
+-        project.connect("done-importing", added, self.mainloop, result, uris)
++        uris = [common.getSampleUri("tears_of_steel.webm")]
++        project.connect("loaded", loadedCb, self.mainloop, result, uris)
++        project.connect("asset-loading-progress",
++                        loadingProgressCb, self,
++                        result, uris)
++
++        def quit(mainloop):
++            mainloop.quit()
+ 
+         self.assertTrue(project.createTimeline())
+         GLib.timeout_add_seconds(5, quit, self.mainloop)
+@@ -390,7 +402,8 @@ class TestProjectLoading(common.TestCase):
+         self.assertTrue(
+             result[0], "Project creation failed to trigger signal: loaded")
+         self.assertTrue(
+-            result[1], "Asset add failed to trigger signal: done-importing")
++            result[1], "Asset add failed to trigger asset-loading-progress"
++            "with progress == 100")
+         self.assertTrue(result[2], "Asset re-adding failed")
+ 
+ 
+@@ -421,11 +434,12 @@ class TestProjectSettings(common.TestCase):
+         self.assertEqual(Gst.Fraction(2, 7), project.videopar)
+ 
+     def testInitialization(self):
+-        def loaded(project, timeline, mainloop, uris):
++        def loadedCb(project, timeline, mainloop, uris):
+             project.addUris(uris)
+ 
+-        def added(project, mainloop):
+-            mainloop.quit()
++        def progressCb(project, progress, estimated_time, mainloop):
++            if progress == 100:
++                mainloop.quit()
+ 
+         def quit(mainloop):
+             mainloop.quit()
+@@ -435,11 +449,11 @@ class TestProjectSettings(common.TestCase):
+         self.assertTrue(project._has_default_video_settings)
+         self.assertTrue(project._has_default_audio_settings)
+ 
+-        uris = [self.getSampleUri("flat_colour1_640x480.png"),
+-                self.getSampleUri("tears_of_steel.webm"),
+-                self.getSampleUri("1sec_simpsons_trailer.mp4")]
+-        project.connect("loaded", loaded, self.mainloop, uris)
+-        project.connect("done-importing", added, self.mainloop)
++        uris = [common.getSampleUri("flat_colour1_640x480.png"),
++                common.getSampleUri("tears_of_steel.webm"),
++                common.getSampleUri("1sec_simpsons_trailer.mp4")]
++        project.connect("loaded", loadedCb, self.mainloop, uris)
++        project.connect("asset-loading-progress", progressCb, self.mainloop)
+ 
+         self.assertTrue(project.createTimeline())
+         GLib.timeout_add_seconds(5, quit, self.mainloop)
+@@ -462,7 +476,8 @@ class TestProjectSettings(common.TestCase):
+         self.assertEqual(Gst.Fraction(1, 1), project.videopar)
+ 
+     def testLoad(self):
+-        project = Project(uri="fake.xges", app=None)
++        ptv = common.getPitiviMock(proxyingStrategy=ProxyingStrategy.NOTHING)
++        project = Project(uri="fake.xges", app=ptv)
+         self.assertFalse(project._has_default_video_settings)
+         self.assertFalse(project._has_default_audio_settings)
+ 
+diff --git a/tests/test_timeline_layer.py b/tests/test_timeline_layer.py
+index aeb4817..7e560c1 100644
+--- a/tests/test_timeline_layer.py
++++ b/tests/test_timeline_layer.py
+@@ -46,7 +46,7 @@ class TestLayer(common.TestCase):
+ 
+     def testCheckMediaTypesWhenNoUI(self):
+         bLayer = GES.Layer()
+-        png = self.getSampleUri("flat_colour1_640x480.png")
++        png = common.getSampleUri("flat_colour1_640x480.png")
+         video_clip = GES.UriClipAsset.request_sync(png).extract()
+         self.assertTrue(bLayer.add_clip(video_clip))
+         self.assertEqual(1, len(bLayer.get_clips()))
+diff --git a/tests/test_timeline_timeline.py b/tests/test_timeline_timeline.py
+index aac5834..883add8 100644
+--- a/tests/test_timeline_timeline.py
++++ b/tests/test_timeline_timeline.py
+@@ -18,7 +18,7 @@
+ # Boston, MA 02110-1301, USA.
+ 
+ from unittest import TestCase, mock
+-
++from tests.common import getPitiviMock
+ from gi.repository import Gdk
+ 
+ from pitivi.project import Project, ProjectManager
+@@ -34,10 +34,11 @@ THICK = ui.LAYER_HEIGHT
+ class TestLayers(TestCase):
+ 
+     def createTimeline(self, layers_heights):
+-        project_manager = ProjectManager(app=None)
++        app = getPitiviMock()
++        project_manager = ProjectManager(app)
+         project_manager.newBlankProject()
+         project = project_manager.current_project
+-        timeline = Timeline(container=None, app=None)
++        timeline = Timeline(container=mock.MagicMock(), app=app)
+         timeline.get_parent = mock.MagicMock()
+         timeline.setProject(project)
+         y = 0
+diff --git a/tests/test_undo_timeline.py b/tests/test_undo_timeline.py
+index aa50489..3c87b63 100644
+--- a/tests/test_undo_timeline.py
++++ b/tests/test_undo_timeline.py
+@@ -315,7 +315,7 @@ class TestTimelineUndo(TestCase):
+         self.assertEqual(20, clip1.get_priority())
+ 
+     def testUngroup(self):
+-        uri = common.TestCase.getSampleUri("tears_of_steel.webm")
++        uri = common.getSampleUri("tears_of_steel.webm")
+         asset = GES.UriClipAsset.request_sync(uri)
+         clip1 = asset.extract()
+         self.layer.add_clip(clip1)
