@@ -436,6 +436,7 @@ if [ "$ready_to_run" != "1" ]; then
             git checkout -- acinclude.m4
         fi
 
+        needs_configure='0'
         if [ "$force_autogen" = "1" ]; then
             needs_configure='1'
         elif [ "$m" == "gst-transcoder" ]; then
