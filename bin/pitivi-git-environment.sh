@@ -451,15 +451,15 @@ if [ "$ready_to_run" != "1" ]; then
             if [ "$m" == "gst-transcoder" ]; then
                 ./configure
             else
-              # Allow passing per-module arguments when running autogen.
-              # For example, specify the following environment variable
-              # to pass --disable-eglgles to gst-plugins-bad's autogen.sh:
-              #   gst_plugins_bad_AUTOGEN_EXTRA="--disable-eglgles"
-              EXTRA_VAR="$(echo $m | sed "s/-/_/g")_AUTOGEN_EXTRA"
-              if $BUILD_DOCS; then
-                  ./autogen.sh ${!EXTRA_VAR}
-              else
-                  ./autogen.sh --disable-gtk-doc --disable-docbook ${!EXTRA_VAR}
+                # Allow passing per-module arguments when running autogen.
+                # For example, specify the following environment variable
+                # to pass --disable-eglgles to gst-plugins-bad's autogen.sh:
+                #   gst_plugins_bad_AUTOGEN_EXTRA="--disable-eglgles"
+                EXTRA_VAR="$(echo $m | sed "s/-/_/g")_AUTOGEN_EXTRA"
+                if $BUILD_DOCS; then
+                    ./autogen.sh ${!EXTRA_VAR}
+                else
+                    ./autogen.sh --disable-gtk-doc --disable-docbook ${!EXTRA_VAR}
               fi
             fi
             if [ $? -ne 0 ]; then
