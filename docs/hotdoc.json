@@ -1,0 +1,9 @@
+{
+    "add_anchors": true,
+    "command": "conf",
+    "index": "HACKING.md",
+    "output": "built_doc",
+    "project_name": "pitivi_docs",
+    "sitemap": "sitemap.txt",
+    "syntax_highlighting_activate": true
+}
