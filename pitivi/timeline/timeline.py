@@ -768,11 +768,11 @@ class Timeline(Gtk.EventBox, Zoomable, Loggable):
 
             self.debug("Creating %s at %s", asset.props.id, Gst.TIME_ARGS(placement))
 
-            ges_clip = ges_layer.add_asset(asset,
-                                           placement,
-                                           0,
-                                           clip_duration,
-                                           asset.get_supported_formats())
+            self.__init_clip_properties(ges_layer.add_asset(asset,
+                                        placement,
+                                        0,
+                                        clip_duration,
+                                        asset.get_supported_formats()))
             placement += clip_duration
             self.current_group.add(ges_clip.get_toplevel_parent())
             self.selection.setSelection([], SELECT_ADD)
@@ -1214,6 +1214,10 @@ class TimelineContainer(Gtk.Grid, Zoomable, Loggable):
         layer = layers[0]
         self._insertClipsAndAssets(clips, position, layer)
 
+    def __init_clip_properties(self, clip):
+
+
+
     def _insertClipsAndAssets(self, objs, position, layer):
         if self.ges_timeline is None:
             raise TimelineError("No ges_timeline set, this is a bug")
@@ -1231,7 +1235,7 @@ class TimelineContainer(Gtk.Grid, Zoomable, Loggable):
             for obj in objs:
                 if isinstance(obj, GES.Clip):
                     obj.set_start(clip_position)
-                    layer.add_clip(obj)
+                    clip = layer.add_clip(obj)
                     duration = obj.get_duration()
                 elif isinstance(obj, GES.Asset):
                     if obj.is_image():
@@ -1240,13 +1244,12 @@ class TimelineContainer(Gtk.Grid, Zoomable, Loggable):
                     else:
                         duration = obj.get_duration()
 
-                    layer.add_asset(obj,
-                                    start=clip_position,
-                                    inpoint=0,
-                                    duration=duration,
-                                    track_types=obj.get_supported_formats())
+                    clip = layer.add_asset(obj, start=clip_position,
+                                        inpoint=0, duration=duration,
+                                        track_types=obj.get_supported_formats())
                 else:
                     raise TimelineError("Cannot insert: %s" % type(obj))
+                self.__init_clip_properties(clip)
                 clip_position += duration
         self._project.pipeline.commit_timeline()
 

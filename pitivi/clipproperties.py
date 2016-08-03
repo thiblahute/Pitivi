@@ -18,6 +18,7 @@
 # Boston, MA 02110-1301, USA.
 """Widgets to control clips properties."""
 import os
+from collections import namedtuple
 from gettext import gettext as _
 
 from gi.repository import Gdk
@@ -526,6 +527,10 @@ class EffectProperties(Gtk.Expander, Loggable):
         self._vbox.add(self._effect_config_ui)
 
 
+
+SourcePosition = namedtuple("SourcePosition", ["x", "y", "width", "height"])()
+
+
 class TransformationProperties(Gtk.Expander, Loggable):
     """Widget for configuring the placement and size of the clip."""
 
@@ -555,6 +560,35 @@ class TransformationProperties(Gtk.Expander, Loggable):
 
         self.app.project_manager.connect_after(
             "new-project-loaded", self._newProjectLoadedCb)
+
+    @staticmethod
+    def get_source_position(project, clip):
+        video_source = [elem for elem in clip.get_children(False) if
+                        isinstance(elem, GES.VideoSource)]
+
+        if not video_source:
+            return None
+
+        video_surce = video_source[0]
+        video_source.set_child_property("x", 0)
+        video_source.set_child_property("y", 0)
+
+        sinfo = video_source.get_asset().get_stream_info()
+
+        scale = min(self._project.videowidth / sinfo.get_width(),
+                    self._project.videoheight / sinfo.get_height())
+        self.error("Scale is %s -> %sx%s", scale, sinfo.get_width() * scale,
+                   sinfo.get_height() * scale)
+
+        position = namedtuple("SourcePosition", ["x", "y", "width", "height"])
+
+        width = sinfo.get_width() * scale
+        height = sinfo.get_height() * scale
+        x = max(0, (self._project.videowidth - width) / 2)
+        y = max(0, (self._project.videoheight - height) / 2)
+
+        return SourcePosition(x, y, width, height)
+
 
     def _newProjectLoadedCb(self, unused_app, project):
         if self._selection is not None:
