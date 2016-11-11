@@ -313,6 +313,7 @@ class RenderingProgressDialog(GObject.Object):
             "estimated_filesize_label")
         self._filesize_est_value_label = self.builder.get_object(
             "estimated_filesize_value_label")
+
         # Parent the dialog with mainwindow, since renderingdialog is hidden.
         # It allows this dialog to properly minimize together with mainwindow
         self.window.set_transient_for(self.app.gui)
@@ -580,6 +581,7 @@ class RenderDialog(Loggable):
 
         icon = os.path.join(configure.get_pixmap_dir(), "pitivi-render-16.png")
         self.window.set_icon_from_file(icon)
+
         self.window.set_transient_for(self.app.gui)
 
     def _settingsChanged(self, unused_project, unused_key, unused_value):
@@ -913,7 +915,7 @@ class RenderDialog(Loggable):
                     self._factory_formats[encoder_string] = fmt
                     break
 
-        self.app.gui.timeline_ui.zoomFit()
+        self.app.gui.timeline_ui.timeline.set_best_zoom_ratio()
         self.project.set_rendering(True)
         self._pipeline.set_render_settings(
             self.outfile, self.project.container_profile)
