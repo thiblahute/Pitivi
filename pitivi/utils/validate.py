@@ -219,12 +219,15 @@ def _releaseButtonIfNeeded(scenario, action, timeline, container, edge, layer_pr
             need_release = False
 
     if next_action is None or need_release:
+        Gst.error("HERE I AM!")
         scenario.dragging = False
         x = Zoomable.nsToPixelAccurate(position)
         event = Event(Gdk.EventType.BUTTON_RELEASE, button=1, x=x, y=y)
         with mock.patch.object(Gtk, "get_event_widget") as get_event_widget:
             get_event_widget.return_value = container.ui
-            container.ui._button_release_event_cb(None, event)
+            # FIXME Find a way to recurse up as Gtk would
+            if not container.ui._button_release_event_cb(None, event):
+                timeline.ui._button_release_event_cb(None, event)
 
         if layer_prio > 0 and container.get_layer().get_priority() != layer_prio:
             scenario.report_simple(GLib.quark_from_string("scenario::execution-error"),
