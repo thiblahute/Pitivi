@@ -180,10 +180,11 @@ class UndoableActionLog(GObject.Object, Loggable):
         "move": (GObject.SIGNAL_RUN_LAST, None, (object,)),
     }
 
-    def __init__(self):
+    def __init__(self, app):
         GObject.Object.__init__(self)
         Loggable.__init__(self)
 
+        self.app = app
         self.undo_stacks = []
         self.redo_stacks = []
         self.stacks = []
@@ -280,11 +281,13 @@ class UndoableActionLog(GObject.Object, Loggable):
         if not self.undo_stacks:
             raise UndoWrongStateError("Nothing to undo")
 
+        self.app.write_action("undo-start", optional_action_type=True)
         stack = self.undo_stacks.pop(-1)
         self.debug("Undo %s", stack)
         self._run(stack.undo)
         self.redo_stacks.append(stack)
         self.emit("move", stack)
+        self.app.write_action("undo-end", optional_action_type=True)
 
     def redo(self):
         """Redoes the last undone operation."""
@@ -293,11 +296,13 @@ class UndoableActionLog(GObject.Object, Loggable):
         if not self.redo_stacks:
             raise UndoWrongStateError("Nothing to redo")
 
+        self.app.write_action("redo-start", optional_action_type=True)
         stack = self.redo_stacks.pop(-1)
         self.debug("Redo %s", stack)
         self._run(stack.do)
         self.undo_stacks.append(stack)
         self.emit("move", stack)
+        self.app.write_action("redo-end", optional_action_type=True)
 
     def _takeSnapshot(self):
         return list(self.undo_stacks)
@@ -384,16 +389,38 @@ class MetaContainerObserver(GObject.Object):
 
 class PropertyChangedAction(UndoableAutomaticObjectAction):
 
-    def __init__(self, gobject, field_name, old_value, new_value):
+    def __init__(self, app, gobject, field_name, old_value, new_value):
         UndoableAutomaticObjectAction.__init__(self, gobject)
+        self.app = app
         self.field_name = field_name
         self.old_value = old_value
         self.new_value = new_value
 
+    def write_action(self, value):
+        if not self.app:
+            return
+
+        v = GObject.Value()
+        prop = [p for p in self.auto_object.list_properties()
+                if p.name == self.field_name]
+        if not prop:
+            self.error("Could not find property %s in %s" % (
+                self.field_name, self.auto_object))
+            return
+
+        v.init(prop[0].value_type)
+        v.set_value(value)
+        self.app.write_action('set-property',
+                                target_element_name=self.auto_object.props.name,
+                                property_name=self.field_name,
+                                property_value=v)
+
     def do(self):
+        self.write_action(self.new_value)
         self.auto_object.set_property(self.field_name, self.new_value)
 
     def undo(self):
+        self.write_action(self.old_value)
         self.auto_object.set_property(self.field_name, self.old_value)
 
 
@@ -430,6 +457,7 @@ class GObjectObserver(GObject.Object):
         if old_value == property_value:
             return
         self.properties[property_name] = property_value
-        action = PropertyChangedAction(gobject, field_name,
+        action = PropertyChangedAction(self.action_log.app,
+                                       gobject, field_name,
                                        old_value, property_value)
         self.action_log.push(action)

@@ -273,7 +273,7 @@ class Pitivi(Gtk.Application, Loggable):
         self._setScenarioFile(project.get_uri())
 
     def _newProjectLoaded(self, unused_project_manager, project):
-        self.action_log = UndoableActionLog()
+        self.action_log = UndoableActionLog(self)
         self.action_log.connect("pre-push", self._action_log_pre_push_cb)
         self.action_log.connect("commit", self._actionLogCommit)
         self.action_log.connect("move", self._action_log_move_cb)

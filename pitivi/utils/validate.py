@@ -138,6 +138,37 @@ def stop(scenario, action):
 
     return 1
 
+def undo_start(scenario, action):
+    scenario.undo_state = "undo"
+    scenario.pipeline.props.timeline.ui.app.action_log.undo()
+
+    return 1
+
+def undo_end(scenario, action):
+    scenario.undo_state = None
+
+    return 1
+
+def redo_start(scenario, action):
+    scenario.undo_state = "redo"
+    scenario.pipeline.props.timeline.ui.app.action_log.redo()
+
+    return 1
+
+def redo_end(scenario, action):
+    scenario.undo_state = None
+
+    return 1
+
+def linkup_if_not_undoing(scenario, action):
+    if getattr(scenario, "undo_state", None) is not None:
+        print("  -> Not running action as we are '%s' stack." %
+              (scenario.undo_state))
+        return 1
+
+    return GstValidate.execute_action(
+        GstValidate.get_action_type(action.type).overriden_type,
+        action)
 
 def positionChangedCb(pipeline, position, scenario, action,
                       wanted_position):
@@ -369,11 +400,6 @@ def editContainer(scenario, action):
     return 1
 
 
-# def commit(scenario, action):
-
-#     return True
-
-
 def split_clip(scenario, action):
     timeline = scenario.pipeline.props.timeline.ui
     timeline.get_parent()._splitCb(None, None)
@@ -550,11 +576,50 @@ def init():
                                          remove_clip, None,
                                          "Remove clip",
                                          GstValidate.ActionTypeFlags.NONE)
+
         GstValidate.register_action_type("select-clips", "pitivi",
                                          select_clips, [Parametter("clip-name",
                                                                    "The name of the clip to select",
                                                                    True, None, "str")],
                                          "Select clips",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        # We need to have un/redo-start and un/redo-stop as not mandatory
+        # actions so that when running inside pitivi all the actions in
+        # between are ignored but when running with, say, ges-launch
+        # all the actions are properly executed.
+        GstValidate.register_action_type("undo-start", "pitivi",
+                                         undo_start, None,
+                                         "Start undoing previous undo/redo stack",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("undo-end", "pitivi",
+                                         undo_end, None,
+                                         "End undoing previous undo/redo stack",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("redo-start", "pitivi",
+                                         redo_start, None,
+                                         "Start redoing previous undo/redo stack",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("redo-end", "pitivi",
+                                         redo_end, None,
+                                         "End redoing previous undo/redo stack",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("set-property", "pitivi",
+                                         linkup_if_not_undoing, None,
+                                         "Overrides set-property so that we do not"
+                                         " set properties when undoing or redoing"
+                                         " action types",
+                                         GstValidate.ActionTypeFlags.NONE)
+
+        GstValidate.register_action_type("commit", "pitivi",
+                                         linkup_if_not_undoing, None,
+                                         "Overrides GESTimeline.commit action type"
+                                         " so that we do not set properties when"
+                                         " undoing or redoing action types.",
                                          GstValidate.ActionTypeFlags.NONE)
 
         for z in ["zoom-fit", "zoom-out", "zoom-in"]:
@@ -570,6 +635,7 @@ def init():
                                    "All sink should display their images in an embedded "
                                    "widget and thus not create a new window",
                                    GstValidate.ReportLevel.CRITICAL))
+
         return True
     except ImportError:
         has_validate = False
