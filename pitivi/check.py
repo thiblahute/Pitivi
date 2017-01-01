@@ -330,6 +330,7 @@ def initialize_modules():
     require_version("GES", GST_API_VERSION)
     from gi.repository import GES
     res, sys.argv = GES.init_check(sys.argv)
+    GES.UriClipAssetClass.set_timeout(5 * Gst.SECOND)
 
     from pitivi.utils import validate
     if validate.init() and "--inspect-action-type" in sys.argv:

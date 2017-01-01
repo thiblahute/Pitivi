@@ -188,12 +188,9 @@ class PreviewWidget(Gtk.Grid, Loggable):
         self.log("Preview request for %s", uri)
         self.clear_preview()
         self.current_selected_uri = uri
-        GES.UriClipAsset.new(uri, None, self.__asset_loaded_cb)
 
-    def __asset_loaded_cb(self, source, res):
-        uri = source.get_id()
         try:
-            asset = GES.Asset.request_finish(res)
+            asset = GES.UriClipAsset.request_sync(uri)
         except GLib.Error as error:
             self.log("Failed discovering %s: %s", uri, error.message)
             self._show_error(error.message)
